@@ -1,5 +1,5 @@
-TerriaCube - prototype integration of TerriaJS and the Digital Earth A...
-=========================================================================
+TerriaCube - prototype integration of TerriaJS and the Digital Earth Australia
+==============================================================================
 
 ![Terria logo](terria-logo.png "Terria logo")
 
