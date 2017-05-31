@@ -20,7 +20,7 @@
             url: "#"
         },
         */
-         
+
         // Pop-up disclaimer that will be shown at the start
         // The text of the disclaimer is in lib/Views/GlobalDisclaimer.html
         globalDisclaimer: {
@@ -33,19 +33,19 @@
             //devHostRegex: "\\b(staging|preview|test|dev)\\.",
             enableOnLocalhost: true // If false, don't show this when running on localhost
         },
-        
+
         /*
         developerAttribution: {
             text: "Your organisation",
             link: "http://www.example.com"
         },*/
         // This is used in various text messages. You should also set <title> in index.html
-        appName: "Terria Map",
+        appName: "Terria-Cube Prototype",
 
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
         brandBarElements: [
-            "",
-            "<a target=\"_blank\" href=\"http://www.nicta.com.au\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
+            "<large>Terria-Cube Prototype</large><br/>",
+            "<small>Version: {{version}}</small>",
             ""
         ],
         // Shown when things go wrong.
@@ -58,6 +58,7 @@
         // Default mobile viewer mode when loading the map for the first time on mobile platforms.
         // Options are: "3DTerrain", "3DSmooth", "2D"
         mobileDefaultViewerMode: "2d",
+        autoPlay: false,
     }
 }
 
