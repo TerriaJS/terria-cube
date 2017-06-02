@@ -16,7 +16,7 @@
       "name": "GSky Test layers",
       "type": "wms-getCapabilities",
       "url": "http://gsky-test.nci.org.au/ows",
-      "cacheDuration": "2h",
+      "cacheDuration": "15m",
       "ignoreUnknownTileErrors": true
     }
   ]
