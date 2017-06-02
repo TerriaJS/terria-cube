@@ -1,7 +1,5 @@
 {
   "corsDomains": [
-    "gsky-test.nci.org.au",
-    "gsky.nci.org.au"
   ],
   "homeCamera": {
     "north": -8,
