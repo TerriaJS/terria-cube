@@ -9,21 +9,11 @@
   "catalog": [
 
     {
-      "name": "GEOGLAM GSky Total Vegetation Cover (PV + NPV)",
-      "type": "wms",
-      "url": "http://gsky.nci.org.au/ows",
+      "name": "GSky Test layers",
+      "type": "wms-getCapabilities",
+      "url": "http://gsky-test.nci.org.au/ows",
       "cacheDuration": "2h",
-      "layers": "global:totalcover",
-      "legendUrls": [],
-      "isEnabled": true,
-      "opacity": 1,
-      "initialTimeSource": "end",
-      "dateFormat": {
-        "currentTime": "mmmm yyyy",
-        "timelineTic": "yyyy"
-      },
-      "ignoreUnknownTileErrors": true,
-      "getFeatureInfoFormats": [{"type": "none"}]
+      "ignoreUnknownTileErrors": true
     }
   ]
 }
