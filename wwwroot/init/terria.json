@@ -13,10 +13,29 @@
   "catalog": [
 
     {
-      "name": "GSky Test layers",
-      "type": "wms-getCapabilities",
+      "name": "AGDC LS5 NBART",
+      "type": "wms",
       "url": "http://gsky-test.nci.org.au/ows",
-      "cacheDuration": "15m",
+      "layers": "LS5:NBART",
+      "cacheDuration": "10m",
+      "ignoreUnknownTileErrors": true
+    },
+
+    {
+      "name": "USGS LS8 Cloud Masked True Colour",
+      "type": "wms",
+      "url": "http://gsky-test.nci.org.au/ows",
+      "layers": "LS8:GeoTIFF",
+      "cacheDuration": "10m",
+      "ignoreUnknownTileErrors": true
+    },
+
+    {
+      "name": "USGS LS8 True Colour",
+      "type": "wms",
+      "url": "http://gsky-test.nci.org.au/ows",
+      "layers": "LS8:GeoTIFFC",
+      "cacheDuration": "10m",
       "ignoreUnknownTileErrors": true
     }
   ]
