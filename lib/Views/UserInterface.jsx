@@ -6,6 +6,7 @@ import StandardUserInterface from 'terriajs/lib/ReactViews/StandardUserInterface
 import MenuItem from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem';
 import RelatedMaps from './RelatedMaps';
 import { Menu, Nav, ExperimentalMenu } from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups';
+import MeasureTool from 'terriajs/lib/ReactViews/Map/Navigation/MeasureTool';
 import SplitPoint from 'terriajs/lib/ReactViews/SplitPoint';
 import ToggleSplitterTool from 'terriajs/lib/ReactViews/Map/Navigation/ToggleSplitterTool';
 
@@ -30,6 +31,7 @@ export default function UserInterface(props) {
                 <MenuItem caption="About" href="about.html" key="about-link"/>
             </Menu>
             <Nav>
+                <MeasureTool terria={props.viewState.terria} key="measure-tool"/>
                 <ToggleSplitterTool terria={props.viewState.terria} key="toggle-splitter-tool"/>
             </Nav>
             <ExperimentalMenu>
