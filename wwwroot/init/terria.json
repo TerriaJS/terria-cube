@@ -13,33 +13,6 @@
   "catalog": [
 
     {
-      "name": "AGDC LS5 NBART",
-      "type": "wms",
-      "url": "http://gsky-test.nci.org.au/ows",
-      "layers": "LS5:NBART",
-      "cacheDuration": "10m",
-      "ignoreUnknownTileErrors": true
-    },
-
-    {
-      "name": "USGS LS8 Cloud Masked True Colour",
-      "type": "wms",
-      "url": "http://gsky-test.nci.org.au/ows",
-      "layers": "LS8:GeoTIFF",
-      "cacheDuration": "10m",
-      "ignoreUnknownTileErrors": true
-    },
-
-    {
-      "name": "USGS LS8 True Colour",
-      "type": "wms",
-      "url": "http://gsky-test.nci.org.au/ows",
-      "layers": "LS8:GeoTIFFC",
-      "cacheDuration": "10m",
-      "ignoreUnknownTileErrors": true
-    },
-
-    {
       "name": "Solar Satellite DNI & GHI",
       "layers": "Solar_Satellite_DNI_2014",
       "url": "http://gis.aremi.nationalmap.gov.au/bom/wms",
