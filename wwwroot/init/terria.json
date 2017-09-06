@@ -58,7 +58,26 @@
       "type": "wmts",
       "ignoreUnknownTileErrors": true,
       "opacity": 1
-    }
+    },
 
+    {
+      "name": "Surface Reflectance (NBAR, True Color, Global, Monthly, v3.0, Landsat / WELD)",
+      "layer": "Landsat_WELD_CorrectedReflectance_TrueColor_Global_Monthly",
+      "url": "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/wmts.cgi",
+      "type": "wmts",
+      "tileMatrixSetID": "31.25m",
+      "ignoreUnknownTileErrors": true,
+      "opacity": 1
+    },
+
+    {
+      "name": "Surface Reflectance (NBAR, True Color, Global, Annual, v3.0, Landsat / WELD)",
+      "layer": "Landsat_WELD_CorrectedReflectance_TrueColor_Global_Annual",
+      "url": "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/wmts.cgi",
+      "type": "wmts",
+      "tileMatrixSetID": "31.25m",
+      "ignoreUnknownTileErrors": true,
+      "opacity": 1
+    }
   ]
 }
