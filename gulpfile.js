@@ -121,7 +121,7 @@ gulp.task('write-version', function() {
     var spawnSync = require('child_process').spawnSync;
 
     // Get a version string from "git describe".
-    var version = spawnSync('git', ['describe']).stdout.toString().trim();
+    var version = spawnSync('date', ['+%Y-%m-%dT%H:%M:%S']).stdout.toString().trim();
     var isClean = spawnSync('git', ['status', '--porcelain']).stdout.toString().length === 0;
     if (!isClean) {
         version += ' (plus local modifications)';
