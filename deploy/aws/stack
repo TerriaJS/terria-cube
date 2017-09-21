@@ -20,7 +20,7 @@ if [ -z "$2" ]
 fi
 
 echo "Deploying $PACKAGE_NAME"
-exit
+
 aws s3 --profile $npm_package_config_awsProfile cp ../packages/$PACKAGE_NAME.tar.gz $npm_package_config_awsS3PackagesPath/$PACKAGE_NAME.tar.gz
 if [[ $? -ne 0 ]]; then
     exit 1
