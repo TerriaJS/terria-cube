@@ -140,7 +140,7 @@ gulp.task('make-package', function() {
     var spawnSync = require('child_process').spawnSync;
     var json5 = require('json5');
 
-    var packageName = argv.packageName || (process.env.npm_package_name + '-' + spawnSync('date', ['+%Y%m%dT%H%M%S']).stdout.toString().trim());
+    var packageName = argv.packageName || process.env.npm_package_name;
     var packagesDir = path.join('.', 'deploy', 'packages');
 
     if (!fs.existsSync(packagesDir)) {
