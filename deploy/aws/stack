@@ -34,7 +34,7 @@ echo "Length of the BASE64 encoded user-data is ${#BASE64_USERDATA} (max size al
 aws cloudformation $1-stack \
     --profile $npm_package_config_awsProfile \
     --region $npm_package_config_awsRegion \
-    --stack-name "$PACKAGE_NAME" \
+    --stack-name "$PACKAGE_NAME"-$(date +%Y%m%dT%H%M%S) \
     --template-body file://stack.json \
     --capabilities CAPABILITY_IAM \
     --parameters \
