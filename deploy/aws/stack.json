@@ -159,12 +159,6 @@
             },
             "LoadBalancerPort": "80",
             "Protocol": "HTTP"
-          },
-          {
-            "InstancePort": "80",
-            "LoadBalancerPort": "443",
-            "Protocol": "HTTPS",
-            "SSLCertificateId": "arn:aws:iam::278900443360:server-certificate/terra.io-20151208"
           }
         ]
       },
