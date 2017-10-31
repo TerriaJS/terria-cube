@@ -2,6 +2,7 @@
     "port": 3001,
 
     "allowProxyFor" : [
+        "9xjfk12.nexus.csiro.au:5000",
         "localhost",
         "localhost:80",
         "localhost:3000",
