@@ -2,25 +2,29 @@
     "port": 3001,
 
     "allowProxyFor" : [
-        "nicta.com.au",
-        "gov.au",
-        "csiro.au",
+        "localhost",
+        "localhost:80",
+        "localhost:3000",
+        "localhost:3001",
+        "localhost:3002",
+        "localhost:5000",
+        "localhost:8000",
+        "localhost:8080,"
         "arcgis.com",
-        "argo.jcommops.org",
-        "www.abc.net.au",
-        "geoserver.aurin.org.au",
-        "mapsengine.google.com",
-        "s3-ap-southeast-2.amazonaws.com",
-        "adelaidecitycouncil.com",
-        "www.dptiapps.com.au",
+        "csiro.au",
         "geoserver-123.aodn.org.au",
+        "geoserver.aurin.org.au",
         "geoserver.imos.org.au",
-        "nci.org.au",
-        "static.nationalmap.nicta.com.au",
         "githubusercontent.com",
         "gov",
-        "gov.uk",
+        "gov.au",
         "gov.nz"
+        "gov.uk",
+        "mapsengine.google.com",
+        "nci.org.au",
+        "nicta.com.au",
+        "static.nationalmap.nicta.com.au",
+        "www.dptiapps.com.au"
     ]
 }
 
