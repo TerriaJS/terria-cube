@@ -1,7 +1,7 @@
 {
     "port": 3001,
 
-    "allowProxyFor" : [
+    "allowProxyFor": [
         "9xjfk12.nexus.csiro.au:5000",
         "localhost",
         "localhost:80",
@@ -10,22 +10,22 @@
         "localhost:3002",
         "localhost:5000",
         "localhost:8000",
-        "localhost:8080,"
+        "localhost:8080",
         "arcgis.com",
         "csiro.au",
+        "d61.io",
+        "data61.io",
         "geoserver-123.aodn.org.au",
         "geoserver.aurin.org.au",
         "geoserver.imos.org.au",
-        "githubusercontent.com",
         "gov",
         "gov.au",
-        "gov.nz"
+        "gov.nz",
         "gov.uk",
         "mapsengine.google.com",
         "nci.org.au",
         "nicta.com.au",
-        "static.nationalmap.nicta.com.au",
-        "www.dptiapps.com.au"
+        "static.nationalmap.nicta.com.au"
     ]
 }
 
