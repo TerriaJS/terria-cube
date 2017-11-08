@@ -1,7 +1,8 @@
 {
   "corsDomains": [
     "gsky-test.nci.org.au",
-    "gsky.nci.org.au"
+    "gsky.nci.org.au",
+    "9xjfk12.nexus.csiro.au:5000"
   ],
   "homeCamera": {
     "north": -8,
