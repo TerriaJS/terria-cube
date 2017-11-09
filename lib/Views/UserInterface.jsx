@@ -32,7 +32,6 @@ export default function UserInterface(props) {
             </Menu>
             <Nav>
                 <MeasureTool terria={props.viewState.terria} key="measure-tool"/>
-                <ToggleSplitterTool terria={props.viewState.terria} key="toggle-splitter-tool"/>
             </Nav>
             <ExperimentalMenu>
                 <If condition={isBrowserSupportedAV()}>
