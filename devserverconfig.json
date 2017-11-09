@@ -2,15 +2,6 @@
     "port": 3001,
 
     "allowProxyFor": [
-        "9xjfk12.nexus.csiro.au:5000",
-        "localhost",
-        "localhost:80",
-        "localhost:3000",
-        "localhost:3001",
-        "localhost:3002",
-        "localhost:5000",
-        "localhost:8000",
-        "localhost:8080",
         "arcgis.com",
         "csiro.au",
         "d61.io",
