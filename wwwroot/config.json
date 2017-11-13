@@ -44,9 +44,9 @@
 
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
         brandBarElements: [
-            "<span style='font-size: larger; color: white'>Terria-Cube Prototype</span><br/>",
-            "<span style='font-size: xx-small; color: white'>Version: {{version}}</span>",
-            ""
+            "<span style='font-size: larger; color: white'>Terria-Cube Prototype</span>",
+            "<a href='https://data61.csiro.au/' target='_blank'><img class='right' src='images/DATA61_CSIRO.png' alt='Data61' style=\"width: 55px; height: 33px; float: right; margin-top: 7.5px;\"/></a>",
+            "<br/><span style='font-size: xx-small; color: white'>Version: {{version}}</span>",
         ],
         // Shown when things go wrong.
         supportEmail: "help@example.com",
