@@ -149,7 +149,7 @@
           "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/LHTC_Tides/high_composite_20.geojson",
           "type": "geojson",
           "featureInfoTemplate": {
-            "template": "The tidal range at this location is {{modelLow}} to {{modelHigh}} meters relative to mean sea level (MSL). <p/> The high tide composite at this location was generated from imagery acquired in the top 20% of the observed tidal range which is between {{LIT}} and {{HIT}} meters relative to MSL, during the period of time of {{date_range}}. <p/> Download the GeoTIFF for this polygon here: <p/> <a href='http://dapds00.nci.org.au/thredds/fileServer/fk4/datacube/002/HLTC/HLTC_2_0/geotiff/COMPOSITE_HIGH_{{ID}}_{{lon}}_{{lat}}_20000101_20170101_PER_20.tif'>COMPOSITE_HIGH_{{ID}}_{{lon}}_{{lat}}_20000101_20170101_PER_20.tif</a>"
+            "template": "The tidal range at this location is {{modelLow}} to {{modelHigh}} meters relative to mean sea level (MSL). <p/> The high tide composite at this location was generated from imagery acquired in the top 20% of the observed tidal range which is between {{LIT}} and {{HIT}} meters relative to MSL, during the period of time of {{date_range}}. <p/> Download the GeoTIFF for this polygon here: <p/> <a href='http://dapds00.nci.org.au/thredds/fileServer/fk4/datacube/002/HLTC/HLTC_2_0/geotiff/COMPOSITE_HIGH_{{ID}}_{{lon}}_{{lat}}_{{start_date}}_{{end_date}}_PER_20.tif'>COMPOSITE_HIGH_{{ID}}_{{lon}}_{{lat}}_{{start_date}}_{{end_date}}_PER_20.tif</a>"
           }
         },
 
@@ -158,7 +158,7 @@
           "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/LHTC_Tides/low_composite_20.geojson",
           "type": "geojson",
           "featureInfoTemplate": {
-            "template" : "The tidal range at this location is {{modelLow}} to {{modelHigh}} meters relative to mean sea level (MSL). <p/> The low tide composite at this location was generated from imagery acquired in the lowest 20% of the observed tidal range which is between {{LIT}} and {{HIT}} meters relative to MSL, during the period of time of {{date_range}}. <p/> Download the GeoTIFF for this polygon here: <p/> <a href='http://dapds00.nci.org.au/thredds/fileServer/fk4/datacube/002/HLTC/HLTC_2_0/geotiff/COMPOSITE_LOW_{{ID}}_{{lon}}_{{lat}}_20000101_20170101_PER_20.tif'>COMPOSITE_LOW_{{ID}}_{{lon}}_{{lat}}_20000101_20170101_PER_20.tif</a>"
+            "template" : "The tidal range at this location is {{modelLow}} to {{modelHigh}} meters relative to mean sea level (MSL). <p/> The low tide composite at this location was generated from imagery acquired in the lowest 20% of the observed tidal range which is between {{LIT}} and {{HIT}} meters relative to MSL, during the period of time of {{date_range}}. <p/> Download the GeoTIFF for this polygon here: <p/> <a href='http://dapds00.nci.org.au/thredds/fileServer/fk4/datacube/002/HLTC/HLTC_2_0/geotiff/COMPOSITE_LOW_{{ID}}_{{lon}}_{{lat}}_{{start_date}}_{{end_date}}_PER_20.tif'>COMPOSITE_LOW_{{ID}}_{{lon}}_{{lat}}_{{start_date}}_{{end_date}}_PER_20.tif</a>"
           }
         }
       ]
