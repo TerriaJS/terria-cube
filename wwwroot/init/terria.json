@@ -1,12 +1,13 @@
 {
   "corsDomains": [
+    "9xjfk12.nexus.csiro.au",
     "9xjfk12.nexus.csiro.au:5000",
     "localhost",
-    "localhost:80",
     "localhost:3000",
     "localhost:3001",
     "localhost:3002",
     "localhost:5000",
+    "localhost:80",
     "localhost:8000",
     "localhost:8080",
     "gsky-dev.nci.org.au",
@@ -214,7 +215,7 @@
       "items": [
         {
           "name": "ODC",
-          "url": "http://9xjfk12.nexus.csiro.au:5000/",
+          "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
           "type": "wms-getCapabilities",
           "itemProperties": {
             "ignoreUnknownTileErrors": true,
@@ -225,7 +226,7 @@
         },
         {
           "name": "ODC no template",
-          "url": "http://9xjfk12.nexus.csiro.au:5000/",
+          "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
           "type": "wms-getCapabilities",
           "itemProperties": {
             "ignoreUnknownTileErrors": true,
