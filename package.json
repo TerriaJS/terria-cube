@@ -19,7 +19,7 @@
     "awsS3PackagesPath": "s3://terria-apps/map",
     "awsRegion": "ap-southeast-2",
     "awsEc2InstanceType": "t2.micro",
-    "awsEc2ImageId": "ami-6c27c50e",
+    "awsEc2ImageId": "ami-4cc8232e",
     "awsKeyName": "terria-mhenrikson",
     "awsS3ServerConfigOverridePath": "s3://terria-apps/map/privateserverconfig-2016-08-31.json",
     "awsS3ClientConfigOverridePath": "s3://terria-apps/map/privateclientconfig-2016-08-31.json"
