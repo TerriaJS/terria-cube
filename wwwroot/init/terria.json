@@ -31,7 +31,7 @@
         {
           "name": "DEA Landsat8 NBAR False colour",
           "layers": "LS8:NBAR:FALSE",
-          "url": "http://gsky-test.nci.org.au/ows",
+          "url": "http://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
           "clipToRectangle": true,
@@ -40,7 +40,7 @@
         {
           "name": "DEA Landsat8 NBAR True colour",
           "layers": "LS8:NBAR:TRUE",
-          "url": "http://gsky-test.nci.org.au/ows",
+          "url": "http://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
           "clipToRectangle": true,
@@ -49,7 +49,7 @@
         {
           "name": "DEA Landsat8 NBART False colour",
           "layers": "LS8:NBART:FALSE",
-          "url": "http://gsky-test.nci.org.au/ows",
+          "url": "http://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
           "clipToRectangle": true,
@@ -58,7 +58,7 @@
         {
           "name": "DEA Landsat8 NBART True colour",
           "layers": "LS8:NBART:TRUE",
-          "url": "http://gsky-test.nci.org.au/ows",
+          "url": "http://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
           "clipToRectangle": true,
@@ -68,7 +68,7 @@
         {
           "name": "DEA Landsat7 NBAR False colour",
           "layers": "LS7:NBAR:FALSE",
-          "url": "http://gsky-test.nci.org.au/ows",
+          "url": "http://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
           "clipToRectangle": true,
@@ -77,7 +77,7 @@
         {
           "name": "DEA Landsat7 NBAR True colour",
           "layers": "LS7:NBAR:TRUE",
-          "url": "http://gsky-test.nci.org.au/ows",
+          "url": "http://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
           "clipToRectangle": true,
@@ -86,7 +86,7 @@
         {
           "name": "DEA Landsat7 NBART False colour",
           "layers": "LS7:NBART:FALSE",
-          "url": "http://gsky-test.nci.org.au/ows",
+          "url": "http://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
           "clipToRectangle": true,
@@ -95,7 +95,7 @@
         {
           "name": "DEA Landsat7 NBART True colour",
           "layers": "LS7:NBART:TRUE",
-          "url": "http://gsky-test.nci.org.au/ows",
+          "url": "http://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
           "clipToRectangle": true,
@@ -105,7 +105,7 @@
         {
           "name": "DEA Landsat5 NBAR False colour",
           "layers": "LS5:NBAR:FALSE",
-          "url": "http://gsky-test.nci.org.au/ows",
+          "url": "http://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
           "clipToRectangle": true,
@@ -114,7 +114,7 @@
         {
           "name": "DEA Landsat5 NBAR True colour",
           "layers": "LS5:NBAR:TRUE",
-          "url": "http://gsky-test.nci.org.au/ows",
+          "url": "http://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
           "clipToRectangle": true,
@@ -123,7 +123,7 @@
         {
           "name": "DEA Landsat5 NBART False colour",
           "layers": "LS5:NBART:FALSE",
-          "url": "http://gsky-test.nci.org.au/ows",
+          "url": "http://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
           "clipToRectangle": true,
@@ -132,7 +132,7 @@
         {
           "name": "DEA Landsat5 NBART True colour",
           "layers": "LS5:NBART:TRUE",
-          "url": "http://gsky-test.nci.org.au/ows",
+          "url": "http://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
           "clipToRectangle": true,
