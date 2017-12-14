@@ -280,6 +280,17 @@
     },
 
     {
+      "name": "wms.datacube.org.au",
+      "url": "http://wms.datacube.org.au/",
+      "type": "wms-getCapabilities",
+      "itemProperties": {
+        "ignoreUnknownTileErrors": true,
+        "clipToRectangle": true,
+        "opacity": 1
+      }
+    },
+
+    {
       "name": "AREMI Solar Satellite DNI & GHI",
       "layers": "Solar_Satellite_DNI_2014",
       "url": "http://gis.aremi.nationalmap.gov.au/bom/wms",
