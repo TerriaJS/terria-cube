@@ -70,6 +70,10 @@
     "WebServerPort": {
       "Default": "80",
       "Type": "Number"
+    },
+    "SSLCertificateArn": {
+      "Default": "arn:aws:acm:ap-southeast-2:278900443360:certificate/4162729d-14b1-435f-84e1-cb318b8f5934",
+      "Type": "String"
     }
   },
   "Resources": {
@@ -159,6 +163,16 @@
             },
             "LoadBalancerPort": "80",
             "Protocol": "HTTP"
+          },
+          {
+            "InstancePort": {
+              "Ref": "WebServerPort"
+            },
+            "LoadBalancerPort": "443",
+            "Protocol": "HTTPS",
+            "SSLCertificateId": {
+              "Ref": "SSLCertificateArn"
+            }
           }
         ]
       },
