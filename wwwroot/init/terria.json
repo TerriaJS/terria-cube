@@ -151,7 +151,17 @@
           "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/ITEM_V2/Itemv2.geojson",
           "type": "geojson",
           "featureInfoTemplate": {
-            "template": "The <b>ITEM v2.0 relative model</b> displays the modelled extents of the exposed intertidal zone, at percentile intervals of the observed tidal range (OTR), derived from Landsat imagery acquired between 1986 and 2016. <p/> The full tidal range at this location is {{LMT}} to {{HMT}} metres relative to mean sea level (MSL), and the OTR at this location is between {{LOT}} and {{HOT}} relative to MSL. <p/> The <b>ITEM v2.0 confidence layer</b> displays the standard deviation of the water index values (NDWI) derived across the tidal intervals used in generating the core ITEM relative product. <p/> High values indicate regions where inundation patterns are not driven by tidal influences. This can be a result of change (shoreline, geomorphic, anthropogenic), or caused by errors in the underlying tidal model. <p/> Download the GeoTIFF products for this polygon here: <p/> <a href='http://dapds00.nci.org.au/thredds/fileServer/fk4/datacube/002/ITEM/ITEM_2_0/geotiff/ITEM_REL_{{ID}}_{{lon}}_{{lat}}.tif'>ITEM_REL_{{ID}}_{{lon}}_{{lat}}.tif</a> <p/> <a href='http://dapds00.nci.org.au/thredds/fileServer/fk4/datacube/002/ITEM/ITEM_2_0/geotiff/ITEM_STD_{{ID}}_{{lon}}_{{lat}}.tif'>ITEM_STD_{{ID}}_{{lon}}_{{lat}}.tif</a>"
+            "template": "The <b>ITEM v2.0 relative model</b> displays the modelled extents of the exposed intertidal zone, at percentile intervals of the observed tidal range (OTR), derived from Landsat imagery acquired between 1986 and 2016. <p/> The full tidal range at this location is {{LMT}} to {{HMT}} metres relative to mean sea level (MSL), and the OTR at this location is between {{LOT}} and {{HOT}} relative to MSL. <p/> The <b>ITEM v2.0 confidence layer</b> displays the standard deviation of the water index values (NDWI) derived across the tidal intervals used in generating the core ITEM relative product. <p/> High values indicate regions where inundation patterns are not driven by tidal influences. This can be a result of change (shoreline, geomorphic, anthropogenic), or caused by errors in the underlying tidal model. <p/> Download the GeoTIFF products for this polygon here: <p/> <a href='http://dapds00.nci.org.au/thredds/fileServer/fk4/datacube/002/ITEM/ITEM_2_0/geotiff/ITEM_REL_{{ID}}_{{lon}}_{{lat}}.tif'>ITEM_REL_{{ID}}_{{lon}}_{{lat}}.tif</a> <p/> <a href='http://dapds00.nci.org.au/thredds/fileServer/fk4/datacube/002/ITEM/ITEM_2_0/geotiff/ITEM_STD_{{ID}}_{{lon}}_{{lat}}.tif'>ITEM_STD_{{ID}}_{{lon}}_{{lat}}.tif</a>",
+            "formats": {
+              "lat": {
+                "type": "number",
+                "minimumFractionDigits": 2
+              },
+              "lon": {
+                "type": "number",
+                "minimumFractionDigits": 2
+              }
+            }
           },
           "info": [
             {
