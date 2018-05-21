@@ -260,7 +260,9 @@
           "type": "wms-getCapabilities",
           "url": "http://nrt.dea.ga.gov.au/",
           "itemProperties": {
-            "ignoreUnknownTileErrors": true
+            "ignoreUnknownTileErrors": true,
+            "clipToRectangle": true,
+            "opacity": 1
           }
         },
 
