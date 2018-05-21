@@ -280,15 +280,6 @@
     },
 
     {
-      "name": "US Monthly Temperature and Precipitation",
-      "type": "wms-getCapabilities",
-      "url": "http://geoport.whoi.edu/thredds/wms/prism3/monthly",
-      "itemProperties": {
-        "ignoreUnknownTileErrors": true
-      }
-    },
-
-    {
       "name": "wms.datacube.org.au",
       "url": "http://wms.datacube.org.au/",
       "type": "wms-getCapabilities",
