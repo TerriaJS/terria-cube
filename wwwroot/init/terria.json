@@ -280,6 +280,22 @@
     },
 
     {
+      "name": "MDBA",
+      "type": "group",
+      "items": [
+        {
+          "name": "MDBA Near Real-Time Satellite Imagery",
+          "type": "wms-getCapabilities",
+          "url": "http://nrt.dea.ga.gov.au/",
+          "itemProperties": {
+            "ignoreUnknownTileErrors": true
+          }
+        }
+
+      ]
+    },
+
+    {
       "name": "wms.datacube.org.au",
       "url": "http://wms.datacube.org.au/",
       "type": "wms-getCapabilities",
