@@ -252,34 +252,6 @@
     },
 
     {
-      "name": "ODC WMS prototype",
-      "type": "group",
-      "items": [
-        {
-          "name": "ODC",
-          "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
-          "type": "wms-getCapabilities",
-          "itemProperties": {
-            "ignoreUnknownTileErrors": true,
-            "clipToRectangle": true,
-            "opacity": 1,
-            "featureInfoTemplate": "<table><tr>  <th>Lat:</th>  <td>{{#terria.formatNumber}}{maximumFractionDigits:4}{{lat}}{{/terria.formatNumber}}</td></tr><tr>  <th>Lon:</th>  <td>{{#terria.formatNumber}}{maximumFractionDigits:4}{{lon}}{{/terria.formatNumber}}</td></tr><tr>  <th>Observation Time:</th>  <td>{{time}}</td></tr><tr>  <th>Coastal Aerosol:</th>  <td>{{#bands}}{{coastal_aerosol}}{{/bands}}</td></tr><tr>  <th>Blue:</th>  <td>{{#bands}}{{blue}}{{/bands}}</td></tr><tr>  <th>Green:</th>  <td>{{#bands}}{{green}}{{/bands}}</td></tr><tr>  <th>Red:</th>  <td>{{#bands}}{{red}}{{/bands}}</td></tr><tr>  <th>NIR:</th>  <td>{{#bands}}{{nir}}{{/bands}}</td></tr><tr>  <th>SWIR1:</th>  <td>{{#bands}}{{swir1}}{{/bands}}</td></tr><tr>  <th>SWIR2:</th>  <td>{{#bands}}{{swir2}}{{/bands}}</td></tr></table><p/><chart  id='{{lat}} {{lon}}'  title='({{#terria.formatNumber}}{maximumFractionDigits:4}{{lat}}{{/terria.formatNumber}},{{#terria.formatNumber}}{maximumFractionDigits:4}{{lon}}{{/terria.formatNumber}} - {{time}})'  x-column='Wavelength'  y-columns='Reflectance'  column-names='Wavelength,Reflectance'  column-units='nanometres,r*10000'  preview-x-label='Reflectance by Wavelength'>Wavelength,Reflectance\n{{#bands}}440,{{coastal_aerosol}}\n480,{{blue}}\n562,{{green}}\n655,{{red}}\n865,{{nir}}\n1600,{{swir1}}\n2200,{{swir2}}{{/bands}}</chart><p/>"
-          }
-        },
-        {
-          "name": "ODC no template",
-          "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
-          "type": "wms-getCapabilities",
-          "itemProperties": {
-            "ignoreUnknownTileErrors": true,
-            "clipToRectangle": true,
-            "opacity": 1
-          }
-        }
-      ]
-    },
-
-    {
       "name": "MDBA",
       "type": "group",
       "items": [
@@ -325,6 +297,35 @@
         "clipToRectangle": true,
         "opacity": 1
       }
+    },
+
+    {
+      "name": "ODC WMS prototype",
+      "type": "group",
+      "items": [
+        {
+          "name": "ODC",
+          "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+          "type": "wms-getCapabilities",
+          "itemProperties": {
+            "ignoreUnknownTileErrors": true,
+            "clipToRectangle": true,
+            "opacity": 1,
+            "featureInfoTemplate": "<table><tr>  <th>Lat:</th>  <td>{{#terria.formatNumber}}{maximumFractionDigits:4}{{lat}}{{/terria.formatNumber}}</td></tr><tr>  <th>Lon:</th>  <td>{{#terria.formatNumber}}{maximumFractionDigits:4}{{lon}}{{/terria.formatNumber}}</td></tr><tr>  <th>Observation Time:</th>  <td>{{time}}</td></tr><tr>  <th>Coastal Aerosol:</th>  <td>{{#bands}}{{coastal_aerosol}}{{/bands}}</td></tr><tr>  <th>Blue:</th>  <td>{{#bands}}{{blue}}{{/bands}}</td></tr><tr>  <th>Green:</th>  <td>{{#bands}}{{green}}{{/bands}}</td></tr><tr>  <th>Red:</th>  <td>{{#bands}}{{red}}{{/bands}}</td></tr><tr>  <th>NIR:</th>  <td>{{#bands}}{{nir}}{{/bands}}</td></tr><tr>  <th>SWIR1:</th>  <td>{{#bands}}{{swir1}}{{/bands}}</td></tr><tr>  <th>SWIR2:</th>  <td>{{#bands}}{{swir2}}{{/bands}}</td></tr></table><p/><chart  id='{{lat}} {{lon}}'  title='({{#terria.formatNumber}}{maximumFractionDigits:4}{{lat}}{{/terria.formatNumber}},{{#terria.formatNumber}}{maximumFractionDigits:4}{{lon}}{{/terria.formatNumber}} - {{time}})'  x-column='Wavelength'  y-columns='Reflectance'  column-names='Wavelength,Reflectance'  column-units='nanometres,r*10000'  preview-x-label='Reflectance by Wavelength'>Wavelength,Reflectance\n{{#bands}}440,{{coastal_aerosol}}\n480,{{blue}}\n562,{{green}}\n655,{{red}}\n865,{{nir}}\n1600,{{swir1}}\n2200,{{swir2}}{{/bands}}</chart><p/>"
+          }
+        },
+        {
+          "name": "ODC no template",
+          "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+          "type": "wms-getCapabilities",
+          "itemProperties": {
+            "ignoreUnknownTileErrors": true,
+            "clipToRectangle": true,
+            "opacity": 1
+          }
+        }
+      ]
     }
+
   ]
 }
