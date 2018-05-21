@@ -290,6 +290,27 @@
           "itemProperties": {
             "ignoreUnknownTileErrors": true
           }
+        },
+
+        {
+          "name": "Section 1 area: US Tribs",
+          "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/projects/2018-04-MDBA/section1.geojson",
+          "type": "geojson"
+        },
+        {
+          "name": "Section 2 area: DS Tribs to Walgett",
+          "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/projects/2018-04-MDBA/section2.geojson",
+          "type": "geojson"
+        },
+        {
+          "name": "Section 3 area: Walgett to Louth",
+          "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/projects/2018-04-MDBA/section3.geojson",
+          "type": "geojson"
+        },
+        {
+          "name": "Section 4 area: Louth to Menindee",
+          "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/projects/2018-04-MDBA/section4.geojson",
+          "type": "geojson"
         }
 
       ]
