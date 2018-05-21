@@ -280,39 +280,6 @@
     },
 
     {
-      "name": "NASA Earthdata GIBS",
-      "type": "group",
-      "items": [
-        {
-          "name": "Corrected Reflectance (True Color, MODIS, Aqua)",
-          "layer": "MODIS_Aqua_CorrectedReflectance_TrueColor",
-          "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/wmts.cgi",
-          "type": "wmts",
-          "ignoreUnknownTileErrors": true,
-          "opacity": 1
-        },
-
-        {
-          "name": "Corrected Reflectance (True Color, MODIS, Terra)",
-          "layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
-          "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/wmts.cgi",
-          "type": "wmts",
-          "ignoreUnknownTileErrors": true,
-          "opacity": 1
-        },
-
-        {
-          "name": "Corrected Reflectance (True Color, VIIRS, SNPP)",
-          "layer": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
-          "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/wmts.cgi",
-          "type": "wmts",
-          "ignoreUnknownTileErrors": true,
-          "opacity": 1
-        }
-      ]
-    },
-
-    {
       "name": "US Monthly Temperature and Precipitation",
       "type": "wms-getCapabilities",
       "url": "http://geoport.whoi.edu/thredds/wms/prism3/monthly",
