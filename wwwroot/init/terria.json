@@ -325,19 +325,6 @@
         "clipToRectangle": true,
         "opacity": 1
       }
-    },
-
-    {
-      "name": "AREMI Solar Satellite DNI & GHI",
-      "layers": "Solar_Satellite_DNI_2014",
-      "url": "http://gis.aremi.nationalmap.gov.au/bom/wms",
-      "type": "wms",
-      "maxRefreshIntervals": 9000,
-      "ignoreUnknownTileErrors": true,
-      "featureInfoTemplate": {
-        "name":"{{GRAY_INDEX}} W/m2"
-      }
     }
-
   ]
 }
