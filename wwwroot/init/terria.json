@@ -2,6 +2,8 @@
   "corsDomains": [
     "9xjfk12.nexus.csiro.au",
     "9xjfk12.nexus.csiro.au:5000",
+    "datacube.org.au",
+    "dea.ga.gov.au",
     "localhost",
     "localhost:3000",
     "localhost:3001",
@@ -292,7 +294,7 @@
 
     {
       "name": "wms.datacube.org.au",
-      "url": "http://wms.datacube.org.au/",
+      "url": "https://wms.datacube.org.au/",
       "type": "wms-getCapabilities",
       "itemProperties": {
         "ignoreUnknownTileErrors": true,
