@@ -260,7 +260,7 @@
         {
           "name": "MDBA Near Real-Time Satellite Imagery",
           "type": "wms-getCapabilities",
-          "url": "http://nrt.dea.ga.gov.au/",
+          "url": "https://nrt.dea.ga.gov.au/",
           "itemProperties": {
             "ignoreUnknownTileErrors": true,
             "clipToRectangle": true,
