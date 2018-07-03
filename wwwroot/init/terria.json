@@ -304,17 +304,6 @@
     },
 
     {
-      "name": "wms.datacube.org.au",
-      "url": "https://wms.datacube.org.au/",
-      "type": "wms-getCapabilities",
-      "itemProperties": {
-        "ignoreUnknownTileErrors": true,
-        "clipToRectangle": true,
-        "opacity": 1
-      }
-    },
-
-    {
       "name": "ODC WMS prototype",
       "type": "group",
       "items": [
