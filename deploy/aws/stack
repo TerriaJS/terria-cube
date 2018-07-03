@@ -42,6 +42,7 @@ aws cloudformation $1-stack \
       ParameterKey=InstanceType,ParameterValue="${npm_package_config_awsEc2InstanceType}" \
       ParameterKey=KeyName,ParameterValue="${npm_package_config_awsKeyName}" \
       ParameterKey=RootVolumeSize,ParameterValue='16' \
+      ParameterKey=MinSize,ParameterValue='2' \
       ParameterKey=UserDataBase64,ParameterValue="${BASE64_USERDATA}" \
       ParameterKey=WebServerPort,ParameterValue='3001' \
       # ParameterKey=SpotPrice,ParameterValue='0.041' \
