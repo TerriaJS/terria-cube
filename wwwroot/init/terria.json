@@ -304,6 +304,18 @@
     },
 
     {
+      "name": "geomedianau.dea.ga.gov.au",
+      "url": "https://geomedianau.dea.ga.gov.au/",
+      "type": "wms-getCapabilities",
+      "flatten": true,
+      "itemProperties": {
+        "ignoreUnknownTileErrors": true,
+        "clipToRectangle": true,
+        "opacity": 1
+      }
+    },
+
+    {
       "name": "ODC WMS prototype",
       "type": "group",
       "items": [
