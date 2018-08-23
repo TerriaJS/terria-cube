@@ -2,8 +2,6 @@
   "corsDomains": [
     "9xjfk12.nexus.csiro.au",
     "9xjfk12.nexus.csiro.au:5000",
-    "datacube.org.au",
-    "dea.ga.gov.au",
     "localhost",
     "localhost:3000",
     "localhost:3001",
@@ -12,6 +10,9 @@
     "localhost:80",
     "localhost:8000",
     "localhost:8080",
+    "data-cbr.it.csiro.au",
+    "datacube.org.au",
+    "dea.ga.gov.au",
     "gsky-dev.nci.org.au",
     "gsky-test.nci.org.au",
     "gsky.nci.org.au"
