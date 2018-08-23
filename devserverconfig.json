@@ -2,21 +2,6 @@
     "port": 3001,
 
     "allowProxyFor": [
-        "arcgis.com",
-        "csiro.au",
-        "d61.io",
-        "data61.io",
-        "geoserver-123.aodn.org.au",
-        "geoserver.aurin.org.au",
-        "geoserver.imos.org.au",
-        "gov",
-        "gov.au",
-        "gov.nz",
-        "gov.uk",
-        "mapsengine.google.com",
-        "nci.org.au",
-        "nicta.com.au",
-        "static.nationalmap.nicta.com.au"
     ]
 }
 
