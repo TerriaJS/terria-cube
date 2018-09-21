@@ -1,14 +1,13 @@
-import React from 'react';
-
-import version from '../../version';
-
-import StandardUserInterface from 'terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx';
-import MenuItem from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem';
-import RelatedMaps from './RelatedMaps';
 import { Menu, Nav, ExperimentalMenu } from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups';
 import MeasureTool from 'terriajs/lib/ReactViews/Map/Navigation/MeasureTool';
-import SplitPoint from 'terriajs/lib/ReactViews/SplitPoint';
+import MenuItem from 'terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem';
+import PropTypes from 'prop-types';
+import React from 'react';
+import RelatedMaps from './RelatedMaps';
 import ToggleSplitterTool from 'terriajs/lib/ReactViews/Map/Navigation/ToggleSplitterTool';
+import SplitPoint from 'terriajs/lib/ReactViews/SplitPoint';
+import StandardUserInterface from 'terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx';
+import version from '../../version';
 
 import './global.scss';
 
@@ -41,3 +40,8 @@ export default function UserInterface(props) {
         </StandardUserInterface>
     );
 }
+
+UserInterface.propTypes = {
+    terria: PropTypes.object,
+    viewState: PropTypes.object
+};

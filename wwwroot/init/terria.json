@@ -1,348 +1,305 @@
 {
-  "corsDomains": [
-    "9xjfk12.nexus.csiro.au",
-    "9xjfk12.nexus.csiro.au:5000",
-    "localhost",
-    "localhost:3000",
-    "localhost:3001",
-    "localhost:3002",
-    "localhost:5000",
-    "localhost:80",
-    "localhost:8000",
-    "localhost:8080",
-    "data-cbr.it.csiro.au",
-    "datacube.org.au",
-    "dea.ga.gov.au",
-    "gsky-dev.nci.org.au",
-    "gsky-test.nci.org.au",
-    "gsky.nci.org.au"
-  ],
   "homeCamera": {
     "north": -8,
     "east": 158,
     "south": -45,
     "west": 109
   },
-  "services": [],
   "catalog": [
-
     {
-      "name": "Digital Earth Australia",
+      "name": "Example Datasets",
       "type": "group",
       "preserveOrder": true,
+      "isOpen": true,
       "items": [
         {
-          "name": "DEA Landsat8 NBAR False colour",
-          "layers": "LS8:NBAR:FALSE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat8 NBAR True colour",
-          "layers": "LS8:NBAR:TRUE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat8 NBART False colour",
-          "layers": "LS8:NBART:FALSE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat8 NBART True colour",
-          "layers": "LS8:NBART:TRUE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-
-        {
-          "name": "DEA Landsat7 NBAR False colour",
-          "layers": "LS7:NBAR:FALSE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat7 NBAR True colour",
-          "layers": "LS7:NBAR:TRUE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat7 NBART False colour",
-          "layers": "LS7:NBART:FALSE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat7 NBART True colour",
-          "layers": "LS7:NBART:TRUE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-
-        {
-          "name": "DEA Landsat5 NBAR False colour",
-          "layers": "LS5:NBAR:FALSE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat5 NBAR True colour",
-          "layers": "LS5:NBAR:TRUE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat5 NBART False colour",
-          "layers": "LS5:NBART:FALSE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat5 NBART True colour",
-          "layers": "LS5:NBART:TRUE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        }
-      ]
-    },
-
-    {
-      "name": "Geoscience Australia",
-      "type": "group",
-      "preserveOrder": true,
-      "items": [
-        {
-          "name": "DEA Intertidal Extents Relative Model and Confidence Layer 25m v2.0 polygons for access to data",
-          "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/ITEM_V2/Itemv2.geojson",
-          "type": "geojson",
-          "featureInfoTemplate": {
-            "template": "The <b>ITEM v2.0 relative model</b> displays the modelled extents of the exposed intertidal zone, at percentile intervals of the observed tidal range (OTR), derived from Landsat imagery acquired between 1986 and 2016. <p/> The full tidal range at this location is {{LMT}} to {{HMT}} metres relative to mean sea level (MSL), and the OTR at this location is between {{LOT}} and {{HOT}} relative to MSL. <p/> The <b>ITEM v2.0 confidence layer</b> displays the standard deviation of the water index values (NDWI) derived across the tidal intervals used in generating the core ITEM relative product. <p/> High values indicate regions where inundation patterns are not driven by tidal influences. This can be a result of change (shoreline, geomorphic, anthropogenic), or caused by errors in the underlying tidal model. <p/> Download the GeoTIFF products for this polygon here: <p/> <a href='http://dapds00.nci.org.au/thredds/fileServer/fk4/datacube/002/ITEM/ITEM_2_0/geotiff/ITEM_REL_{{ID}}_{{lon}}_{{lat}}.tif'>ITEM_REL_{{ID}}_{{lon}}_{{lat}}.tif</a> <p/> <a href='http://dapds00.nci.org.au/thredds/fileServer/fk4/datacube/002/ITEM/ITEM_2_0/geotiff/ITEM_STD_{{ID}}_{{lon}}_{{lat}}.tif'>ITEM_STD_{{ID}}_{{lon}}_{{lat}}.tif</a>",
-            "formats": {
-              "lat": {
-                "type": "number",
-                "minimumFractionDigits": 2
+          "name": "ABC News Stories",
+          "type": "group",
+          "preserveOrder": true,
+          "items": [
+            {
+              "name": "ABC Photo Stories (2009-2014)",
+              "type": "csv",
+              "url": "test/localphotostories20092014.csv",
+              "featureInfoTemplate": {
+                "template": "<div class='abc'><small>{{Date}}</small>{{#Primary image}}<figure><img src='{{Primary image}}'/><figcaption>{{Primary image caption}}</figcaption></figure>{{/Primary image}}<p><a target='_blank' href={{URL}}>Read More</a></div>"
               },
-              "lon": {
-                "type": "number",
-                "minimumFractionDigits": 2
+              "tableStyle": {
+                "dataVariable": "State",
+                "timeColumn": null
+              }
+            },
+            {
+              "name": "ABC Photo Stories by date",
+              "type": "csv",
+              "url": "test/localphotostories20092014.csv",
+              "featureInfoTemplate": {
+                "template": "<div class='abc'><small>{{Date}}</small>{{#Primary image}}<figure><img src='{{Primary image}}'/><figcaption>{{Primary image caption}}</figcaption></figure>{{/Primary image}}<p><a target='_blank' href={{URL}}>Read More</a></div>"
+              },
+              "tableStyle": {
+                "dataVariable": "State",
+                "displayDuration": 1440
               }
             }
-          },
-          "info": [
+          ]
+        },
+        {
+          "name": "3D Demos",
+          "type": "group",
+          "items": [
             {
-              "name": "Abstract",
-              "content": "The Intertidal Extents Model (ITEM v2.0) product analyses GA’s historic archive of satellite imagery to derive a model of the spatial extents of the intertidal zone throughout the tidal cycle. The model can assist in understanding the relative elevation profile of the intertidal zone, delineating exposed areas at differing tidal heights and stages. <p/> The product differs from previous methods used to map the intertidal zone which have been predominately focused on analysing a small number of individual satellite images per location (e.g Ryu et al., 2002; Murray et al., 2012). By utilising a full 30 year time series of observations and a global tidal model (Egbert and Erofeeva, 2002), the methodology enables us to overcome the requirement for clear, high quality observations acquired concurrent to the time of high and low tide."
+              "name": "Smooth Geelong Buildings glTF Mini Demo",
+              "description": "geelong_mini_demo_bin_linux_v1.0-draft_x64.gltf was created using data made available from the [City of Greater Geelong](mailto:gis@geelongcity.vic.gov.au) under a Creative Commons license. The data used to create this demo was originally obtained via email in .skp format (> 100MB so not suitable for inclusion in this repo), however there is also a lower quality dataset of the same region available on data.gov.au in .kml/.dae format (this dataset does not seem to contain building textures).\n\nSee [readme.txt](test/3d/geelong/readme.txt) for more information.",
+              "attribution": "geelong_mini_demo_bin_linux_v1.0-draft_x64.gltf was created using a dataset obtained from the City of Greater Geelong. The original dataset is licensed under the CC BY 3.0 AU.",
+              "type": "czml",
+              "url": "test/3d/geelong/smooth.czml",
+              "rectangle": [
+                144.354,
+                -38.147,
+                144.358,
+                -38.150
+              ]
             },
             {
-              "name": "Overview",
-              "content": "The Intertidal Extents Model product is a national scale gridded dataset characterising the spatial extents of the exposed intertidal zone, at intervals of the observed tidal range (Sagar et al. 2017). The current version (2.0) utilises all Landsat observations (5, 7, and 8) for Australian coastal regions (excluding off-shore Territories) between 1986 and 2016 (inclusive). <p/> ITEM v2.0 has implemented an improved tidal modelling framework (see Sagar et al. 2018) over that utilised in ITEM v1.0. The expanded Landsat archive within the Digital Earth Australia (DEA) has also enabled the model extent to be increased to cover a number of offshore reefs, including the full Great Barrier Reef and southern sections of the Torres Strait Islands. The DEA archive and new tidal modelling framework has improved the coverage and quality of the ITEM v2.0 relative extents model, particularly in regions where AGDC cell boundaries in ITEM v1.0 produced discontinuities or the imposed v1.0 cell structure resulted in poor quality tidal modelling (see Sagar et al. 2017). <p/> Examples of regions in ITEM v2.0 where these significant improvements have been noted include: <ul> <li>Dampier Peninsula and King Sound, WA. Improved modelling within King Sound has removed the discontinuities seen at cell boundaries in ITEM v1.0, and expanded the extent of intertidal region being mapped. </li> <li>Tiwi Islands, Coburg Peninsula and Croker Island, NT. Poor spatial representation of the regions tidal regimes in ITEM v1.0 has been improved in v2.0 resulting in extensive onshore reefs and mudflats now being mapped. </li> <li>The full Great Barrier Reef has been mapped, detailing reef structures which expose at low tide. Algorithm amendments have reduced the false positive exposed surface detections resulting from glint and sun glitter. </li> <li>Broad Sound, QLD. Improved tidal modelling has resulted in a smoother intertidal extent map, and a greatly improved confidence layer value for the region. </li> <li>Improvements in the coverage of the DEA archive has allowed many regions unresolved in ITEM v1.0 and showing as 'no data' to be modelled successfully in ITEM 2.0. For example, Mornington Island, QLD, Eastern sections of Fraser Island, QLD and peninsulas in Bowling Green Bay National Park near Townsville, QLD</li> </ul>"
-            },
-            {
-              "name": "Accuracy and limitations",
-              "content": "Due the sun-synchronous nature of the various Landsat sensor observations; it is unlikely that the full physical extents of the tidal range in any cell will be observed. Hence, terminology has been adopted for the product to reflect the highest modelled tide observed in a given cell (HOT) and the lowest modelled tide observed (LOT) (see Sagar et al. 2017). These measures are relative to Mean Sea Level, and have no consistent relationship to Lowest (LAT) and Highest Astronomical Tide (HAT). <p/> The inclusion of the lowest (LMT) and highest (HMT) modelled tide values for each tidal polygon indicates the highest and lowest tides modelled for that location across the full time series by the OTPS model. The relative difference between the LOT and LMT (and HOT and HMT) heights gives an indication of the extent of the tidal range represented in the Relative Extents Model. <p/> As in ITEM v1.0, v2.0 contains some false positive land detection in open ocean regions. These are a function of the lack of data at the extremes of the observed tidal range, and features like glint and undetected cloud in these data poor regions/intervals. <p/> Methods to isolate and remove these features are in development for future versions. Issues in the DEA archive and data noise in the Esperance, WA region off Cape Le Grande and Cape Arid (Polygons 236,201,301) has resulted in significant artefacts in the model, and use of the model in this area is not recommended. <p/> The Confidence layer is designed to assess the reliability of the Relative Extent Model. Within each tidal range percentile interval, the pixel-based standard deviation of the NDWI values for all observations in the interval subset is calculated. The average standard deviation across all tidal range intervals is then calculated and retained as a quality indicator in this product layer. <p/> The Confidence Layer reflects the pixel based consistency of the NDWI values within each subset of observations, based on the tidal range. Higher standard deviation values indicate water classification changes not based on the tidal cycle, and hence lower confidence in the extent model. <p/> Possible drivers of these changes include: <ol> <li>Inadequacies of the tidal model, due perhaps to complex coastal bathymetry or estuarine structures not captured in the model. These effects have been reduced in ITEM v2.0 compared to previous versions, through the use of an improved tidal modelling framework </li> <li>Change in the structure and exposure of water/non-water features NOT driven by tidal variation. For example, movement of sand banks in estuaries, construction of man-made features (ports etc.).</li> <li>Terrestrial/Inland water features not influenced by the tidal cycle.</li> </ol>"
-            },
-            {
-              "name": "File naming",
-              "content": "<h4>THE RELATIVE EXTENTS MODEL v2.0</h4> ITEM_REL_&lt;TIDAL POLYGON NUMBER&gt;_&lt;LONGITUDE&gt;_&lt;LATITUDE&gt; <p/> TIDAL POLYGON NUMBER relates to the id of the tidal polygon referenced by the file <p/> LONGITUDE is the longitude of the centroid of the tidal polygon <p/> LATITUDE is the latitude of the centroid of the tidal polygon <h4>THE CONFIDENCE LAYER v2.0</h4> ITEM_STD_&lt;TIDAL POLYGON NUMBER&gt;_&lt;LONGITUDE&gt;_&lt;LATITUDE&gt; <p/> TIDAL POLYGON NUMBER relates to the id of the tidal polygon referenced by the file <p/> LONGITUDE is the longitude of the centroid of the tidal polygon <p/> LATITUDE is the latitude of the centroid of the tidal polygon <p/> The index of downloadable GeoTIFFs can be found here: <p/> <a href='http://dap.nci.org.au/thredds/remoteCatalogService?catalog=http://dapds00.nci.org.au/thredds/catalogs/fk4/item_2_0.xml'>http://dap.nci.org.au/thredds/remoteCatalogService?catalog=http://dapds00.nci.org.au/thredds/catalogs/fk4/item_2_0.xml</a>"
-            },
-            {
-              "name": "References",
-              "content": "Egbert, G.D., Erofeeva, S.Y., 2002. Efficient Inverse Modeling of Barotropic Ocean Tides. J. Atmos. Oceanic Technol. 19, 183–204. <p/> Murray, N.J., Phinn, S.R., Clemens, R.S., Roelfsema, C.M., Fuller, R.A., 2012. Continental Scale Mapping of Tidal Flats across East Asia Using the Landsat Archive. Remote Sensing 4, 3417–3426. <p/> Ryu, J.-H., Won, J.-S., Min, K.D., 2002. Waterline extraction from Landsat TM data in a tidal flat: A case study in Gomso Bay, Korea. Remote Sensing of Environment 83, 442–456. <p/> Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Extracting the intertidal extent and topography of the Australian coastline from a 28 year time series of Landsat observations. Remote Sensing of Environment 195, 153–169. <p/> Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2018. Generating Continental Scale Pixel-Based Surface Reflectance Composites in Coastal Regions with the Use of a Multi-Resolution Tidal Model. Remote Sensing 10, 480."
+              "name": "Terrain Geelong Buildings glTF Mini Demo",
+              "description": "geelong_mini_demo_bin_linux_v1.0-draft_x64.gltf was created using data made available from the [City of Greater Geelong](mailto:gis@geelongcity.vic.gov.au) under a Creative Commons license. The data used to create this demo was originally obtained via email in .skp format (> 100MB so not suitable for inclusion in this repo), however there is also a lower quality dataset of the same region available on data.gov.au in .kml/.dae format (this dataset does not seem to contain building textures).\n\nSee [readme.txt](test/3d/geelong/readme.txt) for more information.",
+              "attribution": "geelong_mini_demo_bin_linux_v1.0-draft_x64.gltf was created using a dataset obtained from the City of Greater Geelong. The original dataset is licensed under the CC BY 3.0 AU.",
+              "type": "czml",
+              "url": "test/3d/geelong/terrain.czml",
+              "rectangle": [
+                144.354,
+                -38.147,
+                144.358,
+                -38.150
+              ]
             }
           ]
         },
-
         {
-          "name": "DEA High Tide Composite 25m v2.0 polygons for access to data",
-          "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/LHTC_Tides/high_composite_20.geojson",
-          "type": "geojson",
+          "name": "aero3Dpro",
+          "type": "group",
+          "description": "Aero3Dpro is an Australian 3D mapping service for the generation of geographically accurate, fully textured and high resolution 3D models of natural and urban environments.\n\nIt is an end-to-end service based on aerial photogrammetry techniques including flight planning, image acquisition, 3D processing, geo-registration and final delivery.\n\nAero3Dpro models can be provided as stand-alone data for use in common 3D rendering and CAD software or as 3D GIS-ready products.\n\nhttp://aero3dpro.com.au/",
+          "items": [
+            {
+              "name": "Brisbane 3D city model (aero3Dpro)",
+              "type": "3d-tiles",
+              "description": "Aero3Dpro is an Australian 3D mapping service for the generation of geographically accurate, fully textured and high resolution 3D models of natural and urban environments.\n\nIt is an end-to-end service based on aerial photogrammetry techniques including flight planning, image acquisition, 3D processing, geo-registration and final delivery.\n\nAero3Dpro models can be provided as stand-alone data for use in common 3D rendering and CAD software or as 3D GIS-ready products.\n\nhttp://aero3dpro.com.au/",
+              "url": "https://sample.aero3dpro.com.au/BrisbaneCBD/Scene/recon_h_3DTiles.json",
+              "options": {
+                "maximumScreenSpaceError": 1,
+                "maximumNumberOfLoadedTiles": 1000
+              },
+              "rectangle": [
+                153.01,
+                -27.484,
+                153.034,
+                -27.46
+              ]
+            },
+            {
+              "name": "Melbourne 3D city model (aero3Dpro)",
+              "type": "3d-tiles",
+              "description": "Aero3Dpro is an Australian 3D mapping service for the generation of geographically accurate, fully textured and high resolution 3D models of natural and urban environments.\n\nIt is an end-to-end service based on aerial photogrammetry techniques including flight planning, image acquisition, 3D processing, geo-registration and final delivery.\n\nAero3Dpro models can be provided as stand-alone data for use in common 3D rendering and CAD software or as 3D GIS-ready products.\n\nhttp://aero3dpro.com.au/",
+              "url": "https://sample.aero3dpro.com.au/Melbourne/Scene/recon_h_3DTiles.json",
+              "options": {
+                  "maximumScreenSpaceError": 1,
+                  "maximumNumberOfLoadedTiles": 1000
+              },
+              "rectangle": [
+                144.868,
+                -37.885,
+                145.018,
+                -37.775
+              ]
+            }
+          ]
+        },
+        {
+          "id": "54a553b4",
+          "name": "NEM Current Power Generation - All generation types",
+          "url": "http://services.aremi.nicta.com.au/aemo/v3/csv/all",
+          "type": "csv",
+          "cacheDuration": "5m",
           "featureInfoTemplate": {
-            "template": "The tidal range at this location is {{modelLow}} to {{modelHigh}} meters relative to mean sea level (MSL). <p/> The high tide composite at this location was generated from imagery acquired in the top 20% of the observed tidal range which is between {{LIT}} and {{HIT}} meters relative to MSL, during the period of time of {{date_range}}. <p/> <figure> <img style='width: 100%' src='http://dea-public-data.s3-ap-southeast-2.amazonaws.com/LHTC_Tides/COMPOSITE_HIGH_{{ID}}_{{lon}}_{{lat}}_{{start_date}}_{{end_date}}_PER_20.jpg'/> <figcaption>Observations used to generate the composite (black dots), in relation to the full modelled tidal range (grey line) and complete archive (grey dots) at this location</figcaption> </figure> <p/> Download the GeoTIFF for this polygon here: <p/> <a href='http://dapds00.nci.org.au/thredds/fileServer/fk4/datacube/002/HLTC/HLTC_2_0/geotiff/COMPOSITE_HIGH_{{ID}}_{{lon}}_{{lat}}_{{start_date}}_{{end_date}}_PER_20.tif'>COMPOSITE_HIGH_{{ID}}_{{lon}}_{{lat}}_{{start_date}}_{{end_date}}_PER_20.tif</a>"
+            "name": "{{DUID}} - {{Station Name}}: {{Current % of Max Cap}}%",
+            "template": "<h3>{{Station Name}} ({{DUID}})</h3>\n\n<p><strong>{{Participant}}</strong>\n<div><strong>{{Current Output (MW)}}MW</strong> at {{Most Recent Output Time (AEST)}}</div>\n<div><strong>{{Current % of Reg Cap}}%</strong> of {{Reg Cap (MW)}}MW registered capacity</div>\n<div><strong>{{Current % of Max Cap}}%</strong> of {{Max Cap (MW)}}MW maximum capacity</div>\n</p>\n<table>\n  <tbody>\n    <tr>\n      <td>Category</td>\n      <td class='strong'>{{Category}}</td>\n    </tr>\n    <tr>\n      <td>Classification</td>\n      <td class='strong'>{{Classification}}</td>\n    </tr>\n    <tr>\n      <td>Fuel Source</td>\n      <td class='strong'>{{Fuel Source - Primary}} ({{Fuel Source - Descriptor}})</td>\n    </tr>\n    <tr>\n      <td>Technology Type</td>\n      <td class='strong'>{{Technology Type - Primary}} ({{Technology Type - Descriptor}})</td>\n    </tr>\n    <tr>\n      <td>Physical Unit No.</td>\n      <td class='strong'>{{Physical Unit No_}}</td>\n    </tr>\n    <tr>\n      <td>Aggregation</td>\n      <td class='strong'>{{Aggregation}}</td>\n    </tr>\n    <tr>\n      <td>Unit Size (MW)</td>\n      <td class='strong'>{{Unit Size (MW)}}</td>\n    </tr>\n    <tr><td>Power generation</td><td><chart sources='http://services.aremi.nicta.com.au/aemo/v4/duidcsv/{{DUID}}?offset=1D,http://services.aremi.nicta.com.au/aemo/v4/duidcsv/{{DUID}}?offset=5D,http://services.aremi.nicta.com.au/aemo/v4/duidcsv/{{DUID}}?offset=30D,http://services.aremi.nicta.com.au/aemo/v4/duidcsv/{{DUID}}?offset=3M' source-names='1d,5d,30d,3m' preview-x-label='Last 24 hours' column-names='Time,Power Generation' column-units='Date,MW'></chart></td></tr>\n  </tbody>\n</table>"
+          },
+          "rectangle": [
+            "134.0",
+            "-47.0",
+            "155.0",
+            "-13.0"
+          ],
+          "tableStyle": {
+            "dataVariable": "Current % of Max Cap",
+            "timeColumn": null,
+            "replaceWithZeroValues": [],
+            "replaceWithNullValues": [
+              "-"
+            ],
+            "nullColor": "rgba(255,255,255,0.1)",
+            "nullLabel": "No value",
+            "colorBins": 10,
+            "colorMap": "rgb(94,79,162)-rgb(50,136,189)-rgb(102,194,165)-rgb(171,221,164)-rgb(230,245,152)-rgb(254,224,139)-rgb(253,174,97)-rgb(244,109,67)-rgb(213,62,79)-rgb(158,1,66)"
           },
           "info": [
             {
-              "name": "Abstract",
-              "content": "High Tide and Low Tide Composites 2.0.0 <p/> The High and Low Tide Composites product is composed of two surface reflectance composite mosaics of Landsat TM and ETM+ (Landsat 5 and Landsat 7 respectively) and OLI (Landsat 8) surface reflectance data (Li et al., 2012). These products have been produced using Digital Earth Australia (DEA). The two mosaics allow cloud free and noise reduced visualisation of the shallow water and inter-tidal coastal regions of Australia, as observed at high and low tide respectively (Sagar et al. 2018). <p/> The composites are generated utilising the geomedian approach of Roberts et al (2017) to ensure a valid surface reflectance spectra suitable for uses such as habitat mapping. The time range used for composite generation in each polygon of the mosaic is tailored to ensure dynamic coastal features are captured whilst still allowing a clean and cloud free composite to be generated. The concepts of the Observed Tidal Range (OTR), and Highest and Lowest Observed Tide (HOT, LOT) are discussed and described fully in Sagar et al. (2017) and the product description for the ITEM v 1.0 product (Geoscience Australia, 2016)."
+              "name": "Description",
+              "content": "The AEMO Actual Generation and Load data represents actual generation data for each scheduled generation unit, semi-scheduled generation unit, and non-scheduled generating systems (a non-scheduled generating system comprising non-scheduled generating units) for registered units in the National Electricity Market (NEM). The data is given in MegaWatt (MW). <br/> <br/>Detailed information about the AEMO Generation and Load data is available here: <br/> <br/>[http://aemo.com.au/Electricity/Data/Market-Management-System-MMS/Generation-and-Load](http://aemo.com.au/Electricity/Data/Market-Management-System-MMS/Generation-and-Load) <br/> <br/>Visualisation of AEMO current generation data is based on data files generated every 5 minutes available here: <br/> <br/>[http://www.nemweb.com.au/REPORTS/CURRENT/Dispatch_SCADA/](http://www.nemweb.com.au/REPORTS/CURRENT/Dispatch_SCADA/) <br/> <br/>Visualisation of AEMO historic data is based on daily data files available here: <br/> <br/>[http://www.nemweb.com.au/REPORTS/ARCHIVE/Dispatch_SCADA/](http://www.nemweb.com.au/REPORTS/ARCHIVE/Dispatch_SCADA/) <br/> <br/>AEMO provides a range of data. Raw data is provided in Comma Separated Values (CSV) flat file format to enable access to a range of market data. Recent files are stored in a directory for current reports, and older files are moved into the respective archive reports directory. <br/> <br/>All electricity data provided by AEMO is available here: <br/> <br/>[http://aemo.com.au/Electricity/Data](http://aemo.com.au/Electricity/Data)"
             },
             {
-              "name": "Overview",
-              "content": "Inter-tidal zones are difficult regions to characterise due to the dynamic nature of the tide. They are highly changeable environments, subject to forcings from the land, sea and atmosphere and yet they form critical habitats for a wide range of organisms from birds to fish and sea grass. By harnessing the long archive of satellite imagery over Australia's coastal zones in the DEA and pairing the images with regional tidal modelling, the archive can be sorted by tide height rather than date, enabling the inter-tidal zone to be viewed at any stage of the tide regime. <p/> The High Low Tide Composites (HLTC_25) product is composed of two mosaics, distinguished by tide height, representing a composite image of the synthetic geomedian surface reflectance from Landsats 5 TM, Landsat 7 ETM+ and Landsat 8 OLI NBAR data (Li et al., 2012; Roberts et al., 2017). Oregon State Tidal Prediction (OTPS) software (Egbert and Erofeeva, 2002, 2010) was used to generate tide heights, relative to mean sea level, for the Australian continental coastline, split into 306 distinct tidal regions. These time and date stamped tidal values were then attributed to all coastal tile observations for their time of acquisition, creating a range of observed tide heights for the Australian coastline. The two mosaics in HLTC_25 are composited from the highest and lowest 20 % of observed tide in the ensemble and are termed HOT and LOT respectively. A geomedian composite for each Landsat band is calculated from the tiles in each ensemble subset to produce the respective HOT and LOT composites. Note that Landsat 7 ETM+ observations are excluded after May 2003 due to a large number of data artefacts. <p/> The time range used for composite generation in each of the 306 polygons of the mosaics are tailored to ensure dynamic coastal features are captured whilst still allowing a clean and cloud free composite to be generated. The maximum epoch for which the products are calculated is between 1995-2017, although this varies due to data resolution and observation quality. The product also includes a count of clear observations per pixel for both mosaics and attribute summaries per polygon that include the date range, the highest and lowest modeled astronomical tide as well as the highest and lowest observed tide for that time range, the total observation count and the maximum count of observations for any one pixel in the polygon, the polygon ID number (from 1 to 306), the polygon centroid in longitude and latitude and the count of tide stages attributed to every observation used in that polygon of the mosaic. For the count of tidal stage observations, e = ebbing tide, f = flowing tide, ph = peak high tide and pl = peak low tide. The tide stages were calculated by comparison to the modeled tide data for 15 minutes either side of the observation to determine the ebb, flow or peak movement of the tide. <p/> Observations are filtered to remove poor quality observations including cloud, cloud shadow and band saturation (of any band)."
+              "name": "Updates",
+              "content": "The Actual Generation and Load data is updated in 5-minute intervals."
             },
             {
-              "name": "Accuracy and limitations",
-              "content": "The accuracy of the tide height data is limited by the accuracy of the OTPS model. Tidal modelling on self-similar coastal polygons was performed to minimise regional uncertainty. <p/> Accuracies and limitations related to geomedian compositing of observations are discussed in Roberts et al (2017). <p/> Users should beware of seasonal and diurnal effects in the imagery, especially in the north east of Australia where the footprint of the highest and lowest astronomical tides are large. Consequently, where image acquisition misses the highest astronomical tide, for example, pooling effects of water are still visible in the landscape in lowest observed tidal composite imagery. <p/> This product has been rendered in both true colour and false colour. Validation and interpretation of surface features has not been attempted here. Interpretation of surface features is at the users own discretion."
+              "name": "Data Custodian",
+              "content": "AEMO is the data custodian of electricity generation data displayed on AREMI. Please refer to attribution, licensing and copyrights provisions further on this page. <br/> <br/>The Australian Energy Market Operator (AEMO) was established by the Council of Australian Governments (COAG) to manage the National Electricity Market (NEM) and gas markets from 1 July 2009. <br/> <br/>AEMO’s core functions can be grouped into the following areas: 1) Electricity Market Operator; 2) Gas Markets Operator; 3) National Transmission Planner; 4) Transmission Services; 5) Energy Market Development. <br/> <br/>AEMO operates on a cost recovery basis as a corporate entity limited by guarantee under the Corporations Law. Its membership structure is split between government and industry, respectively 60 and 40 percent. Government members of AEMO include the Queensland, New South Wales, Victorian, South Australian and Tasmanian state governments, the Commonwealth and the Australian Capital Territory. <br/> <br/>As part of the role of managing the NEM and assisting industry, AEMO publishes electricity market data updated in 5 minute intervals and on a daily, monthly and annual basis. Categories of data published are: <br/> <br/>1) Price and demand; <br/>2) Forecast supply and demand; <br/>3) Market notices; <br/>4) Ancillary services; <br/>5) Network data; <br/>6) Pre-dispatch demand forecasting performance; <br/>7) Settlements; <br/>8) Market management system (MMS) (which includes Generation & Load data). <br/> <br/>More information on AEMO and services provided is available here: <br/> <br/>[http://aemo.com.au/About-AEMO](http://aemo.com.au/About-AEMO)"
             },
             {
-              "name": "File naming",
-              "content": "`<COUNT OR COMPOSITE>_<HIGH OR LOW>_<TIDAL POLYGON NUMBER>_<LONGITUDE>_<LATITUDE>_<START DATE>_<END DATE>_<PERCENTILE TIDE RANGE>` <p/> COUNT OR COMPOSITE refers to whether pixels contain composite observation values or the count of observations at that pixel location <br/>HIGH OR LOW refers to whether the content relates to High Tide values or Low Tide values <br/>TIDAL POLYGON NUMBER relates to the id of the tidal polygon referenced by the file <br/>LONGITUDE is the longitude of the centroid of the tidal polygon <br/>LATITUDE is the latitude of the centroid of the tidal polygon <br/>START DATE is the beginning of the date range covered by the file <br/>END DATE is the end of the date range covered by the file <br/>PERCENTILE TIDE RANGE indicates the percentile value used when calculating the composites <p/> The index of downloadable GeoTIFFs can be found here: <p/> http://dap.nci.org.au/thredds/remoteCatalogService?catalog=http://dapds00.nci.org.au/thredds/catalog/fk4/datacube/002/HLTC/HLTC_2_0/geotiff/catalog.xml"
-            },
-            {
-              "name": "References",
-              "content": "Egbert, G.D., Erofeeva, S.Y., 2002. Efficient Inverse Modeling of Barotropic Ocean Tides. J. Atmospheric Ocean. Technol. 19, 183-204. doi:10.1175/1520-0426(2002)019<0183:EIMOBO>2.0.CO;2 <p/> Egbert, G.D., Erofeeva, S.Y., 2010. The OSU TOPEX/Poseiden Global Inverse Solution TPXO [WWW Document]. TPXO8-Atlas Version 10. URL http://volkov.oce.orst.edu/tides/global.html (accessed 2.15.16). <p/> Geoscience Australia, 2016. Intertidal Extents Model (25m) v 1.0 Product Description. doi:10.4225/25/575F683E2A3AF <p/> Li, F., Jupp, D.L.B., Thankappan, M., Lymburner, L., Mueller, N., Lewis, A., Held, A., 2012. A physics-based atmospheric and BRDF correction for Landsat data over mountainous terrain. Remote Sens. Environ. 124, 756-770. doi:10.1016/j.rse.2012.06.018 <p/> Roberts, D., Mueller, N., McIntyre, A., 2017. High-dimensional pixel composites from Earth observation time series. IEEE Trans. Geosci. Remote Sens. In Press. <p/> Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Extracting the intertidal extent and topography of the Australian coastline from a 28 year time series of Landsat observations. Remote Sens. Environ. 195, 153-169. doi:10.1016/j.rse.2017.04.009 <p/> Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2018. Generating Continental Scale Pixel-Based Surface Reflectance Composites in Coastal Regions with the Use of a Multi-Resolution Tidal Model. Remote Sensing 10, 480."
+              "name": "Licensing, Terms & Conditions",
+              "content": "Australian Energy Market Operator (AEMO) is the data custodian for Generation & Load data sets, available on AEMO’s website. <br/><br/>AREMI is displaying the data under AEMO’s licencing and copyright conditions detailed below. <br/><br/>The data is provided for information only and is not intended for commercial use. AEMO does not guarantee the accuracy of the data or its availability at all times.<br/><br/>AEMO, or its licensors, are the owners of all copyright and all other intellectual property rights in the contents of the AEMO website (including text and images). Users may only use such contents for personal use or as authorised by AEMO. Here are the details of the AEMO’s copyright permissions: <br/><br/>AEMO Material comprises documents, reports, sound and video recordings and any other material created by or on behalf of AEMO and made publicly available by AEMO. All AEMO Material is protected by copyright under Australian law. A publication is protected even if it does not display the © symbol.  <br/><br/>In addition to the uses permitted under copyright laws, AEMO confirms its general permission for anyone to use AEMO Material for any purpose, but only with accurate and appropriate attribution of the relevant AEMO Material and AEMO as its author. There is no need to obtain specific permission to use AEMO Material in this way. Confidential documents and any reports commissioned by another person or body who may own the copyright in them and NOT AEMO Material, and these permissions do not apply to those documents. <br/><br/>More information on conditions of use of AEMO generated data and information is available on the AEMO website: [http://aemo.com.au/About-AEMO/Legal-Notices](http://aemo.com.au/About-AEMO/Legal-Notices)"
             }
           ]
         },
-
         {
-          "name": "DEA Low Tide Composite 25m v2.0 polygons for access to data",
-          "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/LHTC_Tides/low_composite_20.geojson",
-          "type": "geojson",
-          "featureInfoTemplate": {
-            "template" : "The tidal range at this location is {{modelLow}} to {{modelHigh}} meters relative to mean sea level (MSL). <p/> The low tide composite at this location was generated from imagery acquired in the lowest 20% of the observed tidal range which is between {{LIT}} and {{HIT}} meters relative to MSL, during the period of time of {{date_range}}. <p/> <figure> <img style='width: 100%' src='http://dea-public-data.s3-ap-southeast-2.amazonaws.com/LHTC_Tides/COMPOSITE_LOW_{{ID}}_{{lon}}_{{lat}}_{{start_date}}_{{end_date}}_PER_20.jpg'/> <figcaption>Observations used to generate the composite (black dots), in relation to the full modelled tidal range (grey line) and complete archive (grey dots) at this location</figcaption> </figure> <p/> Download the GeoTIFF for this polygon here: <p/> <a href='http://dapds00.nci.org.au/thredds/fileServer/fk4/datacube/002/HLTC/HLTC_2_0/geotiff/COMPOSITE_LOW_{{ID}}_{{lon}}_{{lat}}_{{start_date}}_{{end_date}}_PER_20.tif'>COMPOSITE_LOW_{{ID}}_{{lon}}_{{lat}}_{{start_date}}_{{end_date}}_PER_20.tif</a>"
+          "name": "Bird migration paths",
+          "description": "Geographic centers of occurrence estimated daily for 118 migratory bird species using eBird occurrence information for the combined period 2002 to 2014. Additional details on the data and methods can be found here:\nLa Sorte, F.A., Fink, D., Hochachka, W.M. & Kelling, S. (2016) Convergence of broad-scale migration strategies in terrestrial birds. Proceedings of the Royal Society of London B: Biological Sciences, 283, 20152588.",
+          "type": "czml",
+          "url": "test/all_birds.czml",
+          "ignoreUnknownTileErrors": true,
+          "zoomOnEnable": true,
+          "rectangle": [
+            -160,
+            -20,
+            -30,
+            60
+          ]
+        },
+        {
+          "layers": "mybroadband:MyBroadband_ADSL_Quality",
+          "parameters": {
+            "tiled": true
           },
+          "dataUrlType": "none",
+          "clipToRectangle": true,
+          "description": "[MyBroadband ADSL Quality Map](https://www.mybroadband.communications.gov.au)",
+          "name": "Broadband ADSL Quality",
+          "rectangle": [
+            96.79939,
+            -43.59821,
+            153.63925,
+            -9.21592
+          ],
+          "dataCustodian": "[Department of Communications](http://www.communications.gov.au/)",
+          "url": "https://programs.communications.gov.au/geoserver/ows",
+          "type": "wms",
           "info": [
             {
-              "name": "Abstract",
-              "content": "High Tide and Low Tide Composites 2.0.0 <p/> The High and Low Tide Composites product is composed of two surface reflectance composite mosaics of Landsat TM and ETM+ (Landsat 5 and Landsat 7 respectively) and OLI (Landsat 8) surface reflectance data (Li et al., 2012). These products have been produced using Digital Earth Australia (DEA). The two mosaics allow cloud free and noise reduced visualisation of the shallow water and inter-tidal coastal regions of Australia, as observed at high and low tide respectively (Sagar et al. 2018). <p/> The composites are generated utilising the geomedian approach of Roberts et al (2017) to ensure a valid surface reflectance spectra suitable for uses such as habitat mapping. The time range used for composite generation in each polygon of the mosaic is tailored to ensure dynamic coastal features are captured whilst still allowing a clean and cloud free composite to be generated. The concepts of the Observed Tidal Range (OTR), and Highest and Lowest Observed Tide (HOT, LOT) are discussed and described fully in Sagar et al. (2017) and the product description for the ITEM v 1.0 product (Geoscience Australia, 2016)."
-            },
-            {
-              "name": "Overview",
-              "content": "Inter-tidal zones are difficult regions to characterise due to the dynamic nature of the tide. They are highly changeable environments, subject to forcings from the land, sea and atmosphere and yet they form critical habitats for a wide range of organisms from birds to fish and sea grass. By harnessing the long archive of satellite imagery over Australia's coastal zones in the DEA and pairing the images with regional tidal modelling, the archive can be sorted by tide height rather than date, enabling the inter-tidal zone to be viewed at any stage of the tide regime. <p/> The High Low Tide Composites (HLTC_25) product is composed of two mosaics, distinguished by tide height, representing a composite image of the synthetic geomedian surface reflectance from Landsats 5 TM, Landsat 7 ETM+ and Landsat 8 OLI NBAR data (Li et al., 2012; Roberts et al., 2017). Oregon State Tidal Prediction (OTPS) software (Egbert and Erofeeva, 2002, 2010) was used to generate tide heights, relative to mean sea level, for the Australian continental coastline, split into 306 distinct tidal regions. These time and date stamped tidal values were then attributed to all coastal tile observations for their time of acquisition, creating a range of observed tide heights for the Australian coastline. The two mosaics in HLTC_25 are composited from the highest and lowest 20 % of observed tide in the ensemble and are termed HOT and LOT respectively. A geomedian composite for each Landsat band is calculated from the tiles in each ensemble subset to produce the respective HOT and LOT composites. Note that Landsat 7 ETM+ observations are excluded after May 2003 due to a large number of data artefacts. <p/> The time range used for composite generation in each of the 306 polygons of the mosaics are tailored to ensure dynamic coastal features are captured whilst still allowing a clean and cloud free composite to be generated. The maximum epoch for which the products are calculated is between 1995-2017, although this varies due to data resolution and observation quality. The product also includes a count of clear observations per pixel for both mosaics and attribute summaries per polygon that include the date range, the highest and lowest modeled astronomical tide as well as the highest and lowest observed tide for that time range, the total observation count and the maximum count of observations for any one pixel in the polygon, the polygon ID number (from 1 to 306), the polygon centroid in longitude and latitude and the count of tide stages attributed to every observation used in that polygon of the mosaic. For the count of tidal stage observations, e = ebbing tide, f = flowing tide, ph = peak high tide and pl = peak low tide. The tide stages were calculated by comparison to the modeled tide data for 15 minutes either side of the observation to determine the ebb, flow or peak movement of the tide. <p/> Observations are filtered to remove poor quality observations including cloud, cloud shadow and band saturation (of any band)."
-            },
-            {
-              "name": "Accuracy and limitations",
-              "content": "The accuracy of the tide height data is limited by the accuracy of the OTPS model. Tidal modelling on self-similar coastal polygons was performed to minimise regional uncertainty. <p/> Accuracies and limitations related to geomedian compositing of observations are discussed in Roberts et al (2017). <p/> Users should beware of seasonal and diurnal effects in the imagery, especially in the north east of Australia where the footprint of the highest and lowest astronomical tides are large. Consequently, where image acquisition misses the highest astronomical tide, for example, pooling effects of water are still visible in the landscape in lowest observed tidal composite imagery. <p/> This product has been rendered in both true colour and false colour. Validation and interpretation of surface features has not been attempted here. Interpretation of surface features is at the users own discretion."
-            },
-            {
-              "name": "File naming",
-              "content": "`<COUNT OR COMPOSITE>_<HIGH OR LOW>_<TIDAL POLYGON NUMBER>_<LONGITUDE>_<LATITUDE>_<START DATE>_<END DATE>_<PERCENTILE TIDE RANGE>` <p/> COUNT OR COMPOSITE refers to whether pixels contain composite observation values or the count of observations at that pixel location <br/>HIGH OR LOW refers to whether the content relates to High Tide values or Low Tide values <br/>TIDAL POLYGON NUMBER relates to the id of the tidal polygon referenced by the file <br/>LONGITUDE is the longitude of the centroid of the tidal polygon <br/>LATITUDE is the latitude of the centroid of the tidal polygon <br/>START DATE is the beginning of the date range covered by the file <br/>END DATE is the end of the date range covered by the file <br/>PERCENTILE TIDE RANGE indicates the percentile value used when calculating the composites <p/> The index of downloadable GeoTIFFs can be found here: <p/> http://dap.nci.org.au/thredds/remoteCatalogService?catalog=http://dapds00.nci.org.au/thredds/catalog/fk4/datacube/002/HLTC/HLTC_2_0/geotiff/catalog.xml"
-            },
-            {
-              "name": "References",
-              "content": "Egbert, G.D., Erofeeva, S.Y., 2002. Efficient Inverse Modeling of Barotropic Ocean Tides. J. Atmospheric Ocean. Technol. 19, 183-204. doi:10.1175/1520-0426(2002)019<0183:EIMOBO>2.0.CO;2 <p/> Egbert, G.D., Erofeeva, S.Y., 2010. The OSU TOPEX/Poseiden Global Inverse Solution TPXO [WWW Document]. TPXO8-Atlas Version 10. URL http://volkov.oce.orst.edu/tides/global.html (accessed 2.15.16). <p/> Geoscience Australia, 2016. Intertidal Extents Model (25m) v 1.0 Product Description. doi:10.4225/25/575F683E2A3AF <p/> Li, F., Jupp, D.L.B., Thankappan, M., Lymburner, L., Mueller, N., Lewis, A., Held, A., 2012. A physics-based atmospheric and BRDF correction for Landsat data over mountainous terrain. Remote Sens. Environ. 124, 756-770. doi:10.1016/j.rse.2012.06.018 <p/> Roberts, D., Mueller, N., McIntyre, A., 2017. High-dimensional pixel composites from Earth observation time series. IEEE Trans. Geosci. Remote Sens. In Press. <p/> Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Extracting the intertidal extent and topography of the Australian coastline from a 28 year time series of Landsat observations. Remote Sens. Environ. 195, 153-169. doi:10.1016/j.rse.2017.04.009 <p/> Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2018. Generating Continental Scale Pixel-Based Surface Reflectance Composites in Coastal Regions with the Use of a Multi-Resolution Tidal Model. Remote Sensing 10, 480."
+              "name": "Licence",
+              "content": "[Creative Commons Attribution 3.0 Australia (CC BY 3.0 AU)](http://creativecommons.org/licenses/by/3.0/au/)"
             }
           ]
-        }
-      ]
-    },
-
-    {
-      "name": "MDBA",
-      "type": "group",
-      "items": [
-        {
-          "name": "MDBA Near Real-Time Satellite Imagery",
-          "type": "wms-getCapabilities",
-          "url": "https://nrt.dea.ga.gov.au/",
-          "itemProperties": {
-            "ignoreUnknownTileErrors": true,
-            "clipToRectangle": true,
-            "opacity": 1
-          }
-        },
-
-        {
-          "name": "Section 1 area: US Tribs",
-          "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/projects/2018-04-MDBA/section1.geojson",
-          "type": "geojson"
         },
         {
-          "name": "Section 2 area: DS Tribs to Walgett",
-          "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/projects/2018-04-MDBA/section2.geojson",
-          "type": "geojson"
+          "name": "Catchment Scale Land Use 2015",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "resourceId": "7d326ba9-492d-4d32-a893-9d45936bc0af",
+          "datasetId": "catchment-scale-land-use-of-australia-update-march-2015"
         },
         {
-          "name": "Section 3 area: Walgett to Louth",
-          "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/projects/2018-04-MDBA/section3.geojson",
-          "type": "geojson"
+          "url": "http://services.ga.gov.au/gis/rest/services/GA_Surface_Geology/MapServer",
+          "type": "esri-mapServer",
+          "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)",
+          "name": "Surface Geology",
+          "rectangle": [
+            106,
+            -52,
+            172,
+            -8
+          ],
+          "info": [
+            {
+              "name": "Licence",
+              "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+            }
+          ]
         },
         {
-          "name": "Section 4 area: Louth to Menindee",
-          "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/projects/2018-04-MDBA/section4.geojson",
-          "type": "geojson"
-        }
-
-      ]
-    },
-
-    {
-      "name": "nrt-au.dea.ga.gov.au",
-      "url": "https://nrt-au.dea.ga.gov.au/",
-      "type": "wms-getCapabilities",
-      "itemProperties": {
-        "ignoreUnknownTileErrors": true,
-        "clipToRectangle": true,
-        "opacity": 1
-      }
-    },
-
-    {
-      "name": "geomedianau.dea.ga.gov.au",
-      "url": "https://geomedianau.dea.ga.gov.au/",
-      "type": "wms-getCapabilities",
-      "flatten": true,
-      "itemProperties": {
-        "ignoreUnknownTileErrors": true,
-        "clipToRectangle": true,
-        "opacity": 1
-      }
-    },
-
-    {
-      "name": "ODC WMS prototype",
-      "type": "group",
-      "items": [
-        {
-          "name": "ODC",
-          "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
-          "type": "wms-getCapabilities",
-          "itemProperties": {
-            "ignoreUnknownTileErrors": true,
-            "clipToRectangle": true,
-            "opacity": 1,
-            "featureInfoTemplate": "<table><tr>  <th>Lat:</th>  <td>{{#terria.formatNumber}}{maximumFractionDigits:4}{{lat}}{{/terria.formatNumber}}</td></tr><tr>  <th>Lon:</th>  <td>{{#terria.formatNumber}}{maximumFractionDigits:4}{{lon}}{{/terria.formatNumber}}</td></tr><tr>  <th>Observation Time:</th>  <td>{{time}}</td></tr><tr>  <th>Coastal Aerosol:</th>  <td>{{#bands}}{{coastal_aerosol}}{{/bands}}</td></tr><tr>  <th>Blue:</th>  <td>{{#bands}}{{blue}}{{/bands}}</td></tr><tr>  <th>Green:</th>  <td>{{#bands}}{{green}}{{/bands}}</td></tr><tr>  <th>Red:</th>  <td>{{#bands}}{{red}}{{/bands}}</td></tr><tr>  <th>NIR:</th>  <td>{{#bands}}{{nir}}{{/bands}}</td></tr><tr>  <th>SWIR1:</th>  <td>{{#bands}}{{swir1}}{{/bands}}</td></tr><tr>  <th>SWIR2:</th>  <td>{{#bands}}{{swir2}}{{/bands}}</td></tr></table><p/><chart  id='{{lat}} {{lon}}'  title='({{#terria.formatNumber}}{maximumFractionDigits:4}{{lat}}{{/terria.formatNumber}},{{#terria.formatNumber}}{maximumFractionDigits:4}{{lon}}{{/terria.formatNumber}} - {{time}})'  x-column='Wavelength'  y-columns='Reflectance'  column-names='Wavelength,Reflectance'  column-units='nanometres,r*10000'  preview-x-label='Reflectance by Wavelength'>Wavelength,Reflectance\n{{#bands}}440,{{coastal_aerosol}}\n480,{{blue}}\n562,{{green}}\n655,{{red}}\n865,{{nir}}\n1600,{{swir1}}\n2200,{{swir2}}{{/bands}}</chart><p/>"
-          }
+          "layers": "WaterSummary",
+          "url": "http://eos.ga.gov.au/geoserver/NFRIP-WOfS/wms",
+          "type": "wms",
+          "rectangle": [
+            111,
+            -45,
+            155,
+            -10
+          ],
+          "dataCustodian": "[Geoscience Australia](http://www.ga.gov.au/)\n\n[nfrip@ga.gov.au](mailto:nfrip@ga.gov.au)",
+          "name": "Water Observations from Space - Summary",
+          "dataUrlType": "direct",
+          "dataUrl": "http://www.ga.gov.au/scientific-topics/hazards/flood/wofs",
+          "info": [
+            {
+              "name": "Licence",
+              "content": "[Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/)"
+            }
+          ]
         },
         {
-          "name": "ODC no template",
-          "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
-          "type": "wms-getCapabilities",
-          "itemProperties": {
-            "ignoreUnknownTileErrors": true,
-            "clipToRectangle": true,
-            "opacity": 1
-          }
+          "description": "Chlorophyll-a, reflecting wavelengths in the green part of the visible light spectrum, is the substance that helps plants capture the sun’s energy. In the water, it indicates the presence of microscopic green algae (phytoplankton). While these plants are a natural part of the reef ecosystem, elevated numbers (a bloom) of phytoplankton signal elevated nutrient levels, especially nitrogen, in the water. Typical sources are runoff from excess fertiliser being applied to crops and, to a lesser extent in the Great Barrier Reef region, sewage contamination from urban areas.",
+          "layers": "Chl_MIM_mean",
+          "name": "Chlorophyll-a concentration (annual)",
+          "parameters": {
+            "ABOVEMAXCOLOR": "0xAF324B",
+            "BELOWMINCOLOR": "transparent",
+            "COLORSCALERANGE": "0,1",
+            "FORMAT": "image/png",
+            "LAYERS": "Chl_MIM_median",
+            "LOGSCALE": "false",
+            "NUMCOLORBANDS": "16",
+            "PALETTE": "mwq_chl",
+            "STYLES": "boxfill/mwq_chl",
+            "TRANSPARENT": "true",
+            "VERSION": "1.1.1"
+          },
+          "type": "wms",
+          "url": "http://ereeftds.bom.gov.au/ereefs/tds/wms/ereefs/mwq_gridAgg_P1A"
+        },
+        {
+          "name": "BAMS C4ISR",
+          "type": "czml",
+          "description": "Cesium example CZML showing a mission planning exercise involving optimizing the flight path for a reconnaissance UAV over the Persian Gulf.",
+          "url": "http://cesiumjs.org/Gallery/BAMS_C4ISR.czml",
+          "rectangle": [
+            46.5,
+            26.2,
+            53.7,
+            30.4
+          ],
+          "zoomOnEnable": true
+        },
+        {
+          "nowViewingMessage": "Look here for the *legend* and to *interactively filter* the data.",
+          "name": "Census 2011 - Country of Birth",
+          "description": "[More about ABS Data](http://www.abs.gov.au/websitedbs/censushome.nsf/home/data?opendocument&navpos=200)<br>[Licence](http://creativecommons.org/licenses/by/2.5/au/)",
+          "dataCustodian": "[Australian Bureau of Statistics](http://www.abs.gov.au/)",
+          "rectangle": [
+            112.93529,
+            -38.20880,
+            152.06206,
+            -11.05104
+          ],
+          "type": "abs-itt",
+          "url": "http://stat.abs.gov.au/itt/query.jsp",
+          "datasetId": "ABS_CENSUS2011_B09",
+          "filter": [
+            "BPLP.1101",
+            "MEASURE.3",
+            "REGIONTYPE.SA4"
+          ]
         }
       ]
     }
-
   ]
 }
