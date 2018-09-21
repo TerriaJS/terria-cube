@@ -27,128 +27,89 @@
   "catalog": [
 
     {
-      "name": "Digital Earth Australia",
-      "type": "group",
-      "preserveOrder": true,
-      "items": [
-        {
-          "name": "DEA Landsat8 NBAR False colour",
-          "layers": "LS8:NBAR:FALSE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat8 NBAR True colour",
-          "layers": "LS8:NBAR:TRUE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat8 NBART False colour",
-          "layers": "LS8:NBART:FALSE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat8 NBART True colour",
-          "layers": "LS8:NBART:TRUE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-
-        {
-          "name": "DEA Landsat7 NBAR False colour",
-          "layers": "LS7:NBAR:FALSE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat7 NBAR True colour",
-          "layers": "LS7:NBAR:TRUE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat7 NBART False colour",
-          "layers": "LS7:NBART:FALSE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat7 NBART True colour",
-          "layers": "LS7:NBART:TRUE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-
-        {
-          "name": "DEA Landsat5 NBAR False colour",
-          "layers": "LS5:NBAR:FALSE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat5 NBAR True colour",
-          "layers": "LS5:NBAR:TRUE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat5 NBART False colour",
-          "layers": "LS5:NBART:FALSE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        },
-        {
-          "name": "DEA Landsat5 NBART True colour",
-          "layers": "LS5:NBART:TRUE",
-          "url": "http://gsky.nci.org.au/ows",
-          "type": "wms",
-          "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
-          "opacity": 1
-        }
-      ]
+      "name": "Digital Earth Australia (GSKY Prod)",
+      "url": "https://gsky.nci.org.au/ows",
+      "type": "wms-getCapabilities",
+      "itemProperties": {
+        "ignoreUnknownTileErrors": true,
+        "clipToRectangle": true,
+        "opacity": 1,
+        "useOwnClock": true
+      }
     },
 
     {
-      "name": "Geoscience Australia",
+      "name": "Digital Earth Australia Tidal",
       "type": "group",
       "preserveOrder": true,
       "items": [
+
+        {
+          "name": "DEA High Tide Composite 25m v2.0 true colour",
+          "layers": "hltc:high:tc",
+          "url": "https://gsky.nci.org.au/ows",
+          "type": "wms",
+          "ignoreUnknownTileErrors": true,
+          "clipToRectangle": true,
+          "opacity": 1,
+          "useOwnClock": true
+        },
+
+        {
+          "name": "DEA High Tide Composite 25m v2.0 false colour",
+          "layers": "hltc:high:fc",
+          "url": "https://gsky.nci.org.au/ows",
+          "type": "wms",
+          "ignoreUnknownTileErrors": true,
+          "clipToRectangle": true,
+          "opacity": 1,
+          "useOwnClock": true
+        },
+
+        {
+          "name": "DEA Low Tide Composite 25m v2.0 true colour",
+          "layers": "hltc:low:tc",
+          "url": "https://gsky.nci.org.au/ows",
+          "type": "wms",
+          "ignoreUnknownTileErrors": true,
+          "clipToRectangle": true,
+          "opacity": 1,
+          "useOwnClock": true
+        },
+
+        {
+          "name": "DEA Low Tide Composite 25m v2.0 false colour",
+          "layers": "hltc:low:fc",
+          "url": "https://gsky.nci.org.au/ows",
+          "type": "wms",
+          "ignoreUnknownTileErrors": true,
+          "clipToRectangle": true,
+          "opacity": 1,
+          "useOwnClock": true
+        },
+
+        {
+          "name": "DEA Intertidal Extents Model Confidence Layer 25m v2.0",
+          "layers": "item:stddev",
+          "url": "https://gsky.nci.org.au/ows",
+          "type": "wms",
+          "ignoreUnknownTileErrors": true,
+          "clipToRectangle": true,
+          "opacity": 1,
+          "useOwnClock": true
+        },
+
+        {
+          "name": "DEA Intertidal Extents Model Relative Layer 25m v2.0",
+          "layers": "item:relative",
+          "url": "https://gsky.nci.org.au/ows",
+          "type": "wms",
+          "ignoreUnknownTileErrors": true,
+          "clipToRectangle": true,
+          "opacity": 1,
+          "useOwnClock": true
+        },
+
         {
           "name": "DEA Intertidal Extents Relative Model and Confidence Layer 25m v2.0 polygons for access to data",
           "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/ITEM_V2/Itemv2.geojson",
@@ -255,45 +216,6 @@
     },
 
     {
-      "name": "MDBA",
-      "type": "group",
-      "items": [
-        {
-          "name": "MDBA Near Real-Time Satellite Imagery",
-          "type": "wms-getCapabilities",
-          "url": "https://nrt.dea.ga.gov.au/",
-          "itemProperties": {
-            "ignoreUnknownTileErrors": true,
-            "clipToRectangle": true,
-            "opacity": 1
-          }
-        },
-
-        {
-          "name": "Section 1 area: US Tribs",
-          "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/projects/2018-04-MDBA/section1.geojson",
-          "type": "geojson"
-        },
-        {
-          "name": "Section 2 area: DS Tribs to Walgett",
-          "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/projects/2018-04-MDBA/section2.geojson",
-          "type": "geojson"
-        },
-        {
-          "name": "Section 3 area: Walgett to Louth",
-          "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/projects/2018-04-MDBA/section3.geojson",
-          "type": "geojson"
-        },
-        {
-          "name": "Section 4 area: Louth to Menindee",
-          "url": "http://dea-public-data.s3-ap-southeast-2.amazonaws.com/projects/2018-04-MDBA/section4.geojson",
-          "type": "geojson"
-        }
-
-      ]
-    },
-
-    {
       "name": "nrt-au.dea.ga.gov.au",
       "url": "https://nrt-au.dea.ga.gov.au/",
       "type": "wms-getCapabilities",
@@ -305,43 +227,39 @@
     },
 
     {
-      "name": "geomedianau.dea.ga.gov.au",
-      "url": "https://geomedianau.dea.ga.gov.au/",
+      "name": "ows.services.devkube.dea.ga.gov.au",
+      "url": "https://ows.services.devkube.dea.ga.gov.au",
       "type": "wms-getCapabilities",
-      "flatten": true,
       "itemProperties": {
         "ignoreUnknownTileErrors": true,
         "clipToRectangle": true,
-        "opacity": 1
+        "opacity": 1,
+        "useOwnClock": true
       }
     },
 
     {
-      "name": "ODC WMS prototype",
-      "type": "group",
-      "items": [
-        {
-          "name": "ODC",
-          "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
-          "type": "wms-getCapabilities",
-          "itemProperties": {
-            "ignoreUnknownTileErrors": true,
-            "clipToRectangle": true,
-            "opacity": 1,
-            "featureInfoTemplate": "<table><tr>  <th>Lat:</th>  <td>{{#terria.formatNumber}}{maximumFractionDigits:4}{{lat}}{{/terria.formatNumber}}</td></tr><tr>  <th>Lon:</th>  <td>{{#terria.formatNumber}}{maximumFractionDigits:4}{{lon}}{{/terria.formatNumber}}</td></tr><tr>  <th>Observation Time:</th>  <td>{{time}}</td></tr><tr>  <th>Coastal Aerosol:</th>  <td>{{#bands}}{{coastal_aerosol}}{{/bands}}</td></tr><tr>  <th>Blue:</th>  <td>{{#bands}}{{blue}}{{/bands}}</td></tr><tr>  <th>Green:</th>  <td>{{#bands}}{{green}}{{/bands}}</td></tr><tr>  <th>Red:</th>  <td>{{#bands}}{{red}}{{/bands}}</td></tr><tr>  <th>NIR:</th>  <td>{{#bands}}{{nir}}{{/bands}}</td></tr><tr>  <th>SWIR1:</th>  <td>{{#bands}}{{swir1}}{{/bands}}</td></tr><tr>  <th>SWIR2:</th>  <td>{{#bands}}{{swir2}}{{/bands}}</td></tr></table><p/><chart  id='{{lat}} {{lon}}'  title='({{#terria.formatNumber}}{maximumFractionDigits:4}{{lat}}{{/terria.formatNumber}},{{#terria.formatNumber}}{maximumFractionDigits:4}{{lon}}{{/terria.formatNumber}} - {{time}})'  x-column='Wavelength'  y-columns='Reflectance'  column-names='Wavelength,Reflectance'  column-units='nanometres,r*10000'  preview-x-label='Reflectance by Wavelength'>Wavelength,Reflectance\n{{#bands}}440,{{coastal_aerosol}}\n480,{{blue}}\n562,{{green}}\n655,{{red}}\n865,{{nir}}\n1600,{{swir1}}\n2200,{{swir2}}{{/bands}}</chart><p/>"
-          }
-        },
-        {
-          "name": "ODC no template",
-          "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
-          "type": "wms-getCapabilities",
-          "itemProperties": {
-            "ignoreUnknownTileErrors": true,
-            "clipToRectangle": true,
-            "opacity": 1
-          }
-        }
-      ]
+      "name": "geomedian.services.dea.ga.gov.au",
+      "url": "https://geomedian.services.dea.ga.gov.au",
+      "type": "wms-getCapabilities",
+      "itemProperties": {
+        "ignoreUnknownTileErrors": true,
+        "clipToRectangle": true,
+        "opacity": 1,
+        "useOwnClock": true
+      }
+    },
+
+    {
+      "name": "Data61 ODC internal prototype",
+      "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+      "type": "wms-getCapabilities",
+      "itemProperties": {
+        "ignoreUnknownTileErrors": true,
+        "clipToRectangle": true,
+        "opacity": 1,
+        "useOwnClock": true
+      }
     }
 
   ]
