@@ -4,6 +4,10 @@
         "terria-cube"
     ],
     parameters: {
+        initFragmentPaths: [
+            "init/",
+            "proxy/_60s/https://raw.githubusercontent.com/GeoscienceAustralia/dea-config/master/dev/terria/"
+        ],
         bingMapsKey: "AkaOmRFtjAb71cXgLwAGtLbj2RpkPKtVqAIroFQsocfurCBILxIeAWPkil7hhRy_",
         googleUrlShortenerKey: null,
         googleAnalyticsKey: null,
