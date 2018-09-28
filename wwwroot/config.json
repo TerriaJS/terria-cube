@@ -12,6 +12,7 @@
         googleUrlShortenerKey: null,
         googleAnalyticsKey: null,
         googleAnalyticsOptions: null,
+        cesiumIonAccessToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5ODU1MDJiNy00MTQ1LTQ0MTctOWI0MS04NDQ3ODJjMGQxNDgiLCJpZCI6Mjk5Miwic2NvcGVzIjpbImFzciIsImdjIl0sImlhdCI6MTUzODAyNjY5Mn0.9t7UekQae3vxNlKNMtcF_bltkRptmhK0qus0F0HlyJQ",
         /* Text that appears at the bottom of the map */
         disclaimer: {
             text: "Disclaimer: This map must not be used for navigation or precise spatial analysis",
