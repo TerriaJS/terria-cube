@@ -32,7 +32,6 @@
       "type": "wms-getCapabilities",
       "itemProperties": {
         "ignoreUnknownTileErrors": true,
-        "clipToRectangle": true,
         "opacity": 1,
         "useOwnClock": true
       }
@@ -50,7 +49,6 @@
           "url": "https://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
           "opacity": 1,
           "useOwnClock": true
         },
@@ -61,7 +59,6 @@
           "url": "https://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
           "opacity": 1,
           "useOwnClock": true
         },
@@ -72,7 +69,6 @@
           "url": "https://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
           "opacity": 1,
           "useOwnClock": true
         },
@@ -83,7 +79,6 @@
           "url": "https://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
           "opacity": 1,
           "useOwnClock": true
         },
@@ -94,7 +89,6 @@
           "url": "https://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
           "opacity": 1,
           "useOwnClock": true
         },
@@ -105,7 +99,6 @@
           "url": "https://gsky.nci.org.au/ows",
           "type": "wms",
           "ignoreUnknownTileErrors": true,
-          "clipToRectangle": true,
           "opacity": 1,
           "useOwnClock": true
         },
@@ -221,7 +214,6 @@
       "type": "wms-getCapabilities",
       "itemProperties": {
         "ignoreUnknownTileErrors": true,
-        "clipToRectangle": true,
         "opacity": 1
       }
     },
@@ -232,7 +224,6 @@
       "type": "wms-getCapabilities",
       "itemProperties": {
         "ignoreUnknownTileErrors": true,
-        "clipToRectangle": true,
         "opacity": 1,
         "useOwnClock": true
       }
@@ -244,7 +235,6 @@
       "type": "wms-getCapabilities",
       "itemProperties": {
         "ignoreUnknownTileErrors": true,
-        "clipToRectangle": true,
         "opacity": 1,
         "useOwnClock": true
       }
@@ -256,10 +246,114 @@
       "type": "wms-getCapabilities",
       "itemProperties": {
         "ignoreUnknownTileErrors": true,
-        "clipToRectangle": true,
         "opacity": 1,
         "useOwnClock": true
       }
+    },
+
+    {
+      "name": "Clip and Ship test layers",
+      "type": "group",
+      "items": [
+
+        {
+          "name": "geomedian.services.dea.ga.gov.au",
+          "type": "group",
+          "items": [
+            {
+              "name": "Mangrove Canopy Cover 25m 100km tile - ODC-OGC geomedian.services.dea",
+              "url": "https://geomedian.services.dea.ga.gov.au",
+              "layers": "mangrove_cover",
+              "type": "wms",
+              "linkedWcsUrl": "https://geomedian.services.dea.ga.gov.au",
+              "linkedWcsCoverage": "mangrove_cover",
+              "ignoreUnknownTileErrors": true,
+              "useOwnClock": true
+            },
+
+            {
+              "name": "Surface Reflectance 25m Annual Geomedian (Landsat 8) - ODC-OGC geomedian.services.dea",
+              "url": "https://geomedian.services.dea.ga.gov.au",
+              "layers": "ls8_nbart_geomedian_annual",
+              "type": "wms",
+              "linkedWcsUrl": "https://geomedian.services.dea.ga.gov.au",
+              "linkedWcsCoverage": "ls8_nbart_geomedian_annual",
+              "ignoreUnknownTileErrors": true,
+              "useOwnClock": true
+            },
+
+            {
+              "name": "WOfS 25m Clear Count (WOfS Statistics) - ODC-OGC geomedian.services.dea",
+              "url": "https://geomedian.services.dea.ga.gov.au",
+              "layers": "wofs_summary_clear",
+              "type": "wms",
+              "linkedWcsUrl": "https://geomedian.services.dea.ga.gov.au",
+              "linkedWcsCoverage": "wofs_summary_clear",
+              "ignoreUnknownTileErrors": true,
+              "useOwnClock": true
+            }
+          ]
+        },
+
+        {
+          "name": "ows.services.devkube.dea.ga.gov.au",
+          "type": "group",
+          "items": [
+            {
+              "name": "Mangrove Canopy Cover 25m 100km tile - ODC-OGC ows.services.devkube",
+              "url": "https://ows.services.devkube.dea.ga.gov.au",
+              "layers": "mangrove_cover",
+              "type": "wms",
+              "linkedWcsUrl": "https://ows.services.devkube.dea.ga.gov.au",
+              "linkedWcsCoverage": "mangrove_cover",
+              "ignoreUnknownTileErrors": true,
+              "useOwnClock": true
+            },
+
+            {
+              "name": "Surface Reflectance 25m Annual Geomedian (Landsat 8) - ODC-OGC ows.services.devkube.dea",
+              "url": "https://ows.services.devkube.dea.ga.gov.au",
+              "layers": "ls8_nbart_geomedian_annual",
+              "type": "wms",
+              "linkedWcsUrl": "https://ows.services.devkube.dea.ga.gov.au",
+              "linkedWcsCoverage": "ls8_nbart_geomedian_annual",
+              "ignoreUnknownTileErrors": true,
+              "useOwnClock": true
+            },
+
+            {
+              "name": "WOfS 25m Clear Count (WOfS Statistics) - ODC-OGC ows.services.devkube.dea",
+              "url": "https://ows.services.devkube.dea.ga.gov.au",
+              "layers": "wofs_summary_clear",
+              "type": "wms",
+              "linkedWcsUrl": "https://ows.services.devkube.dea.ga.gov.au",
+              "linkedWcsCoverage": "wofs_summary_clear",
+              "ignoreUnknownTileErrors": true,
+              "useOwnClock": true
+            }
+          ]
+        },
+
+        {
+          "name": "WOfS Clear Observations - NCI Geoserver",
+          "type": "wms",
+          "url": "http://geoserver.nci.org.au/geoserver/NFRIP-WOfS/wms",
+          "layers": "ClearObservations",
+          "linkedWcsUrl": "http://geoserver.nci.org.au/geoserver/NFRIP-WOfS/wcs",
+          "linkedWcsCoverage": "NFRIP-WOfS:ClearObservations",
+          "ignoreUnknownTileErrors": true
+        },
+
+        {
+          "name": "Australian Bathymetry and Topography - GA Esri WMSServer/WCSServer",
+          "type": "wms",
+          "url": "http://services.ga.gov.au/site_3/services/Bathymetry_Topography/MapServer/WMSServer",
+          "layers": "Australian_Bathymetry_and_Topography",
+          "linkedWcsUrl": "http://services.ga.gov.au/site_3/services/Bathymetry_Topography/MapServer/WCSServer",
+          "linkedWcsCoverage": "1",
+          "ignoreUnknownTileErrors": true
+        }
+      ]
     }
 
   ]
