@@ -31,7 +31,7 @@
       "type": "group",
       "items": [
         {
-          "name": "9xjfk12",
+          "name": "9xjfk12 dynamic",
           "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
           "type": "wms-getCapabilities",
           "itemProperties": {
@@ -45,6 +45,67 @@
           "name": "Clip and Ship test layers",
           "type": "group",
           "items": [
+            {
+              "name": "9xjfk12",
+              "type": "group",
+              "items": [
+                {
+                  "name": "ls8_nbart_albers",
+                  "type": "wms",
+                  "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "layers": "ls8_nbart_albers",
+                  "linkedWcsUrl": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "linkedWcsCoverage": "ls8_nbart_albers",
+                  "opacity": 1,
+                  "useOwnClock": true,
+                  "ignoreUnknownTileErrors": true
+                },
+                {
+                  "name": "ls8_wofs",
+                  "type": "wms",
+                  "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "layers": "ls8_wofs",
+                  "linkedWcsUrl": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "linkedWcsCoverage": "ls8_wofs",
+                  "opacity": 1,
+                  "useOwnClock": true,
+                  "ignoreUnknownTileErrors": true
+                },
+                {
+                  "name": "ls5_nbart_geomedian_annual",
+                  "type": "wms",
+                  "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "layers": "ls5_nbart_geomedian_annual",
+                  "linkedWcsUrl": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "linkedWcsCoverage": "ls5_nbart_geomedian_annual",
+                  "opacity": 1,
+                  "useOwnClock": true,
+                  "ignoreUnknownTileErrors": true
+                },
+                {
+                  "name": "ls7_nbart_geomedian_annual",
+                  "type": "wms",
+                  "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "layers": "ls7_nbart_geomedian_annual",
+                  "linkedWcsUrl": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "linkedWcsCoverage": "ls7_nbart_geomedian_annual",
+                  "opacity": 1,
+                  "useOwnClock": true,
+                  "ignoreUnknownTileErrors": true
+                },
+                {
+                  "name": "ls8_nbart_geomedian_annual",
+                  "type": "wms",
+                  "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "layers": "ls8_nbart_geomedian_annual",
+                  "linkedWcsUrl": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "linkedWcsCoverage": "ls8_nbart_geomedian_annual",
+                  "opacity": 1,
+                  "useOwnClock": true,
+                  "ignoreUnknownTileErrors": true
+                }
+              ]
+            },
 
             {
               "name": "WOfS Clear Observations - NCI Geoserver",
@@ -69,6 +130,5 @@
         }
       ]
     }
-
   ]
 }
