@@ -19,6 +19,9 @@
         "static.nationalmap.nicta.com.au",
         "sample.aero3dpro.com.au",
         "raw.githubusercontent.com"
-    ]
+    ],
+
+    "trustProxy": "loopback, linklocal, uniquelocal",
+    "redirectToHttps": true
 }
 
