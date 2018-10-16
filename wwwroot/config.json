@@ -1,8 +1,8 @@
 {
     /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
     initializationUrls: [
-        "terria-cube",
-        "dea"
+        "dea",
+        "terria-cube"
     ],
     parameters: {
         initFragmentPaths: [
