@@ -1,7 +1,7 @@
 {
   "corsDomains": [
-    "9xjfk12.nexus.csiro.au",
-    "9xjfk12.nexus.csiro.au:5000",
+    "bird-bm.nexus.csiro.au",
+    "bird-bm.nexus.csiro.au:5000",
     "localhost",
     "localhost:3000",
     "localhost:3001",
@@ -31,8 +31,8 @@
       "type": "group",
       "items": [
         {
-          "name": "9xjfk12 dynamic",
-          "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+          "name": "bird-bm dynamic",
+          "url": "http://bird-bm.nexus.csiro.au:5000/datacube_wms/",
           "type": "wms-getCapabilities",
           "itemProperties": {
             "ignoreUnknownTileErrors": true,
@@ -46,15 +46,15 @@
           "type": "group",
           "items": [
             {
-              "name": "9xjfk12",
+              "name": "bird-bm",
               "type": "group",
               "items": [
                 {
                   "name": "ls8_nbart_albers",
                   "type": "wms",
-                  "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "url": "http://bird-bm.nexus.csiro.au/datacube_wms/",
                   "layers": "ls8_nbart_albers",
-                  "linkedWcsUrl": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "linkedWcsUrl": "http://bird-bm.nexus.csiro.au/datacube_wms/",
                   "linkedWcsCoverage": "ls8_nbart_albers",
                   "opacity": 1,
                   "useOwnClock": true,
@@ -63,9 +63,9 @@
                 {
                   "name": "ls8_wofs",
                   "type": "wms",
-                  "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "url": "http://bird-bm.nexus.csiro.au/datacube_wms/",
                   "layers": "ls8_wofs",
-                  "linkedWcsUrl": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "linkedWcsUrl": "http://bird-bm.nexus.csiro.au/datacube_wms/",
                   "linkedWcsCoverage": "ls8_wofs",
                   "opacity": 1,
                   "useOwnClock": true,
@@ -74,9 +74,9 @@
                 {
                   "name": "ls5_nbart_geomedian_annual",
                   "type": "wms",
-                  "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "url": "http://bird-bm.nexus.csiro.au/datacube_wms/",
                   "layers": "ls5_nbart_geomedian_annual",
-                  "linkedWcsUrl": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "linkedWcsUrl": "http://bird-bm.nexus.csiro.au/datacube_wms/",
                   "linkedWcsCoverage": "ls5_nbart_geomedian_annual",
                   "opacity": 1,
                   "useOwnClock": true,
@@ -85,9 +85,9 @@
                 {
                   "name": "ls7_nbart_geomedian_annual",
                   "type": "wms",
-                  "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "url": "http://bird-bm.nexus.csiro.au/datacube_wms/",
                   "layers": "ls7_nbart_geomedian_annual",
-                  "linkedWcsUrl": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "linkedWcsUrl": "http://bird-bm.nexus.csiro.au/datacube_wms/",
                   "linkedWcsCoverage": "ls7_nbart_geomedian_annual",
                   "opacity": 1,
                   "useOwnClock": true,
@@ -96,9 +96,9 @@
                 {
                   "name": "ls8_nbart_geomedian_annual",
                   "type": "wms",
-                  "url": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "url": "http://bird-bm.nexus.csiro.au/datacube_wms/",
                   "layers": "ls8_nbart_geomedian_annual",
-                  "linkedWcsUrl": "http://9xjfk12.nexus.csiro.au/datacube_wms/",
+                  "linkedWcsUrl": "http://bird-bm.nexus.csiro.au/datacube_wms/",
                   "linkedWcsCoverage": "ls8_nbart_geomedian_annual",
                   "opacity": 1,
                   "useOwnClock": true,
