@@ -22,6 +22,6 @@
     ],
 
     "trustProxy": "loopback, linklocal, uniquelocal",
-    "redirectToHttps": true
+    "redirectToHttps": false
 }
 
