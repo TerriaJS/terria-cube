@@ -172,7 +172,7 @@ gulp.task('make-package', function(done) {
     fs.mkdirSync(workingDir);
 
     var copyOptions = {
-        preserveTimestamps: true
+        preserveTimestamps: false
     };
 
     fs.copySync('wwwroot', path.join(workingDir, 'wwwroot'), copyOptions);
