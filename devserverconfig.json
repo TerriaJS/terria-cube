@@ -18,7 +18,9 @@
         "nicta.com.au",
         "static.nationalmap.nicta.com.au",
         "sample.aero3dpro.com.au",
-        "raw.githubusercontent.com"
+        "raw.githubusercontent.com",
+        "pacificdata.org",
+        "sprep.org"
     ],
 
     "trustProxy": "loopback, linklocal, uniquelocal",
