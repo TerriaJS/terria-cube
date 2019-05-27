@@ -25,7 +25,6 @@
   },
   "services": [],
   "catalog": [
-
     {
       "name": "Data61 prototyping",
       "type": "group",
@@ -40,7 +39,6 @@
             "useOwnClock": true
           }
         },
-
         {
           "name": "Clip and Ship test layers",
           "type": "group",
@@ -106,7 +104,6 @@
                 }
               ]
             },
-
             {
               "name": "WOfS Clear Observations - NCI Geoserver",
               "type": "wms",
@@ -116,7 +113,6 @@
               "linkedWcsCoverage": "NFRIP-WOfS:ClearObservations",
               "ignoreUnknownTileErrors": true
             },
-
             {
               "name": "Australian Bathymetry and Topography - GA Esri WMSServer/WCSServer",
               "type": "wms",
@@ -136,210 +132,1485 @@
       "description": "The Bureau receives water data measured at stations around Australia from organisations named in the Water Regulations (2008). This data is stored in the Australian Water Resource Information System (AWRIS). A large proportion of time series data in AWRIS is made available to the public via Sensor Observation Service (SOS2) web services. NEII uses these web services to present storage levels, storage volume, water course discharge and water course levels data. Please refer to http://www.bom.gov.au/waterdata/ for more information.",
       "custodian": "Bureau of Meteorology",
       "items": [
-          {
-            "name": "Hydrologic Reference Stations",
-            "type": "group",
-            "items": [
-              {
-                "name": "Watercourse Levels",
-                "url": "http://www.bom.gov.au/waterdata/services",
-                "type": "sos",
-                "proceduresName": "Frequency",
-                "description": "Watercourse levels, as defined under category 1a of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
-                "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
-                "observablePropertiesName": "Observation type",
-                "startDate": "1980-01-01T00:00:00+10",
-                "filterByProcedures": false,
-                "tryToLoadObservationData": false,
-                "stationIdWhitelist": ["http://bom.gov.au/waterdata/services/stations/410730","http://bom.gov.au/waterdata/services/stations/410731","http://bom.gov.au/waterdata/services/stations/http://bom.gov.au/waterdata/services/stations/410734","http://bom.gov.au/waterdata/services/stations/http://bom.gov.au/waterdata/services/stations/410705","http://bom.gov.au/waterdata/services/stations/410761","http://bom.gov.au/waterdata/services/stations/204034","http://bom.gov.au/waterdata/services/stations/206014","http://bom.gov.au/waterdata/services/stations/206018","http://bom.gov.au/waterdata/services/stations/208007","http://bom.gov.au/waterdata/services/stations/208009","http://bom.gov.au/waterdata/services/stations/210006","http://bom.gov.au/waterdata/services/stations/210011","http://bom.gov.au/waterdata/services/stations/211008","http://bom.gov.au/waterdata/services/stations/212209","http://bom.gov.au/waterdata/services/stations/212260","http://bom.gov.au/waterdata/services/stations/215002","http://bom.gov.au/waterdata/services/stations/215004","http://bom.gov.au/waterdata/services/stations/215207","http://bom.gov.au/waterdata/services/stations/216002","http://bom.gov.au/waterdata/services/stations/216004","http://bom.gov.au/waterdata/services/stations/218001","http://bom.gov.au/waterdata/services/stations/219001","http://bom.gov.au/waterdata/services/stations/401009","http://bom.gov.au/waterdata/services/stations/401012","http://bom.gov.au/waterdata/services/stations/401015","http://bom.gov.au/waterdata/services/stations/410057","http://bom.gov.au/waterdata/services/stations/410061","http://bom.gov.au/waterdata/services/stations/412028","http://bom.gov.au/waterdata/services/stations/412050","http://bom.gov.au/waterdata/services/stations/412066","http://bom.gov.au/waterdata/services/stations/416003","http://bom.gov.au/waterdata/services/stations/416008","http://bom.gov.au/waterdata/services/stations/418005","http://bom.gov.au/waterdata/services/stations/418014","http://bom.gov.au/waterdata/services/stations/419005","http://bom.gov.au/waterdata/services/stations/424002","http://bom.gov.au/waterdata/services/stations/G0010005","http://bom.gov.au/waterdata/services/stations/G0050115","http://bom.gov.au/waterdata/services/stations/G0060005","http://bom.gov.au/waterdata/services/stations/G8110004","http://bom.gov.au/waterdata/services/stations/G8110016","http://bom.gov.au/waterdata/services/stations/G8140001","http://bom.gov.au/waterdata/services/stations/G8140040","http://bom.gov.au/waterdata/services/stations/G8140161","http://bom.gov.au/waterdata/services/stations/G8150018","http://bom.gov.au/waterdata/services/stations/G8170002","http://bom.gov.au/waterdata/services/stations/G8190001","http://bom.gov.au/waterdata/services/stations/G8200045","http://bom.gov.au/waterdata/services/stations/G8210010","http://bom.gov.au/waterdata/services/stations/G9030124","http://bom.gov.au/waterdata/services/stations/G9030250","http://bom.gov.au/waterdata/services/stations/G9070142","http://bom.gov.au/waterdata/services/stations/102101A","http://bom.gov.au/waterdata/services/stations/104001A","http://bom.gov.au/waterdata/services/stations/105101A","http://bom.gov.au/waterdata/services/stations/105102A","http://bom.gov.au/waterdata/services/stations/105105A","http://bom.gov.au/waterdata/services/stations/107001B","http://bom.gov.au/waterdata/services/stations/108002A","http://bom.gov.au/waterdata/services/stations/108003A","http://bom.gov.au/waterdata/services/stations/112002A","http://bom.gov.au/waterdata/services/stations/112102A","http://bom.gov.au/waterdata/services/stations/113004A","http://bom.gov.au/waterdata/services/stations/116006B","http://bom.gov.au/waterdata/services/stations/116010A","http://bom.gov.au/waterdata/services/stations/116011A","http://bom.gov.au/waterdata/services/stations/116012A","http://bom.gov.au/waterdata/services/stations/116013A","http://bom.gov.au/waterdata/services/stations/116014A","http://bom.gov.au/waterdata/services/stations/116015A","http://bom.gov.au/waterdata/services/stations/121001A","http://bom.gov.au/waterdata/services/stations/122004A","http://bom.gov.au/waterdata/services/stations/126003A","http://bom.gov.au/waterdata/services/stations/136202D","http://bom.gov.au/waterdata/services/stations/136203A","http://bom.gov.au/waterdata/services/stations/136208A","http://bom.gov.au/waterdata/services/stations/137101A","http://bom.gov.au/waterdata/services/stations/137201A","http://bom.gov.au/waterdata/services/stations/138004B","http://bom.gov.au/waterdata/services/stations/138009A","http://bom.gov.au/waterdata/services/stations/138010A","http://bom.gov.au/waterdata/services/stations/138113A","http://bom.gov.au/waterdata/services/stations/143009A","http://bom.gov.au/waterdata/services/stations/143110A","http://bom.gov.au/waterdata/services/stations/143303A","http://bom.gov.au/waterdata/services/stations/145010A","http://bom.gov.au/waterdata/services/stations/145011A","http://bom.gov.au/waterdata/services/stations/145018A","http://bom.gov.au/waterdata/services/stations/145101D","http://bom.gov.au/waterdata/services/stations/145107A","http://bom.gov.au/waterdata/services/stations/146010A","http://bom.gov.au/waterdata/services/stations/146012A","http://bom.gov.au/waterdata/services/stations/146014A","http://bom.gov.au/waterdata/services/stations/146095A","http://bom.gov.au/waterdata/services/stations/422202B","http://bom.gov.au/waterdata/services/stations/422306A","http://bom.gov.au/waterdata/services/stations/422313B","http://bom.gov.au/waterdata/services/stations/422319B","http://bom.gov.au/waterdata/services/stations/422321B","http://bom.gov.au/waterdata/services/stations/422334A","http://bom.gov.au/waterdata/services/stations/422394A","http://bom.gov.au/waterdata/services/stations/424201A","http://bom.gov.au/waterdata/services/stations/912101A","http://bom.gov.au/waterdata/services/stations/912105A","http://bom.gov.au/waterdata/services/stations/915011A","http://bom.gov.au/waterdata/services/stations/917107A","http://bom.gov.au/waterdata/services/stations/919003A","http://bom.gov.au/waterdata/services/stations/919201A","http://bom.gov.au/waterdata/services/stations/919309A","http://bom.gov.au/waterdata/services/stations/922101B","http://bom.gov.au/waterdata/services/stations/925001A","http://bom.gov.au/waterdata/services/stations/926002A","http://bom.gov.au/waterdata/services/stations/A0020101","http://bom.gov.au/waterdata/services/stations/A0030501","http://bom.gov.au/waterdata/services/stations/A2390519","http://bom.gov.au/waterdata/services/stations/A2390523","http://bom.gov.au/waterdata/services/stations/A2390531","http://bom.gov.au/waterdata/services/stations/A5030502","http://bom.gov.au/waterdata/services/stations/A5040517","http://bom.gov.au/waterdata/services/stations/A5040523","http://bom.gov.au/waterdata/services/stations/A5050517","http://bom.gov.au/waterdata/services/stations/A5130501","http://bom.gov.au/waterdata/services/stations/302214","http://bom.gov.au/waterdata/services/stations/304497","http://bom.gov.au/waterdata/services/stations/304499","http://bom.gov.au/waterdata/services/stations/305202","http://bom.gov.au/waterdata/services/stations/307473","http://bom.gov.au/waterdata/services/stations/308145","http://bom.gov.au/waterdata/services/stations/308799","http://bom.gov.au/waterdata/services/stations/312061","http://bom.gov.au/waterdata/services/stations/314207","http://bom.gov.au/waterdata/services/stations/314213","http://bom.gov.au/waterdata/services/stations/315450","http://bom.gov.au/waterdata/services/stations/318076","http://bom.gov.au/waterdata/services/stations/221207","http://bom.gov.au/waterdata/services/stations/221210","http://bom.gov.au/waterdata/services/stations/222206","http://bom.gov.au/waterdata/services/stations/222213","http://bom.gov.au/waterdata/services/stations/223202","http://bom.gov.au/waterdata/services/stations/224206","http://bom.gov.au/waterdata/services/stations/224213A","http://bom.gov.au/waterdata/services/stations/225020A","http://bom.gov.au/waterdata/services/stations/225110A","http://bom.gov.au/waterdata/services/stations/225219","http://bom.gov.au/waterdata/services/stations/226220","http://bom.gov.au/waterdata/services/stations/226222","http://bom.gov.au/waterdata/services/stations/226407","http://bom.gov.au/waterdata/services/stations/227225A","http://bom.gov.au/waterdata/services/stations/227226","http://bom.gov.au/waterdata/services/stations/227227","http://bom.gov.au/waterdata/services/stations/229650A","http://bom.gov.au/waterdata/services/stations/229661A","http://bom.gov.au/waterdata/services/stations/230210","http://bom.gov.au/waterdata/services/stations/231213","http://bom.gov.au/waterdata/services/stations/235205","http://bom.gov.au/waterdata/services/stations/236213","http://bom.gov.au/waterdata/services/stations/238208","http://bom.gov.au/waterdata/services/stations/401203","http://bom.gov.au/waterdata/services/stations/401208","http://bom.gov.au/waterdata/services/stations/401210","http://bom.gov.au/waterdata/services/stations/401212","http://bom.gov.au/waterdata/services/stations/401216","http://bom.gov.au/waterdata/services/stations/401217","http://bom.gov.au/waterdata/services/stations/402204","http://bom.gov.au/waterdata/services/stations/402206","http://bom.gov.au/waterdata/services/stations/402213","http://bom.gov.au/waterdata/services/stations/402217","http://bom.gov.au/waterdata/services/stations/403209A","http://bom.gov.au/waterdata/services/stations/403213A","http://bom.gov.au/waterdata/services/stations/403214","http://bom.gov.au/waterdata/services/stations/403217","http://bom.gov.au/waterdata/services/stations/403221","http://bom.gov.au/waterdata/services/stations/403222","http://bom.gov.au/waterdata/services/stations/403226","http://bom.gov.au/waterdata/services/stations/403232","http://bom.gov.au/waterdata/services/stations/404207","http://bom.gov.au/waterdata/services/stations/405205","http://bom.gov.au/waterdata/services/stations/405209","http://bom.gov.au/waterdata/services/stations/405215","http://bom.gov.au/waterdata/services/stations/405217","http://bom.gov.au/waterdata/services/stations/405218","http://bom.gov.au/waterdata/services/stations/405219","http://bom.gov.au/waterdata/services/stations/405226","http://bom.gov.au/waterdata/services/stations/405227","http://bom.gov.au/waterdata/services/stations/405238","http://bom.gov.au/waterdata/services/stations/405245","http://bom.gov.au/waterdata/services/stations/405248","http://bom.gov.au/waterdata/services/stations/405251","http://bom.gov.au/waterdata/services/stations/405263","http://bom.gov.au/waterdata/services/stations/405264","http://bom.gov.au/waterdata/services/stations/405274","http://bom.gov.au/waterdata/services/stations/406208","http://bom.gov.au/waterdata/services/stations/406213","http://bom.gov.au/waterdata/services/stations/406214","http://bom.gov.au/waterdata/services/stations/406224","http://bom.gov.au/waterdata/services/stations/407214","http://bom.gov.au/waterdata/services/stations/407215","http://bom.gov.au/waterdata/services/stations/407220","http://bom.gov.au/waterdata/services/stations/407230","http://bom.gov.au/waterdata/services/stations/407253","http://bom.gov.au/waterdata/services/stations/408200","http://bom.gov.au/waterdata/services/stations/408202","http://bom.gov.au/waterdata/services/stations/415207","http://bom.gov.au/waterdata/services/stations/415226","http://bom.gov.au/waterdata/services/stations/415237","http://bom.gov.au/waterdata/services/stations/224214A","http://bom.gov.au/waterdata/services/stations/604053","http://bom.gov.au/waterdata/services/stations/606001","http://bom.gov.au/waterdata/services/stations/606002","http://bom.gov.au/waterdata/services/stations/606185","http://bom.gov.au/waterdata/services/stations/607155","http://bom.gov.au/waterdata/services/stations/608002","http://bom.gov.au/waterdata/services/stations/610008","http://bom.gov.au/waterdata/services/stations/613002","http://bom.gov.au/waterdata/services/stations/613146","http://bom.gov.au/waterdata/services/stations/614044","http://bom.gov.au/waterdata/services/stations/616002","http://bom.gov.au/waterdata/services/stations/616013","http://bom.gov.au/waterdata/services/stations/616065","http://bom.gov.au/waterdata/services/stations/803003","http://bom.gov.au/waterdata/services/stations/804001","http://bom.gov.au/waterdata/services/stations/809310"],                    
-                "procedures": [
+        {
+          "name": "Hydrologic Reference Stations",
+          "type": "group",
+          "items": [
+            {
+              "name": "Watercourse Levels",
+              "url": "http://www.bom.gov.au/waterdata/services",
+              "type": "sos",
+              "proceduresName": "Frequency",
+              "description": "Watercourse levels, as defined under category 1a of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
+              "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
+              "observablePropertiesName": "Observation type",
+              "startDate": "1980-01-01T00:00:00+10",
+              "filterByProcedures": false,
+              "tryToLoadObservationData": false,
+              "stationIdWhitelist": [
+                "http://bom.gov.au/waterdata/services/stations/410730",
+                "http://bom.gov.au/waterdata/services/stations/410731",
+                "http://bom.gov.au/waterdata/services/stations/http://bom.gov.au/waterdata/services/stations/410734",
+                "http://bom.gov.au/waterdata/services/stations/http://bom.gov.au/waterdata/services/stations/410705",
+                "http://bom.gov.au/waterdata/services/stations/410761",
+                "http://bom.gov.au/waterdata/services/stations/204034",
+                "http://bom.gov.au/waterdata/services/stations/206014",
+                "http://bom.gov.au/waterdata/services/stations/206018",
+                "http://bom.gov.au/waterdata/services/stations/208007",
+                "http://bom.gov.au/waterdata/services/stations/208009",
+                "http://bom.gov.au/waterdata/services/stations/210006",
+                "http://bom.gov.au/waterdata/services/stations/210011",
+                "http://bom.gov.au/waterdata/services/stations/211008",
+                "http://bom.gov.au/waterdata/services/stations/212209",
+                "http://bom.gov.au/waterdata/services/stations/212260",
+                "http://bom.gov.au/waterdata/services/stations/215002",
+                "http://bom.gov.au/waterdata/services/stations/215004",
+                "http://bom.gov.au/waterdata/services/stations/215207",
+                "http://bom.gov.au/waterdata/services/stations/216002",
+                "http://bom.gov.au/waterdata/services/stations/216004",
+                "http://bom.gov.au/waterdata/services/stations/218001",
+                "http://bom.gov.au/waterdata/services/stations/219001",
+                "http://bom.gov.au/waterdata/services/stations/401009",
+                "http://bom.gov.au/waterdata/services/stations/401012",
+                "http://bom.gov.au/waterdata/services/stations/401015",
+                "http://bom.gov.au/waterdata/services/stations/410057",
+                "http://bom.gov.au/waterdata/services/stations/410061",
+                "http://bom.gov.au/waterdata/services/stations/412028",
+                "http://bom.gov.au/waterdata/services/stations/412050",
+                "http://bom.gov.au/waterdata/services/stations/412066",
+                "http://bom.gov.au/waterdata/services/stations/416003",
+                "http://bom.gov.au/waterdata/services/stations/416008",
+                "http://bom.gov.au/waterdata/services/stations/418005",
+                "http://bom.gov.au/waterdata/services/stations/418014",
+                "http://bom.gov.au/waterdata/services/stations/419005",
+                "http://bom.gov.au/waterdata/services/stations/424002",
+                "http://bom.gov.au/waterdata/services/stations/G0010005",
+                "http://bom.gov.au/waterdata/services/stations/G0050115",
+                "http://bom.gov.au/waterdata/services/stations/G0060005",
+                "http://bom.gov.au/waterdata/services/stations/G8110004",
+                "http://bom.gov.au/waterdata/services/stations/G8110016",
+                "http://bom.gov.au/waterdata/services/stations/G8140001",
+                "http://bom.gov.au/waterdata/services/stations/G8140040",
+                "http://bom.gov.au/waterdata/services/stations/G8140161",
+                "http://bom.gov.au/waterdata/services/stations/G8150018",
+                "http://bom.gov.au/waterdata/services/stations/G8170002",
+                "http://bom.gov.au/waterdata/services/stations/G8190001",
+                "http://bom.gov.au/waterdata/services/stations/G8200045",
+                "http://bom.gov.au/waterdata/services/stations/G8210010",
+                "http://bom.gov.au/waterdata/services/stations/G9030124",
+                "http://bom.gov.au/waterdata/services/stations/G9030250",
+                "http://bom.gov.au/waterdata/services/stations/G9070142",
+                "http://bom.gov.au/waterdata/services/stations/102101A",
+                "http://bom.gov.au/waterdata/services/stations/104001A",
+                "http://bom.gov.au/waterdata/services/stations/105101A",
+                "http://bom.gov.au/waterdata/services/stations/105102A",
+                "http://bom.gov.au/waterdata/services/stations/105105A",
+                "http://bom.gov.au/waterdata/services/stations/107001B",
+                "http://bom.gov.au/waterdata/services/stations/108002A",
+                "http://bom.gov.au/waterdata/services/stations/108003A",
+                "http://bom.gov.au/waterdata/services/stations/112002A",
+                "http://bom.gov.au/waterdata/services/stations/112102A",
+                "http://bom.gov.au/waterdata/services/stations/113004A",
+                "http://bom.gov.au/waterdata/services/stations/116006B",
+                "http://bom.gov.au/waterdata/services/stations/116010A",
+                "http://bom.gov.au/waterdata/services/stations/116011A",
+                "http://bom.gov.au/waterdata/services/stations/116012A",
+                "http://bom.gov.au/waterdata/services/stations/116013A",
+                "http://bom.gov.au/waterdata/services/stations/116014A",
+                "http://bom.gov.au/waterdata/services/stations/116015A",
+                "http://bom.gov.au/waterdata/services/stations/121001A",
+                "http://bom.gov.au/waterdata/services/stations/122004A",
+                "http://bom.gov.au/waterdata/services/stations/126003A",
+                "http://bom.gov.au/waterdata/services/stations/136202D",
+                "http://bom.gov.au/waterdata/services/stations/136203A",
+                "http://bom.gov.au/waterdata/services/stations/136208A",
+                "http://bom.gov.au/waterdata/services/stations/137101A",
+                "http://bom.gov.au/waterdata/services/stations/137201A",
+                "http://bom.gov.au/waterdata/services/stations/138004B",
+                "http://bom.gov.au/waterdata/services/stations/138009A",
+                "http://bom.gov.au/waterdata/services/stations/138010A",
+                "http://bom.gov.au/waterdata/services/stations/138113A",
+                "http://bom.gov.au/waterdata/services/stations/143009A",
+                "http://bom.gov.au/waterdata/services/stations/143110A",
+                "http://bom.gov.au/waterdata/services/stations/143303A",
+                "http://bom.gov.au/waterdata/services/stations/145010A",
+                "http://bom.gov.au/waterdata/services/stations/145011A",
+                "http://bom.gov.au/waterdata/services/stations/145018A",
+                "http://bom.gov.au/waterdata/services/stations/145101D",
+                "http://bom.gov.au/waterdata/services/stations/145107A",
+                "http://bom.gov.au/waterdata/services/stations/146010A",
+                "http://bom.gov.au/waterdata/services/stations/146012A",
+                "http://bom.gov.au/waterdata/services/stations/146014A",
+                "http://bom.gov.au/waterdata/services/stations/146095A",
+                "http://bom.gov.au/waterdata/services/stations/422202B",
+                "http://bom.gov.au/waterdata/services/stations/422306A",
+                "http://bom.gov.au/waterdata/services/stations/422313B",
+                "http://bom.gov.au/waterdata/services/stations/422319B",
+                "http://bom.gov.au/waterdata/services/stations/422321B",
+                "http://bom.gov.au/waterdata/services/stations/422334A",
+                "http://bom.gov.au/waterdata/services/stations/422394A",
+                "http://bom.gov.au/waterdata/services/stations/424201A",
+                "http://bom.gov.au/waterdata/services/stations/912101A",
+                "http://bom.gov.au/waterdata/services/stations/912105A",
+                "http://bom.gov.au/waterdata/services/stations/915011A",
+                "http://bom.gov.au/waterdata/services/stations/917107A",
+                "http://bom.gov.au/waterdata/services/stations/919003A",
+                "http://bom.gov.au/waterdata/services/stations/919201A",
+                "http://bom.gov.au/waterdata/services/stations/919309A",
+                "http://bom.gov.au/waterdata/services/stations/922101B",
+                "http://bom.gov.au/waterdata/services/stations/925001A",
+                "http://bom.gov.au/waterdata/services/stations/926002A",
+                "http://bom.gov.au/waterdata/services/stations/A0020101",
+                "http://bom.gov.au/waterdata/services/stations/A0030501",
+                "http://bom.gov.au/waterdata/services/stations/A2390519",
+                "http://bom.gov.au/waterdata/services/stations/A2390523",
+                "http://bom.gov.au/waterdata/services/stations/A2390531",
+                "http://bom.gov.au/waterdata/services/stations/A5030502",
+                "http://bom.gov.au/waterdata/services/stations/A5040517",
+                "http://bom.gov.au/waterdata/services/stations/A5040523",
+                "http://bom.gov.au/waterdata/services/stations/A5050517",
+                "http://bom.gov.au/waterdata/services/stations/A5130501",
+                "http://bom.gov.au/waterdata/services/stations/302214",
+                "http://bom.gov.au/waterdata/services/stations/304497",
+                "http://bom.gov.au/waterdata/services/stations/304499",
+                "http://bom.gov.au/waterdata/services/stations/305202",
+                "http://bom.gov.au/waterdata/services/stations/307473",
+                "http://bom.gov.au/waterdata/services/stations/308145",
+                "http://bom.gov.au/waterdata/services/stations/308799",
+                "http://bom.gov.au/waterdata/services/stations/312061",
+                "http://bom.gov.au/waterdata/services/stations/314207",
+                "http://bom.gov.au/waterdata/services/stations/314213",
+                "http://bom.gov.au/waterdata/services/stations/315450",
+                "http://bom.gov.au/waterdata/services/stations/318076",
+                "http://bom.gov.au/waterdata/services/stations/221207",
+                "http://bom.gov.au/waterdata/services/stations/221210",
+                "http://bom.gov.au/waterdata/services/stations/222206",
+                "http://bom.gov.au/waterdata/services/stations/222213",
+                "http://bom.gov.au/waterdata/services/stations/223202",
+                "http://bom.gov.au/waterdata/services/stations/224206",
+                "http://bom.gov.au/waterdata/services/stations/224213A",
+                "http://bom.gov.au/waterdata/services/stations/225020A",
+                "http://bom.gov.au/waterdata/services/stations/225110A",
+                "http://bom.gov.au/waterdata/services/stations/225219",
+                "http://bom.gov.au/waterdata/services/stations/226220",
+                "http://bom.gov.au/waterdata/services/stations/226222",
+                "http://bom.gov.au/waterdata/services/stations/226407",
+                "http://bom.gov.au/waterdata/services/stations/227225A",
+                "http://bom.gov.au/waterdata/services/stations/227226",
+                "http://bom.gov.au/waterdata/services/stations/227227",
+                "http://bom.gov.au/waterdata/services/stations/229650A",
+                "http://bom.gov.au/waterdata/services/stations/229661A",
+                "http://bom.gov.au/waterdata/services/stations/230210",
+                "http://bom.gov.au/waterdata/services/stations/231213",
+                "http://bom.gov.au/waterdata/services/stations/235205",
+                "http://bom.gov.au/waterdata/services/stations/236213",
+                "http://bom.gov.au/waterdata/services/stations/238208",
+                "http://bom.gov.au/waterdata/services/stations/401203",
+                "http://bom.gov.au/waterdata/services/stations/401208",
+                "http://bom.gov.au/waterdata/services/stations/401210",
+                "http://bom.gov.au/waterdata/services/stations/401212",
+                "http://bom.gov.au/waterdata/services/stations/401216",
+                "http://bom.gov.au/waterdata/services/stations/401217",
+                "http://bom.gov.au/waterdata/services/stations/402204",
+                "http://bom.gov.au/waterdata/services/stations/402206",
+                "http://bom.gov.au/waterdata/services/stations/402213",
+                "http://bom.gov.au/waterdata/services/stations/402217",
+                "http://bom.gov.au/waterdata/services/stations/403209A",
+                "http://bom.gov.au/waterdata/services/stations/403213A",
+                "http://bom.gov.au/waterdata/services/stations/403214",
+                "http://bom.gov.au/waterdata/services/stations/403217",
+                "http://bom.gov.au/waterdata/services/stations/403221",
+                "http://bom.gov.au/waterdata/services/stations/403222",
+                "http://bom.gov.au/waterdata/services/stations/403226",
+                "http://bom.gov.au/waterdata/services/stations/403232",
+                "http://bom.gov.au/waterdata/services/stations/404207",
+                "http://bom.gov.au/waterdata/services/stations/405205",
+                "http://bom.gov.au/waterdata/services/stations/405209",
+                "http://bom.gov.au/waterdata/services/stations/405215",
+                "http://bom.gov.au/waterdata/services/stations/405217",
+                "http://bom.gov.au/waterdata/services/stations/405218",
+                "http://bom.gov.au/waterdata/services/stations/405219",
+                "http://bom.gov.au/waterdata/services/stations/405226",
+                "http://bom.gov.au/waterdata/services/stations/405227",
+                "http://bom.gov.au/waterdata/services/stations/405238",
+                "http://bom.gov.au/waterdata/services/stations/405245",
+                "http://bom.gov.au/waterdata/services/stations/405248",
+                "http://bom.gov.au/waterdata/services/stations/405251",
+                "http://bom.gov.au/waterdata/services/stations/405263",
+                "http://bom.gov.au/waterdata/services/stations/405264",
+                "http://bom.gov.au/waterdata/services/stations/405274",
+                "http://bom.gov.au/waterdata/services/stations/406208",
+                "http://bom.gov.au/waterdata/services/stations/406213",
+                "http://bom.gov.au/waterdata/services/stations/406214",
+                "http://bom.gov.au/waterdata/services/stations/406224",
+                "http://bom.gov.au/waterdata/services/stations/407214",
+                "http://bom.gov.au/waterdata/services/stations/407215",
+                "http://bom.gov.au/waterdata/services/stations/407220",
+                "http://bom.gov.au/waterdata/services/stations/407230",
+                "http://bom.gov.au/waterdata/services/stations/407253",
+                "http://bom.gov.au/waterdata/services/stations/408200",
+                "http://bom.gov.au/waterdata/services/stations/408202",
+                "http://bom.gov.au/waterdata/services/stations/415207",
+                "http://bom.gov.au/waterdata/services/stations/415226",
+                "http://bom.gov.au/waterdata/services/stations/415237",
+                "http://bom.gov.au/waterdata/services/stations/224214A",
+                "http://bom.gov.au/waterdata/services/stations/604053",
+                "http://bom.gov.au/waterdata/services/stations/606001",
+                "http://bom.gov.au/waterdata/services/stations/606002",
+                "http://bom.gov.au/waterdata/services/stations/606185",
+                "http://bom.gov.au/waterdata/services/stations/607155",
+                "http://bom.gov.au/waterdata/services/stations/608002",
+                "http://bom.gov.au/waterdata/services/stations/610008",
+                "http://bom.gov.au/waterdata/services/stations/613002",
+                "http://bom.gov.au/waterdata/services/stations/613146",
+                "http://bom.gov.au/waterdata/services/stations/614044",
+                "http://bom.gov.au/waterdata/services/stations/616002",
+                "http://bom.gov.au/waterdata/services/stations/616013",
+                "http://bom.gov.au/waterdata/services/stations/616065",
+                "http://bom.gov.au/waterdata/services/stations/803003",
+                "http://bom.gov.au/waterdata/services/stations/804001",
+                "http://bom.gov.au/waterdata/services/stations/809310"
+              ],
+              "procedures": [
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_YearlyMean",
+                  "title": "Annual average",
+                  "defaultDuration": "40y"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_MonthlyMean",
+                  "title": "Monthly average",
+                  "defaultDuration": "3y"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMean",
+                  "title": "Daily average"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMin",
+                  "title": "Daily minimum"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMax",
+                  "title": "Daily maximum"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_HourlyMean",
+                  "title": "Hourly average",
+                  "defaultDuration": "48h"
+                }
+              ],
+              "observableProperties": [
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/parameters/Water Course Level",
+                  "title": "Water Course Level",
+                  "units": "metres"
+                }
+              ]
+            },
+            {
+              "name": "Watercourse Discharge",
+              "url": "http://www.bom.gov.au/waterdata/services",
+              "type": "sos",
+              "proceduresName": "Frequency",
+              "description": "Watercourse discharge, as defined under category 1b of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
+              "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
+              "observablePropertiesName": "Observation type",
+              "startDate": "1980-01-01T00:00:00+10",
+              "filterByProcedures": false,
+              "tryToLoadObservationData": false,
+              "stationIdWhitelist": [
+                "http://bom.gov.au/waterdata/services/stations/410730",
+                "http://bom.gov.au/waterdata/services/stations/410731",
+                "http://bom.gov.au/waterdata/services/stations/http://bom.gov.au/waterdata/services/stations/410734",
+                "http://bom.gov.au/waterdata/services/stations/http://bom.gov.au/waterdata/services/stations/410705",
+                "http://bom.gov.au/waterdata/services/stations/410761",
+                "http://bom.gov.au/waterdata/services/stations/204034",
+                "http://bom.gov.au/waterdata/services/stations/206014",
+                "http://bom.gov.au/waterdata/services/stations/206018",
+                "http://bom.gov.au/waterdata/services/stations/208007",
+                "http://bom.gov.au/waterdata/services/stations/208009",
+                "http://bom.gov.au/waterdata/services/stations/210006",
+                "http://bom.gov.au/waterdata/services/stations/210011",
+                "http://bom.gov.au/waterdata/services/stations/211008",
+                "http://bom.gov.au/waterdata/services/stations/212209",
+                "http://bom.gov.au/waterdata/services/stations/212260",
+                "http://bom.gov.au/waterdata/services/stations/215002",
+                "http://bom.gov.au/waterdata/services/stations/215004",
+                "http://bom.gov.au/waterdata/services/stations/215207",
+                "http://bom.gov.au/waterdata/services/stations/216002",
+                "http://bom.gov.au/waterdata/services/stations/216004",
+                "http://bom.gov.au/waterdata/services/stations/218001",
+                "http://bom.gov.au/waterdata/services/stations/219001",
+                "http://bom.gov.au/waterdata/services/stations/401009",
+                "http://bom.gov.au/waterdata/services/stations/401012",
+                "http://bom.gov.au/waterdata/services/stations/401015",
+                "http://bom.gov.au/waterdata/services/stations/410057",
+                "http://bom.gov.au/waterdata/services/stations/410061",
+                "http://bom.gov.au/waterdata/services/stations/412028",
+                "http://bom.gov.au/waterdata/services/stations/412050",
+                "http://bom.gov.au/waterdata/services/stations/412066",
+                "http://bom.gov.au/waterdata/services/stations/416003",
+                "http://bom.gov.au/waterdata/services/stations/416008",
+                "http://bom.gov.au/waterdata/services/stations/418005",
+                "http://bom.gov.au/waterdata/services/stations/418014",
+                "http://bom.gov.au/waterdata/services/stations/419005",
+                "http://bom.gov.au/waterdata/services/stations/424002",
+                "http://bom.gov.au/waterdata/services/stations/G0010005",
+                "http://bom.gov.au/waterdata/services/stations/G0050115",
+                "http://bom.gov.au/waterdata/services/stations/G0060005",
+                "http://bom.gov.au/waterdata/services/stations/G8110004",
+                "http://bom.gov.au/waterdata/services/stations/G8110016",
+                "http://bom.gov.au/waterdata/services/stations/G8140001",
+                "http://bom.gov.au/waterdata/services/stations/G8140040",
+                "http://bom.gov.au/waterdata/services/stations/G8140161",
+                "http://bom.gov.au/waterdata/services/stations/G8150018",
+                "http://bom.gov.au/waterdata/services/stations/G8170002",
+                "http://bom.gov.au/waterdata/services/stations/G8190001",
+                "http://bom.gov.au/waterdata/services/stations/G8200045",
+                "http://bom.gov.au/waterdata/services/stations/G8210010",
+                "http://bom.gov.au/waterdata/services/stations/G9030124",
+                "http://bom.gov.au/waterdata/services/stations/G9030250",
+                "http://bom.gov.au/waterdata/services/stations/G9070142",
+                "http://bom.gov.au/waterdata/services/stations/102101A",
+                "http://bom.gov.au/waterdata/services/stations/104001A",
+                "http://bom.gov.au/waterdata/services/stations/105101A",
+                "http://bom.gov.au/waterdata/services/stations/105102A",
+                "http://bom.gov.au/waterdata/services/stations/105105A",
+                "http://bom.gov.au/waterdata/services/stations/107001B",
+                "http://bom.gov.au/waterdata/services/stations/108002A",
+                "http://bom.gov.au/waterdata/services/stations/108003A",
+                "http://bom.gov.au/waterdata/services/stations/112002A",
+                "http://bom.gov.au/waterdata/services/stations/112102A",
+                "http://bom.gov.au/waterdata/services/stations/113004A",
+                "http://bom.gov.au/waterdata/services/stations/116006B",
+                "http://bom.gov.au/waterdata/services/stations/116010A",
+                "http://bom.gov.au/waterdata/services/stations/116011A",
+                "http://bom.gov.au/waterdata/services/stations/116012A",
+                "http://bom.gov.au/waterdata/services/stations/116013A",
+                "http://bom.gov.au/waterdata/services/stations/116014A",
+                "http://bom.gov.au/waterdata/services/stations/116015A",
+                "http://bom.gov.au/waterdata/services/stations/121001A",
+                "http://bom.gov.au/waterdata/services/stations/122004A",
+                "http://bom.gov.au/waterdata/services/stations/126003A",
+                "http://bom.gov.au/waterdata/services/stations/136202D",
+                "http://bom.gov.au/waterdata/services/stations/136203A",
+                "http://bom.gov.au/waterdata/services/stations/136208A",
+                "http://bom.gov.au/waterdata/services/stations/137101A",
+                "http://bom.gov.au/waterdata/services/stations/137201A",
+                "http://bom.gov.au/waterdata/services/stations/138004B",
+                "http://bom.gov.au/waterdata/services/stations/138009A",
+                "http://bom.gov.au/waterdata/services/stations/138010A",
+                "http://bom.gov.au/waterdata/services/stations/138113A",
+                "http://bom.gov.au/waterdata/services/stations/143009A",
+                "http://bom.gov.au/waterdata/services/stations/143110A",
+                "http://bom.gov.au/waterdata/services/stations/143303A",
+                "http://bom.gov.au/waterdata/services/stations/145010A",
+                "http://bom.gov.au/waterdata/services/stations/145011A",
+                "http://bom.gov.au/waterdata/services/stations/145018A",
+                "http://bom.gov.au/waterdata/services/stations/145101D",
+                "http://bom.gov.au/waterdata/services/stations/145107A",
+                "http://bom.gov.au/waterdata/services/stations/146010A",
+                "http://bom.gov.au/waterdata/services/stations/146012A",
+                "http://bom.gov.au/waterdata/services/stations/146014A",
+                "http://bom.gov.au/waterdata/services/stations/146095A",
+                "http://bom.gov.au/waterdata/services/stations/422202B",
+                "http://bom.gov.au/waterdata/services/stations/422306A",
+                "http://bom.gov.au/waterdata/services/stations/422313B",
+                "http://bom.gov.au/waterdata/services/stations/422319B",
+                "http://bom.gov.au/waterdata/services/stations/422321B",
+                "http://bom.gov.au/waterdata/services/stations/422334A",
+                "http://bom.gov.au/waterdata/services/stations/422394A",
+                "http://bom.gov.au/waterdata/services/stations/424201A",
+                "http://bom.gov.au/waterdata/services/stations/912101A",
+                "http://bom.gov.au/waterdata/services/stations/912105A",
+                "http://bom.gov.au/waterdata/services/stations/915011A",
+                "http://bom.gov.au/waterdata/services/stations/917107A",
+                "http://bom.gov.au/waterdata/services/stations/919003A",
+                "http://bom.gov.au/waterdata/services/stations/919201A",
+                "http://bom.gov.au/waterdata/services/stations/919309A",
+                "http://bom.gov.au/waterdata/services/stations/922101B",
+                "http://bom.gov.au/waterdata/services/stations/925001A",
+                "http://bom.gov.au/waterdata/services/stations/926002A",
+                "http://bom.gov.au/waterdata/services/stations/A0020101",
+                "http://bom.gov.au/waterdata/services/stations/A0030501",
+                "http://bom.gov.au/waterdata/services/stations/A2390519",
+                "http://bom.gov.au/waterdata/services/stations/A2390523",
+                "http://bom.gov.au/waterdata/services/stations/A2390531",
+                "http://bom.gov.au/waterdata/services/stations/A5030502",
+                "http://bom.gov.au/waterdata/services/stations/A5040517",
+                "http://bom.gov.au/waterdata/services/stations/A5040523",
+                "http://bom.gov.au/waterdata/services/stations/A5050517",
+                "http://bom.gov.au/waterdata/services/stations/A5130501",
+                "http://bom.gov.au/waterdata/services/stations/302214",
+                "http://bom.gov.au/waterdata/services/stations/304497",
+                "http://bom.gov.au/waterdata/services/stations/304499",
+                "http://bom.gov.au/waterdata/services/stations/305202",
+                "http://bom.gov.au/waterdata/services/stations/307473",
+                "http://bom.gov.au/waterdata/services/stations/308145",
+                "http://bom.gov.au/waterdata/services/stations/308799",
+                "http://bom.gov.au/waterdata/services/stations/312061",
+                "http://bom.gov.au/waterdata/services/stations/314207",
+                "http://bom.gov.au/waterdata/services/stations/314213",
+                "http://bom.gov.au/waterdata/services/stations/315450",
+                "http://bom.gov.au/waterdata/services/stations/318076",
+                "http://bom.gov.au/waterdata/services/stations/221207",
+                "http://bom.gov.au/waterdata/services/stations/221210",
+                "http://bom.gov.au/waterdata/services/stations/222206",
+                "http://bom.gov.au/waterdata/services/stations/222213",
+                "http://bom.gov.au/waterdata/services/stations/223202",
+                "http://bom.gov.au/waterdata/services/stations/224206",
+                "http://bom.gov.au/waterdata/services/stations/224213A",
+                "http://bom.gov.au/waterdata/services/stations/225020A",
+                "http://bom.gov.au/waterdata/services/stations/225110A",
+                "http://bom.gov.au/waterdata/services/stations/225219",
+                "http://bom.gov.au/waterdata/services/stations/226220",
+                "http://bom.gov.au/waterdata/services/stations/226222",
+                "http://bom.gov.au/waterdata/services/stations/226407",
+                "http://bom.gov.au/waterdata/services/stations/227225A",
+                "http://bom.gov.au/waterdata/services/stations/227226",
+                "http://bom.gov.au/waterdata/services/stations/227227",
+                "http://bom.gov.au/waterdata/services/stations/229650A",
+                "http://bom.gov.au/waterdata/services/stations/229661A",
+                "http://bom.gov.au/waterdata/services/stations/230210",
+                "http://bom.gov.au/waterdata/services/stations/231213",
+                "http://bom.gov.au/waterdata/services/stations/235205",
+                "http://bom.gov.au/waterdata/services/stations/236213",
+                "http://bom.gov.au/waterdata/services/stations/238208",
+                "http://bom.gov.au/waterdata/services/stations/401203",
+                "http://bom.gov.au/waterdata/services/stations/401208",
+                "http://bom.gov.au/waterdata/services/stations/401210",
+                "http://bom.gov.au/waterdata/services/stations/401212",
+                "http://bom.gov.au/waterdata/services/stations/401216",
+                "http://bom.gov.au/waterdata/services/stations/401217",
+                "http://bom.gov.au/waterdata/services/stations/402204",
+                "http://bom.gov.au/waterdata/services/stations/402206",
+                "http://bom.gov.au/waterdata/services/stations/402213",
+                "http://bom.gov.au/waterdata/services/stations/402217",
+                "http://bom.gov.au/waterdata/services/stations/403209A",
+                "http://bom.gov.au/waterdata/services/stations/403213A",
+                "http://bom.gov.au/waterdata/services/stations/403214",
+                "http://bom.gov.au/waterdata/services/stations/403217",
+                "http://bom.gov.au/waterdata/services/stations/403221",
+                "http://bom.gov.au/waterdata/services/stations/403222",
+                "http://bom.gov.au/waterdata/services/stations/403226",
+                "http://bom.gov.au/waterdata/services/stations/403232",
+                "http://bom.gov.au/waterdata/services/stations/404207",
+                "http://bom.gov.au/waterdata/services/stations/405205",
+                "http://bom.gov.au/waterdata/services/stations/405209",
+                "http://bom.gov.au/waterdata/services/stations/405215",
+                "http://bom.gov.au/waterdata/services/stations/405217",
+                "http://bom.gov.au/waterdata/services/stations/405218",
+                "http://bom.gov.au/waterdata/services/stations/405219",
+                "http://bom.gov.au/waterdata/services/stations/405226",
+                "http://bom.gov.au/waterdata/services/stations/405227",
+                "http://bom.gov.au/waterdata/services/stations/405238",
+                "http://bom.gov.au/waterdata/services/stations/405245",
+                "http://bom.gov.au/waterdata/services/stations/405248",
+                "http://bom.gov.au/waterdata/services/stations/405251",
+                "http://bom.gov.au/waterdata/services/stations/405263",
+                "http://bom.gov.au/waterdata/services/stations/405264",
+                "http://bom.gov.au/waterdata/services/stations/405274",
+                "http://bom.gov.au/waterdata/services/stations/406208",
+                "http://bom.gov.au/waterdata/services/stations/406213",
+                "http://bom.gov.au/waterdata/services/stations/406214",
+                "http://bom.gov.au/waterdata/services/stations/406224",
+                "http://bom.gov.au/waterdata/services/stations/407214",
+                "http://bom.gov.au/waterdata/services/stations/407215",
+                "http://bom.gov.au/waterdata/services/stations/407220",
+                "http://bom.gov.au/waterdata/services/stations/407230",
+                "http://bom.gov.au/waterdata/services/stations/407253",
+                "http://bom.gov.au/waterdata/services/stations/408200",
+                "http://bom.gov.au/waterdata/services/stations/408202",
+                "http://bom.gov.au/waterdata/services/stations/415207",
+                "http://bom.gov.au/waterdata/services/stations/415226",
+                "http://bom.gov.au/waterdata/services/stations/415237",
+                "http://bom.gov.au/waterdata/services/stations/224214A",
+                "http://bom.gov.au/waterdata/services/stations/604053",
+                "http://bom.gov.au/waterdata/services/stations/606001",
+                "http://bom.gov.au/waterdata/services/stations/606002",
+                "http://bom.gov.au/waterdata/services/stations/606185",
+                "http://bom.gov.au/waterdata/services/stations/607155",
+                "http://bom.gov.au/waterdata/services/stations/608002",
+                "http://bom.gov.au/waterdata/services/stations/610008",
+                "http://bom.gov.au/waterdata/services/stations/613002",
+                "http://bom.gov.au/waterdata/services/stations/613146",
+                "http://bom.gov.au/waterdata/services/stations/614044",
+                "http://bom.gov.au/waterdata/services/stations/616002",
+                "http://bom.gov.au/waterdata/services/stations/616013",
+                "http://bom.gov.au/waterdata/services/stations/616065",
+                "http://bom.gov.au/waterdata/services/stations/803003",
+                "http://bom.gov.au/waterdata/services/stations/804001",
+                "http://bom.gov.au/waterdata/services/stations/809310"
+              ],
+              "procedures": [
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_YearlyMean",
+                  "title": "Annual average",
+                  "defaultDuration": "40y"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_MonthlyMean",
+                  "title": "Monthly average",
+                  "defaultDuration": "3y"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMean",
+                  "title": "Daily average"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMin",
+                  "title": "Daily minimum"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMax",
+                  "title": "Daily maximum"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_HourlyMean",
+                  "title": "Hourly average",
+                  "defaultDuration": "48h"
+                }
+              ],
+              "observableProperties": [
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/parameters/Water Course Discharge",
+                  "title": "Water Course Discharge",
+                  "units": "cubic m/s"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "All Hydrologic Stations",
+          "type": "group",
+          "items": [
+            {
+              "name": "Watercourse Levels",
+              "url": "http://www.bom.gov.au/waterdata/services",
+              "type": "sos",
+              "proceduresName": "Frequency",
+              "description": "Watercourse levels, as defined under category 1a of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
+              "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
+              "observablePropertiesName": "Observation type",
+              "startDate": "1980-01-01T00:00:00+10",
+              "filterByProcedures": false,
+              "procedures": [
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_YearlyMean",
+                  "title": "Annual average",
+                  "defaultDuration": "40y"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_MonthlyMean",
+                  "title": "Monthly average",
+                  "defaultDuration": "3y"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMean",
+                  "title": "Daily average"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMin",
+                  "title": "Daily minimum"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMax",
+                  "title": "Daily maximum"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_HourlyMean",
+                  "title": "Hourly average",
+                  "defaultDuration": "48h"
+                }
+              ],
+              "observableProperties": [
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/parameters/Water Course Level",
+                  "title": "Water Course Level",
+                  "units": "metres"
+                }
+              ]
+            },
+            {
+              "name": "Watercourse Discharge",
+              "url": "http://www.bom.gov.au/waterdata/services",
+              "type": "sos",
+              "proceduresName": "Frequency",
+              "description": "Watercourse discharge, as defined under category 1b of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
+              "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
+              "observablePropertiesName": "Observation type",
+              "startDate": "1980-01-01T00:00:00+10",
+              "filterByProcedures": false,
+              "procedures": [
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_YearlyMean",
+                  "title": "Annual average",
+                  "defaultDuration": "40y"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_MonthlyMean",
+                  "title": "Monthly average",
+                  "defaultDuration": "3y"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMean",
+                  "title": "Daily average"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMin",
+                  "title": "Daily minimum"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMax",
+                  "title": "Daily maximum"
+                },
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_HourlyMean",
+                  "title": "Hourly average",
+                  "defaultDuration": "48h"
+                }
+              ],
+              "observableProperties": [
+                {
+                  "identifier": "http://bom.gov.au/waterdata/services/parameters/Water Course Discharge",
+                  "title": "Water Course Discharge",
+                  "units": "cubic m/s"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Satellite Imagery - data renamed",
+      "type": "group",
+      "items": [
+        {
+          "name": "Satellite Images",
+          "type": "group",
+          "items": [
+            {
+              "name": "Satellite Images 10m pixels",
+              "type": "group",
+              "items": [
+                {
+                  "name": "Hill shadows removed",
+                  "type": "group",
+                  "items": [
                     {
-                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_YearlyMean",
-                        "title": "Annual average",
-                        "defaultDuration": "40y"
+                      "id": "351222a9",
+                      "name": "Sentinel 2A satellite images",
+                      "layers": "s2a_nrt_granule_nbar_t",
+                      "url": "https://ows.services.dea.ga.gov.au",
+                      "type": "wms",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "s2a_nrt_granule_nbar_t"
                     },
                     {
-                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_MonthlyMean",
-                        "title": "Monthly average",
-                        "defaultDuration": "3y"
-                    },
-                    {
-                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMean",
-                        "title": "Daily average"
-                    },
-                    {
-                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMin",
-                        "title": "Daily minimum"
-                    },
-                    {
-                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMax",
-                        "title": "Daily maximum"
-                    },
-                    {
-                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_HourlyMean",
-                        "title": "Hourly average",
-                        "defaultDuration": "48h"
+                      "id": "afc9f4b0",
+                      "name": "Sentinel 2B satellite images",
+                      "layers": "s2b_nrt_granule_nbar_t",
+                      "url": "https://ows.services.dea.ga.gov.au",
+                      "type": "wms",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "s2b_nrt_granule_nbar_t"
                     }
-                ],
-                "observableProperties": [
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Satellite Images 25m pixels - daily",
+              "type": "group",
+              "items": [
+                {
+                  "name": "Hill shadows removed",
+                  "type": "group",
+                  "items": [
                     {
-                        "identifier": "http://bom.gov.au/waterdata/services/parameters/Water Course Level",
-                        "title": "Water Course Level",
-                        "units": "metres"
+                      "id": "78492595",
+                      "name": "Landsat 5 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat5_nbart_daily",
+                      "linkedWcsUrl": "https://gsky.nci.org.au/ows/dea",
+                      "linkedWcsCoverage": "landsat5_nbart_daily",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1,
+                      "shareKeys": [
+                        "eb9339e1"
+                      ]
+                    },
+                    {
+                      "id": "ced51b59",
+                      "name": "Landsat 7 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat7_nbart_daily",
+                      "linkedWcsUrl": "https://gsky.nci.org.au/ows/dea",
+                      "linkedWcsCoverage": "landsat7_nbart_daily",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1,
+                      "shareKeys": [
+                        "7116f503"
+                      ]
+                    },
+                    {
+                      "id": "5d75bf2a",
+                      "name": "Landsat 8 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat8_nbart_daily",
+                      "linkedWcsUrl": "https://gsky.nci.org.au/ows/dea",
+                      "linkedWcsCoverage": "landsat8_nbart_daily",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1,
+                      "shareKeys": [
+                        "0de1b493"
+                      ]
+                    },
+                    {
+                      "id": "0d7e458a",
+                      "name": "Landsat 5 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat5_nbar_daily",
+                      "linkedWcsUrl": "https://gsky.nci.org.au/ows/dea",
+                      "linkedWcsCoverage": "landsat5_nbar_daily",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1,
+                      "shareKeys": [
+                        "eb9339e1"
+                      ]
+                    },
+                    {
+                      "id": "dc43b31b",
+                      "name": "Landsat 7 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat7_nbar_daily",
+                      "linkedWcsUrl": "https://gsky.nci.org.au/ows/dea",
+                      "linkedWcsCoverage": "landsat7_nbar_daily",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1,
+                      "shareKeys": [
+                        "7116f503"
+                      ]
+                    },
+                    {
+                      "id": "848e68ca",
+                      "name": "Landsat 8 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat8_nbar_daily",
+                      "linkedWcsUrl": "https://gsky.nci.org.au/ows/dea",
+                      "linkedWcsCoverage": "landsat8_nbar_daily",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1,
+                      "shareKeys": [
+                        "0de1b493"
+                      ]
                     }
-                ]
-              },
-              {
-                "name": "Watercourse Discharge",
-                "url": "http://www.bom.gov.au/waterdata/services",
-                "type": "sos",
-                "proceduresName": "Frequency",
-                "description": "Watercourse discharge, as defined under category 1b of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
-                "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
-                "observablePropertiesName": "Observation type",
-                "startDate": "1980-01-01T00:00:00+10",
-                "filterByProcedures": false,
-                "tryToLoadObservationData": false,
-                "stationIdWhitelist": ["http://bom.gov.au/waterdata/services/stations/410730","http://bom.gov.au/waterdata/services/stations/410731","http://bom.gov.au/waterdata/services/stations/http://bom.gov.au/waterdata/services/stations/410734","http://bom.gov.au/waterdata/services/stations/http://bom.gov.au/waterdata/services/stations/410705","http://bom.gov.au/waterdata/services/stations/410761","http://bom.gov.au/waterdata/services/stations/204034","http://bom.gov.au/waterdata/services/stations/206014","http://bom.gov.au/waterdata/services/stations/206018","http://bom.gov.au/waterdata/services/stations/208007","http://bom.gov.au/waterdata/services/stations/208009","http://bom.gov.au/waterdata/services/stations/210006","http://bom.gov.au/waterdata/services/stations/210011","http://bom.gov.au/waterdata/services/stations/211008","http://bom.gov.au/waterdata/services/stations/212209","http://bom.gov.au/waterdata/services/stations/212260","http://bom.gov.au/waterdata/services/stations/215002","http://bom.gov.au/waterdata/services/stations/215004","http://bom.gov.au/waterdata/services/stations/215207","http://bom.gov.au/waterdata/services/stations/216002","http://bom.gov.au/waterdata/services/stations/216004","http://bom.gov.au/waterdata/services/stations/218001","http://bom.gov.au/waterdata/services/stations/219001","http://bom.gov.au/waterdata/services/stations/401009","http://bom.gov.au/waterdata/services/stations/401012","http://bom.gov.au/waterdata/services/stations/401015","http://bom.gov.au/waterdata/services/stations/410057","http://bom.gov.au/waterdata/services/stations/410061","http://bom.gov.au/waterdata/services/stations/412028","http://bom.gov.au/waterdata/services/stations/412050","http://bom.gov.au/waterdata/services/stations/412066","http://bom.gov.au/waterdata/services/stations/416003","http://bom.gov.au/waterdata/services/stations/416008","http://bom.gov.au/waterdata/services/stations/418005","http://bom.gov.au/waterdata/services/stations/418014","http://bom.gov.au/waterdata/services/stations/419005","http://bom.gov.au/waterdata/services/stations/424002","http://bom.gov.au/waterdata/services/stations/G0010005","http://bom.gov.au/waterdata/services/stations/G0050115","http://bom.gov.au/waterdata/services/stations/G0060005","http://bom.gov.au/waterdata/services/stations/G8110004","http://bom.gov.au/waterdata/services/stations/G8110016","http://bom.gov.au/waterdata/services/stations/G8140001","http://bom.gov.au/waterdata/services/stations/G8140040","http://bom.gov.au/waterdata/services/stations/G8140161","http://bom.gov.au/waterdata/services/stations/G8150018","http://bom.gov.au/waterdata/services/stations/G8170002","http://bom.gov.au/waterdata/services/stations/G8190001","http://bom.gov.au/waterdata/services/stations/G8200045","http://bom.gov.au/waterdata/services/stations/G8210010","http://bom.gov.au/waterdata/services/stations/G9030124","http://bom.gov.au/waterdata/services/stations/G9030250","http://bom.gov.au/waterdata/services/stations/G9070142","http://bom.gov.au/waterdata/services/stations/102101A","http://bom.gov.au/waterdata/services/stations/104001A","http://bom.gov.au/waterdata/services/stations/105101A","http://bom.gov.au/waterdata/services/stations/105102A","http://bom.gov.au/waterdata/services/stations/105105A","http://bom.gov.au/waterdata/services/stations/107001B","http://bom.gov.au/waterdata/services/stations/108002A","http://bom.gov.au/waterdata/services/stations/108003A","http://bom.gov.au/waterdata/services/stations/112002A","http://bom.gov.au/waterdata/services/stations/112102A","http://bom.gov.au/waterdata/services/stations/113004A","http://bom.gov.au/waterdata/services/stations/116006B","http://bom.gov.au/waterdata/services/stations/116010A","http://bom.gov.au/waterdata/services/stations/116011A","http://bom.gov.au/waterdata/services/stations/116012A","http://bom.gov.au/waterdata/services/stations/116013A","http://bom.gov.au/waterdata/services/stations/116014A","http://bom.gov.au/waterdata/services/stations/116015A","http://bom.gov.au/waterdata/services/stations/121001A","http://bom.gov.au/waterdata/services/stations/122004A","http://bom.gov.au/waterdata/services/stations/126003A","http://bom.gov.au/waterdata/services/stations/136202D","http://bom.gov.au/waterdata/services/stations/136203A","http://bom.gov.au/waterdata/services/stations/136208A","http://bom.gov.au/waterdata/services/stations/137101A","http://bom.gov.au/waterdata/services/stations/137201A","http://bom.gov.au/waterdata/services/stations/138004B","http://bom.gov.au/waterdata/services/stations/138009A","http://bom.gov.au/waterdata/services/stations/138010A","http://bom.gov.au/waterdata/services/stations/138113A","http://bom.gov.au/waterdata/services/stations/143009A","http://bom.gov.au/waterdata/services/stations/143110A","http://bom.gov.au/waterdata/services/stations/143303A","http://bom.gov.au/waterdata/services/stations/145010A","http://bom.gov.au/waterdata/services/stations/145011A","http://bom.gov.au/waterdata/services/stations/145018A","http://bom.gov.au/waterdata/services/stations/145101D","http://bom.gov.au/waterdata/services/stations/145107A","http://bom.gov.au/waterdata/services/stations/146010A","http://bom.gov.au/waterdata/services/stations/146012A","http://bom.gov.au/waterdata/services/stations/146014A","http://bom.gov.au/waterdata/services/stations/146095A","http://bom.gov.au/waterdata/services/stations/422202B","http://bom.gov.au/waterdata/services/stations/422306A","http://bom.gov.au/waterdata/services/stations/422313B","http://bom.gov.au/waterdata/services/stations/422319B","http://bom.gov.au/waterdata/services/stations/422321B","http://bom.gov.au/waterdata/services/stations/422334A","http://bom.gov.au/waterdata/services/stations/422394A","http://bom.gov.au/waterdata/services/stations/424201A","http://bom.gov.au/waterdata/services/stations/912101A","http://bom.gov.au/waterdata/services/stations/912105A","http://bom.gov.au/waterdata/services/stations/915011A","http://bom.gov.au/waterdata/services/stations/917107A","http://bom.gov.au/waterdata/services/stations/919003A","http://bom.gov.au/waterdata/services/stations/919201A","http://bom.gov.au/waterdata/services/stations/919309A","http://bom.gov.au/waterdata/services/stations/922101B","http://bom.gov.au/waterdata/services/stations/925001A","http://bom.gov.au/waterdata/services/stations/926002A","http://bom.gov.au/waterdata/services/stations/A0020101","http://bom.gov.au/waterdata/services/stations/A0030501","http://bom.gov.au/waterdata/services/stations/A2390519","http://bom.gov.au/waterdata/services/stations/A2390523","http://bom.gov.au/waterdata/services/stations/A2390531","http://bom.gov.au/waterdata/services/stations/A5030502","http://bom.gov.au/waterdata/services/stations/A5040517","http://bom.gov.au/waterdata/services/stations/A5040523","http://bom.gov.au/waterdata/services/stations/A5050517","http://bom.gov.au/waterdata/services/stations/A5130501","http://bom.gov.au/waterdata/services/stations/302214","http://bom.gov.au/waterdata/services/stations/304497","http://bom.gov.au/waterdata/services/stations/304499","http://bom.gov.au/waterdata/services/stations/305202","http://bom.gov.au/waterdata/services/stations/307473","http://bom.gov.au/waterdata/services/stations/308145","http://bom.gov.au/waterdata/services/stations/308799","http://bom.gov.au/waterdata/services/stations/312061","http://bom.gov.au/waterdata/services/stations/314207","http://bom.gov.au/waterdata/services/stations/314213","http://bom.gov.au/waterdata/services/stations/315450","http://bom.gov.au/waterdata/services/stations/318076","http://bom.gov.au/waterdata/services/stations/221207","http://bom.gov.au/waterdata/services/stations/221210","http://bom.gov.au/waterdata/services/stations/222206","http://bom.gov.au/waterdata/services/stations/222213","http://bom.gov.au/waterdata/services/stations/223202","http://bom.gov.au/waterdata/services/stations/224206","http://bom.gov.au/waterdata/services/stations/224213A","http://bom.gov.au/waterdata/services/stations/225020A","http://bom.gov.au/waterdata/services/stations/225110A","http://bom.gov.au/waterdata/services/stations/225219","http://bom.gov.au/waterdata/services/stations/226220","http://bom.gov.au/waterdata/services/stations/226222","http://bom.gov.au/waterdata/services/stations/226407","http://bom.gov.au/waterdata/services/stations/227225A","http://bom.gov.au/waterdata/services/stations/227226","http://bom.gov.au/waterdata/services/stations/227227","http://bom.gov.au/waterdata/services/stations/229650A","http://bom.gov.au/waterdata/services/stations/229661A","http://bom.gov.au/waterdata/services/stations/230210","http://bom.gov.au/waterdata/services/stations/231213","http://bom.gov.au/waterdata/services/stations/235205","http://bom.gov.au/waterdata/services/stations/236213","http://bom.gov.au/waterdata/services/stations/238208","http://bom.gov.au/waterdata/services/stations/401203","http://bom.gov.au/waterdata/services/stations/401208","http://bom.gov.au/waterdata/services/stations/401210","http://bom.gov.au/waterdata/services/stations/401212","http://bom.gov.au/waterdata/services/stations/401216","http://bom.gov.au/waterdata/services/stations/401217","http://bom.gov.au/waterdata/services/stations/402204","http://bom.gov.au/waterdata/services/stations/402206","http://bom.gov.au/waterdata/services/stations/402213","http://bom.gov.au/waterdata/services/stations/402217","http://bom.gov.au/waterdata/services/stations/403209A","http://bom.gov.au/waterdata/services/stations/403213A","http://bom.gov.au/waterdata/services/stations/403214","http://bom.gov.au/waterdata/services/stations/403217","http://bom.gov.au/waterdata/services/stations/403221","http://bom.gov.au/waterdata/services/stations/403222","http://bom.gov.au/waterdata/services/stations/403226","http://bom.gov.au/waterdata/services/stations/403232","http://bom.gov.au/waterdata/services/stations/404207","http://bom.gov.au/waterdata/services/stations/405205","http://bom.gov.au/waterdata/services/stations/405209","http://bom.gov.au/waterdata/services/stations/405215","http://bom.gov.au/waterdata/services/stations/405217","http://bom.gov.au/waterdata/services/stations/405218","http://bom.gov.au/waterdata/services/stations/405219","http://bom.gov.au/waterdata/services/stations/405226","http://bom.gov.au/waterdata/services/stations/405227","http://bom.gov.au/waterdata/services/stations/405238","http://bom.gov.au/waterdata/services/stations/405245","http://bom.gov.au/waterdata/services/stations/405248","http://bom.gov.au/waterdata/services/stations/405251","http://bom.gov.au/waterdata/services/stations/405263","http://bom.gov.au/waterdata/services/stations/405264","http://bom.gov.au/waterdata/services/stations/405274","http://bom.gov.au/waterdata/services/stations/406208","http://bom.gov.au/waterdata/services/stations/406213","http://bom.gov.au/waterdata/services/stations/406214","http://bom.gov.au/waterdata/services/stations/406224","http://bom.gov.au/waterdata/services/stations/407214","http://bom.gov.au/waterdata/services/stations/407215","http://bom.gov.au/waterdata/services/stations/407220","http://bom.gov.au/waterdata/services/stations/407230","http://bom.gov.au/waterdata/services/stations/407253","http://bom.gov.au/waterdata/services/stations/408200","http://bom.gov.au/waterdata/services/stations/408202","http://bom.gov.au/waterdata/services/stations/415207","http://bom.gov.au/waterdata/services/stations/415226","http://bom.gov.au/waterdata/services/stations/415237","http://bom.gov.au/waterdata/services/stations/224214A","http://bom.gov.au/waterdata/services/stations/604053","http://bom.gov.au/waterdata/services/stations/606001","http://bom.gov.au/waterdata/services/stations/606002","http://bom.gov.au/waterdata/services/stations/606185","http://bom.gov.au/waterdata/services/stations/607155","http://bom.gov.au/waterdata/services/stations/608002","http://bom.gov.au/waterdata/services/stations/610008","http://bom.gov.au/waterdata/services/stations/613002","http://bom.gov.au/waterdata/services/stations/613146","http://bom.gov.au/waterdata/services/stations/614044","http://bom.gov.au/waterdata/services/stations/616002","http://bom.gov.au/waterdata/services/stations/616013","http://bom.gov.au/waterdata/services/stations/616065","http://bom.gov.au/waterdata/services/stations/803003","http://bom.gov.au/waterdata/services/stations/804001","http://bom.gov.au/waterdata/services/stations/809310"],
-                "procedures": [
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Satellite Images 25m pixels - 16 day composite",
+              "type": "group",
+              "items": [
+                {
+                  "name": "Hill shadows removed",
+                  "type": "group",
+                  "items": [
                     {
-                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_YearlyMean",
-                        "title": "Annual average",
-                        "defaultDuration": "40y"
+                      "id": "2436cf84",
+                      "name": "Landsat 8 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat8_nbart_16day",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1
                     },
                     {
-                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_MonthlyMean",
-                        "title": "Monthly average",
-                        "defaultDuration": "3y"
+                      "id": "2f1e3d2d",
+                      "name": "Landsat 7 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat7_nbart_16day",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1
                     },
                     {
-                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMean",
-                        "title": "Daily average"
+                      "id": "5cc3b401",
+                      "name": "Landsat 5 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat5_nbart_16day",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1
                     },
                     {
-                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMin",
-                        "title": "Daily minimum"
+                      "id": "2cade3f2",
+                      "name": "Landsat 8 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat8_nbar_16day",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1
                     },
                     {
-                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMax",
-                        "title": "Daily maximum"
+                      "id": "5bf4ce52",
+                      "name": "Landsat 7 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat7_nbar_16day",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1
                     },
                     {
-                        "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_HourlyMean",
-                        "title": "Hourly average",
-                        "defaultDuration": "48h"
+                      "id": "be67777f",
+                      "name": "Landsat 5 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat5_nbar_16day",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1
                     }
-                ],
-                "observableProperties": [
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Satellite Images 25m pixels",
+              "type": "group",
+              "items": [
+                {
+                  "name": "Yearly average image",
+                  "type": "group",
+                  "items": [
                     {
-                        "identifier": "http://bom.gov.au/waterdata/services/parameters/Water Course Discharge",
-                        "title": "Water Course Discharge",
-                        "units": "cubic m/s"
+                      "id": "bd503c94",
+                      "name": "Landsat 5 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat5_geomedian",
+                      "linkedWcsUrl": "https://gsky.nci.org.au/ows/dea",
+                      "linkedWcsCoverage": "landsat5_geomedian",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1,
+                      "shareKeys": [
+                        "eb9339e1"
+                      ]
+                    },
+                    {
+                      "id": "a6ab32a4",
+                      "name": "Landsat 7 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat7_geomedian",
+                      "linkedWcsUrl": "https://gsky.nci.org.au/ows/dea",
+                      "linkedWcsCoverage": "landsat7_geomedian",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1,
+                      "shareKeys": [
+                        "7116f503"
+                      ]
+                    },
+                    {
+                      "id": "638a3afa",
+                      "name": "Landsat 8 satellite images",
+                      "url": "https://gsky.nci.org.au/ows/dea",
+                      "layers": "landsat8_geomedian",
+                      "linkedWcsUrl": "https://gsky.nci.org.au/ows/dea",
+                      "linkedWcsCoverage": "landsat8_geomedian",
+                      "type": "wms",
+                      "styles": "tc",
+                      "ignoreUnknownTileErrors": true,
+                      "useOwnClock": true,
+                      "opacity": 1,
+                      "shareKeys": [
+                        "0de1b493"
+                      ]
                     }
-                ]
-              }
-            ]
-          }, 
-          {
-            "name": "All Hydrologic Stations",
-            "type": "group",
-            "items": [
-              {
-                "name": "Watercourse Levels",
-                "url": "http://www.bom.gov.au/waterdata/services",
-                "type": "sos",
-                "proceduresName": "Frequency",
-                "description": "Watercourse levels, as defined under category 1a of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
-                "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
-                "observablePropertiesName": "Observation type",
-                "startDate": "1980-01-01T00:00:00+10",
-                "filterByProcedures": false,
-                "procedures": [
-                  {
-                    "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_YearlyMean",
-                    "title": "Annual average",
-                    "defaultDuration": "40y"
-                  },
-                  {
-                    "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_MonthlyMean",
-                    "title": "Monthly average",
-                    "defaultDuration": "3y"
-                  },
-                  {
-                    "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMean",
-                    "title": "Daily average"
-                  },
-                  {
-                    "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMin",
-                    "title": "Daily minimum"
-                  },
-                  {
-                    "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_DailyMax",
-                    "title": "Daily maximum"
-                  },
-                  {
-                    "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat3_C_B_1_HourlyMean",
-                    "title": "Hourly average",
-                    "defaultDuration": "48h"
-                  }
-                ],
-                "observableProperties": [
-                  {
-                    "identifier": "http://bom.gov.au/waterdata/services/parameters/Water Course Level",
-                    "title": "Water Course Level",
-                    "units": "metres"
-                  }
-                ]
-              },
-              {
-                "name": "Watercourse Discharge",
-                "url": "http://www.bom.gov.au/waterdata/services",
-                "type": "sos",
-                "proceduresName": "Frequency",
-                "description": "Watercourse discharge, as defined under category 1b of the Water Regulations 2008 – refer to [Definitions – Subcategories of Water Information](http://www.bom.gov.au/water/regulations/subCategoriesWaterAuxNav.shtml#surfWater). This data is shown as provided to the Bureau of Meteorology by data owner organisations and is subject to their terms and conditions of use. Please refer to Copyright on the [Water Data Online](http://www.bom.gov.au/waterdata/) website, and [Disclaimer](http://www.bom.gov.au/other/disclaimer.shtml) statements relating to the use of Bureau of Meteorology material.",
-                "featureInfoTemplate": "# {{name}}\n\n|||\n|-------|-------|\n|Station Name|{{name}}|\n|SOS2 Feature Type|{{type}}|\n|SOS2 ID|{{id}}|\n|Latitude|{{lat}}|\n|Longitude|{{lon}}|\n\n{{chart}}",
-                "observablePropertiesName": "Observation type",
-                "startDate": "1980-01-01T00:00:00+10",
-                "filterByProcedures": false,
-                "procedures": [
-                  {
-                    "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_YearlyMean",
-                    "title": "Annual average",
-                    "defaultDuration": "40y"
-                  },
-                  {
-                    "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_MonthlyMean",
-                    "title": "Monthly average",
-                    "defaultDuration": "3y"
-                  },
-                  {
-                    "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMean",
-                    "title": "Daily average"
-                  },
-                  {
-                    "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMin",
-                    "title": "Daily minimum"
-                  },
-                  {
-                    "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_DailyMax",
-                    "title": "Daily maximum"
-                  },
-                  {
-                    "identifier": "http://bom.gov.au/waterdata/services/tstypes/Pat4_C_B_1_HourlyMean",
-                    "title": "Hourly average",
-                    "defaultDuration": "48h"
-                  }
-                ],
-                "observableProperties": [
-                  {
-                    "identifier": "http://bom.gov.au/waterdata/services/parameters/Water Course Discharge",
-                    "title": "Water Course Discharge",
-                    "units": "cubic m/s"
-                  }
-                ]
-              }
-            ]
-          }
+                  ]
+                },
+                {
+                  "id": "0711af5e",
+                  "name": "Barest Earth",
+                  "url": "https://ows.services.dea.ga.gov.au/",
+                  "layers": "ls8_barest_earth_mosaic",
+                  "type": "wms",
+                  "ignoreUnknownTileErrors": true,
+                  "opacity": 1,
+                  "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                  "linkedWcsCoverage": "ls8_barest_earth_mosaic"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "items": [
+            {
+              "name": "Coastal",
+              "type": "group",
+              "description": "<% include includes/DigitalEarthAustralia-description %>",
+              "items": [
+                {
+                  "name": "High tide satellite image",
+                  "type": "group",
+                  "items": [
+                    {
+                      "id": "8d4043e1",
+                      "name": "Imagery",
+                      "type": "wms",
+                      "layers": "high_tide_composite",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "high_tide_composite",
+                      "useOwnClock": true,
+                      "opacity": 1
+                    },
+                    {
+                      "name": "Polygons for access to data",
+                      "url": "https://data.dea.ga.gov.au/LHTC_Tides/high_composite_20.geojson",
+                      "type": "geojson",
+                      "featureInfoTemplate": {
+                        "template": "The tidal range at this location is {{modelLow}} to {{modelHigh}} meters relative to mean sea level (MSL). <p/> The high tide composite at this location was generated from imagery acquired in the top 20% of the observed tidal range which is between {{LIT}} and {{HIT}} meters relative to MSL, during the period of time of {{date_range}}. <p/> <figure> <img style='width: 100%' src='http://dea-public-data.s3-ap-southeast-2.amazonaws.com/LHTC_Tides/COMPOSITE_HIGH_{{ID}}_{{lon}}_{{lat}}_{{start_date}}_{{end_date}}_PER_20.jpg'/> <figcaption>Observations used to generate the composite (black dots), in relation to the full modelled tidal range (blue) and complete archive (white dots) at this location</figcaption> </figure> <p/> Download the GeoTIFF for this polygon here: <p/> <a href='http://dapds00.nci.org.au/thredds/fileServer/fk4/datacube/002/HLTC/HLTC_2_0/geotiff/COMPOSITE_HIGH_{{ID}}_{{lon}}_{{lat}}_{{start_date}}_{{end_date}}_PER_20.tif'>COMPOSITE_HIGH_{{ID}}_{{lon}}_{{lat}}_{{start_date}}_{{end_date}}_PER_20.tif</a>"
+                      },
+                      "info": [
+                        {
+                          "name": "Abstract",
+                          "content": "High Tide and Low Tide Composites 2.0.0 <p/> The High and Low Tide Composites product is composed of two surface reflectance composite mosaics of Landsat TM and ETM+ (Landsat 5 and Landsat 7 respectively) and OLI (Landsat 8) surface reflectance data (Li et al., 2012). These products have been produced using Digital Earth Australia (DEA). The two mosaics allow cloud free and noise reduced visualisation of the shallow water and inter-tidal coastal regions of Australia, as observed at high and low tide respectively (Sagar et al. 2018). <p/> The composites are generated utilising the geomedian approach of Roberts et al (2017) to ensure a valid surface reflectance spectra suitable for uses such as habitat mapping. The time range used for composite generation in each polygon of the mosaic is tailored to ensure dynamic coastal features are captured whilst still allowing a clean and cloud free composite to be generated. The concepts of the Observed Tidal Range (OTR), and Highest and Lowest Observed Tide (HOT, LOT) are discussed and described fully in Sagar et al. (2017) and the product description for the ITEM v 1.0 product (Geoscience Australia, 2016)."
+                        },
+                        {
+                          "name": "Overview",
+                          "content": "Inter-tidal zones are difficult regions to characterise due to the dynamic nature of the tide. They are highly changeable environments, subject to forcings from the land, sea and atmosphere and yet they form critical habitats for a wide range of organisms from birds to fish and sea grass. By harnessing the long archive of satellite imagery over Australia's coastal zones in the DEA and pairing the images with regional tidal modelling, the archive can be sorted by tide height rather than date, enabling the inter-tidal zone to be viewed at any stage of the tide regime. <p/> The High Low Tide Composites (HLTC_25) product is composed of two mosaics, distinguished by tide height, representing a composite image of the synthetic geomedian surface reflectance from Landsats 5 TM, Landsat 7 ETM+ and Landsat 8 OLI NBAR data (Li et al., 2012; Roberts et al., 2017). Oregon State Tidal Prediction (OTPS) software (Egbert and Erofeeva, 2002, 2010) was used to generate tide heights, relative to mean sea level, for the Australian continental coastline, split into 306 distinct tidal regions. These time and date stamped tidal values were then attributed to all coastal tile observations for their time of acquisition, creating a range of observed tide heights for the Australian coastline. The two mosaics in HLTC_25 are composited from the highest and lowest 20 % of observed tide in the ensemble and are termed HOT and LOT respectively. A geomedian composite for each Landsat band is calculated from the tiles in each ensemble subset to produce the respective HOT and LOT composites. Note that Landsat 7 ETM+ observations are excluded after May 2003 due to a large number of data artefacts. <p/> The time range used for composite generation in each of the 306 polygons of the mosaics are tailored to ensure dynamic coastal features are captured whilst still allowing a clean and cloud free composite to be generated. The maximum epoch for which the products are calculated is between 1995-2017, although this varies due to data resolution and observation quality. The product also includes a count of clear observations per pixel for both mosaics and attribute summaries per polygon that include the date range, the highest and lowest modeled astronomical tide as well as the highest and lowest observed tide for that time range, the total observation count and the maximum count of observations for any one pixel in the polygon, the polygon ID number (from 1 to 306), the polygon centroid in longitude and latitude and the count of tide stages attributed to every observation used in that polygon of the mosaic. For the count of tidal stage observations, e = ebbing tide, f = flowing tide, ph = peak high tide and pl = peak low tide. The tide stages were calculated by comparison to the modeled tide data for 15 minutes either side of the observation to determine the ebb, flow or peak movement of the tide. <p/> Observations are filtered to remove poor quality observations including cloud, cloud shadow and band saturation (of any band)."
+                        },
+                        {
+                          "name": "Accuracy and limitations",
+                          "content": "The accuracy of the tide height data is limited by the accuracy of the OTPS model. Tidal modelling on self-similar coastal polygons was performed to minimise regional uncertainty. <p/> Accuracies and limitations related to geomedian compositing of observations are discussed in Roberts et al (2017). <p/> Users should beware of seasonal and diurnal effects in the imagery, especially in the north east of Australia where the footprint of the highest and lowest astronomical tides are large. Consequently, where image acquisition misses the highest astronomical tide, for example, pooling effects of water are still visible in the landscape in lowest observed tidal composite imagery. <p/> This product has been rendered in both true colour and false colour. Validation and interpretation of surface features has not been attempted here. Interpretation of surface features is at the users own discretion."
+                        },
+                        {
+                          "name": "File naming",
+                          "content": "`<COUNT OR COMPOSITE>_<HIGH OR LOW>_<TIDAL POLYGON NUMBER>_<LONGITUDE>_<LATITUDE>_<START DATE>_<END DATE>_<PERCENTILE TIDE RANGE>` <p/> COUNT OR COMPOSITE refers to whether pixels contain composite observation values or the count of observations at that pixel location <br/>HIGH OR LOW refers to whether the content relates to High Tide values or Low Tide values <br/>TIDAL POLYGON NUMBER relates to the id of the tidal polygon referenced by the file <br/>LONGITUDE is the longitude of the centroid of the tidal polygon <br/>LATITUDE is the latitude of the centroid of the tidal polygon <br/>START DATE is the beginning of the date range covered by the file <br/>END DATE is the end of the date range covered by the file <br/>PERCENTILE TIDE RANGE indicates the percentile value used when calculating the composites <p/> The index of downloadable GeoTIFFs can be found here: <p/> http://dap.nci.org.au/thredds/remoteCatalogService?catalog=http://dapds00.nci.org.au/thredds/catalog/fk4/datacube/002/HLTC/HLTC_2_0/geotiff/catalog.xml"
+                        },
+                        {
+                          "name": "References",
+                          "content": "Egbert, G.D., Erofeeva, S.Y., 2002. Efficient Inverse Modeling of Barotropic Ocean Tides. J. Atmospheric Ocean. Technol. 19, 183-204. doi:10.1175/1520-0426(2002)019<0183:EIMOBO>2.0.CO;2 <p/> Egbert, G.D., Erofeeva, S.Y., 2010. The OSU TOPEX/Poseiden Global Inverse Solution TPXO [WWW Document]. TPXO8-Atlas Version 10. URL http://volkov.oce.orst.edu/tides/global.html (accessed 2.15.16). <p/> Geoscience Australia, 2016. Intertidal Extents Model (25m) v 1.0 Product Description. doi:10.4225/25/575F683E2A3AF <p/> Li, F., Jupp, D.L.B., Thankappan, M., Lymburner, L., Mueller, N., Lewis, A., Held, A., 2012. A physics-based atmospheric and BRDF correction for Landsat data over mountainous terrain. Remote Sens. Environ. 124, 756-770. doi:10.1016/j.rse.2012.06.018 <p/> Roberts, D., Mueller, N., McIntyre, A., 2017. High-dimensional pixel composites from Earth observation time series. IEEE Trans. Geosci. Remote Sens. In Press. <p/> Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Extracting the intertidal extent and topography of the Australian coastline from a 28 year time series of Landsat observations. Remote Sens. Environ. 195, 153-169. doi:10.1016/j.rse.2017.04.009 <p/> Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2018. Generating Continental Scale Pixel-Based Surface Reflectance Composites in Coastal Regions with the Use of a Multi-Resolution Tidal Model. Remote Sensing 10, 480."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Low tide satellite image",
+                  "type": "group",
+                  "items": [
+                    {
+                      "id": "c134dbcd",
+                      "name": "Imagery",
+                      "type": "wms",
+                      "layers": "low_tide_composite",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "low_tide_composite",
+                      "useOwnClock": true,
+                      "opacity": 1
+                    },
+                    {
+                      "name": "Polygons for access to data",
+                      "url": "https://data.dea.ga.gov.au/LHTC_Tides/low_composite_20.geojson",
+                      "type": "geojson",
+                      "featureInfoTemplate": {
+                        "template": "The tidal range at this location is {{modelLow}} to {{modelHigh}} meters relative to mean sea level (MSL). <p/> The low tide composite at this location was generated from imagery acquired in the lowest 20% of the observed tidal range which is between {{LIT}} and {{HIT}} meters relative to MSL, during the period of time of {{date_range}}. <p/> <figure> <img style='width: 100%' src='http://dea-public-data.s3-ap-southeast-2.amazonaws.com/LHTC_Tides/COMPOSITE_LOW_{{ID}}_{{lon}}_{{lat}}_{{start_date}}_{{end_date}}_PER_20.jpg'/> <figcaption>Observations used to generate the composite (black dots), in relation to the full modelled tidal range (blue) and complete archive (white dots) at this location</figcaption> </figure> <p/> Download the GeoTIFF for this polygon here: <p/> <a href='http://dapds00.nci.org.au/thredds/fileServer/fk4/datacube/002/HLTC/HLTC_2_0/geotiff/COMPOSITE_LOW_{{ID}}_{{lon}}_{{lat}}_{{start_date}}_{{end_date}}_PER_20.tif'>COMPOSITE_LOW_{{ID}}_{{lon}}_{{lat}}_{{start_date}}_{{end_date}}_PER_20.tif</a>"
+                      },
+                      "info": [
+                        {
+                          "name": "Abstract",
+                          "content": "High Tide and Low Tide Composites 2.0.0 <p/> The High and Low Tide Composites product is composed of two surface reflectance composite mosaics of Landsat TM and ETM+ (Landsat 5 and Landsat 7 respectively) and OLI (Landsat 8) surface reflectance data (Li et al., 2012). These products have been produced using Digital Earth Australia (DEA). The two mosaics allow cloud free and noise reduced visualisation of the shallow water and inter-tidal coastal regions of Australia, as observed at high and low tide respectively (Sagar et al. 2018). <p/> The composites are generated utilising the geomedian approach of Roberts et al (2017) to ensure a valid surface reflectance spectra suitable for uses such as habitat mapping. The time range used for composite generation in each polygon of the mosaic is tailored to ensure dynamic coastal features are captured whilst still allowing a clean and cloud free composite to be generated. The concepts of the Observed Tidal Range (OTR), and Highest and Lowest Observed Tide (HOT, LOT) are discussed and described fully in Sagar et al. (2017) and the product description for the ITEM v 1.0 product (Geoscience Australia, 2016)."
+                        },
+                        {
+                          "name": "Overview",
+                          "content": "Inter-tidal zones are difficult regions to characterise due to the dynamic nature of the tide. They are highly changeable environments, subject to forcings from the land, sea and atmosphere and yet they form critical habitats for a wide range of organisms from birds to fish and sea grass. By harnessing the long archive of satellite imagery over Australia's coastal zones in the DEA and pairing the images with regional tidal modelling, the archive can be sorted by tide height rather than date, enabling the inter-tidal zone to be viewed at any stage of the tide regime. <p/> The High Low Tide Composites (HLTC_25) product is composed of two mosaics, distinguished by tide height, representing a composite image of the synthetic geomedian surface reflectance from Landsats 5 TM, Landsat 7 ETM+ and Landsat 8 OLI NBAR data (Li et al., 2012; Roberts et al., 2017). Oregon State Tidal Prediction (OTPS) software (Egbert and Erofeeva, 2002, 2010) was used to generate tide heights, relative to mean sea level, for the Australian continental coastline, split into 306 distinct tidal regions. These time and date stamped tidal values were then attributed to all coastal tile observations for their time of acquisition, creating a range of observed tide heights for the Australian coastline. The two mosaics in HLTC_25 are composited from the highest and lowest 20 % of observed tide in the ensemble and are termed HOT and LOT respectively. A geomedian composite for each Landsat band is calculated from the tiles in each ensemble subset to produce the respective HOT and LOT composites. Note that Landsat 7 ETM+ observations are excluded after May 2003 due to a large number of data artefacts. <p/> The time range used for composite generation in each of the 306 polygons of the mosaics are tailored to ensure dynamic coastal features are captured whilst still allowing a clean and cloud free composite to be generated. The maximum epoch for which the products are calculated is between 1995-2017, although this varies due to data resolution and observation quality. The product also includes a count of clear observations per pixel for both mosaics and attribute summaries per polygon that include the date range, the highest and lowest modeled astronomical tide as well as the highest and lowest observed tide for that time range, the total observation count and the maximum count of observations for any one pixel in the polygon, the polygon ID number (from 1 to 306), the polygon centroid in longitude and latitude and the count of tide stages attributed to every observation used in that polygon of the mosaic. For the count of tidal stage observations, e = ebbing tide, f = flowing tide, ph = peak high tide and pl = peak low tide. The tide stages were calculated by comparison to the modeled tide data for 15 minutes either side of the observation to determine the ebb, flow or peak movement of the tide. <p/> Observations are filtered to remove poor quality observations including cloud, cloud shadow and band saturation (of any band)."
+                        },
+                        {
+                          "name": "Accuracy and limitations",
+                          "content": "The accuracy of the tide height data is limited by the accuracy of the OTPS model. Tidal modelling on self-similar coastal polygons was performed to minimise regional uncertainty. <p/> Accuracies and limitations related to geomedian compositing of observations are discussed in Roberts et al (2017). <p/> Users should beware of seasonal and diurnal effects in the imagery, especially in the north east of Australia where the footprint of the highest and lowest astronomical tides are large. Consequently, where image acquisition misses the highest astronomical tide, for example, pooling effects of water are still visible in the landscape in lowest observed tidal composite imagery. <p/> This product has been rendered in both true colour and false colour. Validation and interpretation of surface features has not been attempted here. Interpretation of surface features is at the users own discretion."
+                        },
+                        {
+                          "name": "File naming",
+                          "content": "`<COUNT OR COMPOSITE>_<HIGH OR LOW>_<TIDAL POLYGON NUMBER>_<LONGITUDE>_<LATITUDE>_<START DATE>_<END DATE>_<PERCENTILE TIDE RANGE>` <p/> COUNT OR COMPOSITE refers to whether pixels contain composite observation values or the count of observations at that pixel location <br/>HIGH OR LOW refers to whether the content relates to High Tide values or Low Tide values <br/>TIDAL POLYGON NUMBER relates to the id of the tidal polygon referenced by the file <br/>LONGITUDE is the longitude of the centroid of the tidal polygon <br/>LATITUDE is the latitude of the centroid of the tidal polygon <br/>START DATE is the beginning of the date range covered by the file <br/>END DATE is the end of the date range covered by the file <br/>PERCENTILE TIDE RANGE indicates the percentile value used when calculating the composites <p/> The index of downloadable GeoTIFFs can be found here: <p/> http://dap.nci.org.au/thredds/remoteCatalogService?catalog=http://dapds00.nci.org.au/thredds/catalog/fk4/datacube/002/HLTC/HLTC_2_0/geotiff/catalog.xml"
+                        },
+                        {
+                          "name": "References",
+                          "content": "Egbert, G.D., Erofeeva, S.Y., 2002. Efficient Inverse Modeling of Barotropic Ocean Tides. J. Atmospheric Ocean. Technol. 19, 183-204. doi:10.1175/1520-0426(2002)019<0183:EIMOBO>2.0.CO;2 <p/> Egbert, G.D., Erofeeva, S.Y., 2010. The OSU TOPEX/Poseiden Global Inverse Solution TPXO [WWW Document]. TPXO8-Atlas Version 10. URL http://volkov.oce.orst.edu/tides/global.html (accessed 2.15.16). <p/> Geoscience Australia, 2016. Intertidal Extents Model (25m) v 1.0 Product Description. doi:10.4225/25/575F683E2A3AF <p/> Li, F., Jupp, D.L.B., Thankappan, M., Lymburner, L., Mueller, N., Lewis, A., Held, A., 2012. A physics-based atmospheric and BRDF correction for Landsat data over mountainous terrain. Remote Sens. Environ. 124, 756-770. doi:10.1016/j.rse.2012.06.018 <p/> Roberts, D., Mueller, N., McIntyre, A., 2017. High-dimensional pixel composites from Earth observation time series. IEEE Trans. Geosci. Remote Sens. In Press. <p/> Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Extracting the intertidal extent and topography of the Australian coastline from a 28 year time series of Landsat observations. Remote Sens. Environ. 195, 153-169. doi:10.1016/j.rse.2017.04.009 <p/> Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2018. Generating Continental Scale Pixel-Based Surface Reflectance Composites in Coastal Regions with the Use of a Multi-Resolution Tidal Model. Remote Sensing 10, 480."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Intertidal extent model",
+                  "type": "group",
+                  "items": [
+                    {
+                      "id": "ce712908",
+                      "name": "Extent",
+                      "type": "wms",
+                      "layers": "ITEM_V2.0.0",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "ITEM_V2.0.0",
+                      "useOwnClock": true,
+                      "opacity": 1
+                    },
+                    {
+                      "id": "96bdb0fc",
+                      "name": "Confidence",
+                      "type": "wms",
+                      "layers": "ITEM_V2.0.0_Conf",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "ITEM_V2.0.0_Conf",
+                      "useOwnClock": true,
+                      "opacity": 1
+                    },
+                    {
+                      "name": "Polygons for access to data",
+                      "url": "https://data.dea.ga.gov.au/ITEM_V2/Itemv2.geojson",
+                      "type": "geojson",
+                      "featureInfoTemplate": {
+                        "template": "The <b>ITEM v2.0 relative model</b> displays the modelled extents of the exposed intertidal zone, at percentile intervals of the observed tidal range (OTR), derived from Landsat imagery acquired between 1986 and 2016. <p/> The full tidal range at this location is {{LMT}} to {{HMT}} metres relative to mean sea level (MSL), and the OTR at this location is between {{LOT}} and {{HOT}} relative to MSL. <p/> The <b>ITEM v2.0 confidence layer</b> displays the standard deviation of the water index values (NDWI) derived across the tidal intervals used in generating the core ITEM relative product. <p/> High values indicate regions where inundation patterns are not driven by tidal influences. This can be a result of change (shoreline, geomorphic, anthropogenic), or caused by errors in the underlying tidal model. <p/> <figure> <img style='width: 100%' src='http://dea-public-data.s3-ap-southeast-2.amazonaws.com/ITEM_Intervals/ITEM_REL_{{ID}}_{{lon}}_{{lat}}.jpg'/> <figcaption>Coloured bars corresponding to the legend highlight the observations (black dots) and tidal range used to generate each ITEM interval, compared to the full modelled tidal range (light grey) at this location</figcaption> </figure> <p/> Download the GeoTIFF products for this polygon here: <p/> <a href='http://dapds00.nci.org.au/thredds/fileServer/fk4/datacube/002/ITEM/ITEM_2_0/geotiff/ITEM_REL_{{ID}}_{{lon}}_{{lat}}.tif'>ITEM_REL_{{ID}}_{{lon}}_{{lat}}.tif</a> <p/> <a href='http://dapds00.nci.org.au/thredds/fileServer/fk4/datacube/002/ITEM/ITEM_2_0/geotiff/ITEM_STD_{{ID}}_{{lon}}_{{lat}}.tif'>ITEM_STD_{{ID}}_{{lon}}_{{lat}}.tif</a>",
+                        "formats": {
+                          "lat": {
+                            "type": "number",
+                            "minimumFractionDigits": 2
+                          },
+                          "lon": {
+                            "type": "number",
+                            "minimumFractionDigits": 2
+                          }
+                        }
+                      },
+                      "info": [
+                        {
+                          "name": "Abstract",
+                          "content": "The Intertidal Extents Model (ITEM v2.0) product analyses GA’s historic archive of satellite imagery to derive a model of the spatial extents of the intertidal zone throughout the tidal cycle. The model can assist in understanding the relative elevation profile of the intertidal zone, delineating exposed areas at differing tidal heights and stages. <p/> The product differs from previous methods used to map the intertidal zone which have been predominately focused on analysing a small number of individual satellite images per location (e.g Ryu et al., 2002; Murray et al., 2012). By utilising a full 30 year time series of observations and a global tidal model (Egbert and Erofeeva, 2002), the methodology enables us to overcome the requirement for clear, high quality observations acquired concurrent to the time of high and low tide."
+                        },
+                        {
+                          "name": "Overview",
+                          "content": "The Intertidal Extents Model product is a national scale gridded dataset characterising the spatial extents of the exposed intertidal zone, at intervals of the observed tidal range (Sagar et al. 2017). The current version (2.0) utilises all Landsat observations (5, 7, and 8) for Australian coastal regions (excluding off-shore Territories) between 1986 and 2016 (inclusive). <p/> ITEM v2.0 has implemented an improved tidal modelling framework (see Sagar et al. 2018) over that utilised in ITEM v1.0. The expanded Landsat archive within the Digital Earth Australia (DEA) has also enabled the model extent to be increased to cover a number of offshore reefs, including the full Great Barrier Reef and southern sections of the Torres Strait Islands. The DEA archive and new tidal modelling framework has improved the coverage and quality of the ITEM v2.0 relative extents model, particularly in regions where AGDC cell boundaries in ITEM v1.0 produced discontinuities or the imposed v1.0 cell structure resulted in poor quality tidal modelling (see Sagar et al. 2017). <p/> Examples of regions in ITEM v2.0 where these significant improvements have been noted include: <ul> <li>Dampier Peninsula and King Sound, WA. Improved modelling within King Sound has removed the discontinuities seen at cell boundaries in ITEM v1.0, and expanded the extent of intertidal region being mapped. </li> <li>Tiwi Islands, Coburg Peninsula and Croker Island, NT. Poor spatial representation of the regions tidal regimes in ITEM v1.0 has been improved in v2.0 resulting in extensive onshore reefs and mudflats now being mapped. </li> <li>The full Great Barrier Reef has been mapped, detailing reef structures which expose at low tide. Algorithm amendments have reduced the false positive exposed surface detections resulting from glint and sun glitter. </li> <li>Broad Sound, QLD. Improved tidal modelling has resulted in a smoother intertidal extent map, and a greatly improved confidence layer value for the region. </li> <li>Improvements in the coverage of the DEA archive has allowed many regions unresolved in ITEM v1.0 and showing as 'no data' to be modelled successfully in ITEM 2.0. For example, Mornington Island, QLD, Eastern sections of Fraser Island, QLD and peninsulas in Bowling Green Bay National Park near Townsville, QLD</li> </ul>"
+                        },
+                        {
+                          "name": "Accuracy and limitations",
+                          "content": "Due the sun-synchronous nature of the various Landsat sensor observations; it is unlikely that the full physical extents of the tidal range in any cell will be observed. Hence, terminology has been adopted for the product to reflect the highest modelled tide observed in a given cell (HOT) and the lowest modelled tide observed (LOT) (see Sagar et al. 2017). These measures are relative to Mean Sea Level, and have no consistent relationship to Lowest (LAT) and Highest Astronomical Tide (HAT). <p/> The inclusion of the lowest (LMT) and highest (HMT) modelled tide values for each tidal polygon indicates the highest and lowest tides modelled for that location across the full time series by the OTPS model. The relative difference between the LOT and LMT (and HOT and HMT) heights gives an indication of the extent of the tidal range represented in the Relative Extents Model. <p/> As in ITEM v1.0, v2.0 contains some false positive land detection in open ocean regions. These are a function of the lack of data at the extremes of the observed tidal range, and features like glint and undetected cloud in these data poor regions/intervals. <p/> Methods to isolate and remove these features are in development for future versions. Issues in the DEA archive and data noise in the Esperance, WA region off Cape Le Grande and Cape Arid (Polygons 236,201,301) has resulted in significant artefacts in the model, and use of the model in this area is not recommended. <p/> The Confidence layer is designed to assess the reliability of the Relative Extent Model. Within each tidal range percentile interval, the pixel-based standard deviation of the NDWI values for all observations in the interval subset is calculated. The average standard deviation across all tidal range intervals is then calculated and retained as a quality indicator in this product layer. <p/> The Confidence Layer reflects the pixel based consistency of the NDWI values within each subset of observations, based on the tidal range. Higher standard deviation values indicate water classification changes not based on the tidal cycle, and hence lower confidence in the extent model. <p/> Possible drivers of these changes include: <ol> <li>Inadequacies of the tidal model, due perhaps to complex coastal bathymetry or estuarine structures not captured in the model. These effects have been reduced in ITEM v2.0 compared to previous versions, through the use of an improved tidal modelling framework </li> <li>Change in the structure and exposure of water/non-water features NOT driven by tidal variation. For example, movement of sand banks in estuaries, construction of man-made features (ports etc.).</li> <li>Terrestrial/Inland water features not influenced by the tidal cycle.</li> </ol>"
+                        },
+                        {
+                          "name": "File naming",
+                          "content": "<h4>THE RELATIVE EXTENTS MODEL v2.0</h4> ITEM_REL_&lt;TIDAL POLYGON NUMBER&gt;_&lt;LONGITUDE&gt;_&lt;LATITUDE&gt; <p/> TIDAL POLYGON NUMBER relates to the id of the tidal polygon referenced by the file <p/> LONGITUDE is the longitude of the centroid of the tidal polygon <p/> LATITUDE is the latitude of the centroid of the tidal polygon <h4>THE CONFIDENCE LAYER v2.0</h4> ITEM_STD_&lt;TIDAL POLYGON NUMBER&gt;_&lt;LONGITUDE&gt;_&lt;LATITUDE&gt; <p/> TIDAL POLYGON NUMBER relates to the id of the tidal polygon referenced by the file <p/> LONGITUDE is the longitude of the centroid of the tidal polygon <p/> LATITUDE is the latitude of the centroid of the tidal polygon <p/> The index of downloadable GeoTIFFs can be found here: <p/> <a href='http://dap.nci.org.au/thredds/remoteCatalogService?catalog=http://dapds00.nci.org.au/thredds/catalogs/fk4/item_2_0.xml'>http://dap.nci.org.au/thredds/remoteCatalogService?catalog=http://dapds00.nci.org.au/thredds/catalogs/fk4/item_2_0.xml</a>"
+                        },
+                        {
+                          "name": "References",
+                          "content": "Egbert, G.D., Erofeeva, S.Y., 2002. Efficient Inverse Modeling of Barotropic Ocean Tides. J. Atmos. Oceanic Technol. 19, 183–204. <p/> Murray, N.J., Phinn, S.R., Clemens, R.S., Roelfsema, C.M., Fuller, R.A., 2012. Continental Scale Mapping of Tidal Flats across East Asia Using the Landsat Archive. Remote Sensing 4, 3417–3426. <p/> Ryu, J.-H., Won, J.-S., Min, K.D., 2002. Waterline extraction from Landsat TM data in a tidal flat: A case study in Gomso Bay, Korea. Remote Sensing of Environment 83, 442–456. <p/> Sagar, S., Roberts, D., Bala, B., Lymburner, L., 2017. Extracting the intertidal extent and topography of the Australian coastline from a 28 year time series of Landsat observations. Remote Sensing of Environment 195, 153–169. <p/> Sagar, S., Phillips, C., Bala, B., Roberts, D., Lymburner, L., 2018. Generating Continental Scale Pixel-Based Surface Reflectance Composites in Coastal Regions with the Use of a Multi-Resolution Tidal Model. Remote Sensing 10, 480."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Intertidal elevation model",
+                  "type": "wms",
+                  "url": "https://ows.services.dea.ga.gov.au",
+                  "layers": "NIDEM",
+                  "linkedWcsCoverage": "NIDEM",
+                  "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                  "useOwnClock": true,
+                  "availableDimensions": [],
+                  "opacity": 1
+                },
+                {
+                  "name": "Mangrove canopy cover",
+                  "type": "group",
+                  "items": [
+                    {
+                      "name": "Canopy cover",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "layers": "mangrove_cover",
+                      "type": "wms",
+                      "useOwnClock": true,
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "mangrove_cover"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Water Observations from Space",
+              "type": "group",
+              "items": [
+                {
+                  "name": "All water observations combined",
+                  "type": "group",
+                  "items": [
+                    {
+                      "id": "31776bb0",
+                      "name": "Summary of Observations",
+                      "layers": "wofs_filtered_summary",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "type": "wms",
+                      "useOwnClock": true,
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "wofs_filtered_summary"
+                    },
+                    {
+                      "id": "b9c0897e",
+                      "name": "Wet Observations",
+                      "layers": "wofs_summary_wet",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "type": "wms",
+                      "useOwnClock": true,
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "wofs_summary_wet"
+                    },
+                    {
+                      "id": "5e03b911",
+                      "name": "Clear Observations",
+                      "layers": "wofs_summary_clear",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "type": "wms",
+                      "useOwnClock": true,
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "wofs_summary_clear"
+                    },
+                    {
+                      "id": "2546f9ab",
+                      "name": "Confidence",
+                      "layers": "wofs_filtered_summary_confidence",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "type": "wms",
+                      "useOwnClock": true,
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "wofs_filtered_summary_confidence"
+                    }
+                  ]
+                },
+                {
+                  "name": "Yearly water observations",
+                  "type": "group",
+                  "items": [
+                    {
+                      "id": "2cafc485",
+                      "name": "Clear Observations",
+                      "layers": "wofs_annual_summary_clear",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "type": "wms",
+                      "useOwnClock": true,
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
+                    },
+                    {
+                      "id": "9b97f045",
+                      "name": "Wet Observations",
+                      "layers": "wofs_annual_summary_wet",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "type": "wms",
+                      "useOwnClock": true,
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
+                    },
+                    {
+                      "id": "c170c834",
+                      "name": "Summary of Observations",
+                      "layers": "wofs_annual_summary_statistics",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "type": "wms",
+                      "useOwnClock": true,
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "April-October water observations",
+                  "type": "group",
+                  "items": [
+                    {
+                      "id": "9140c499",
+                      "name": "Wet Observations",
+                      "layers": "wofs_apr_oct_summary_wet",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "type": "wms",
+                      "useOwnClock": true,
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
+                    },
+                    {
+                      "id": "6b31f15d",
+                      "name": "Clear Observations",
+                      "layers": "wofs_apr_oct_summary_clear",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "type": "wms",
+                      "useOwnClock": true,
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
+                    },
+                    {
+                      "id": "c0ee6330",
+                      "name": "Summary of Observations",
+                      "layers": "wofs_apr_oct_summary_statistics",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "type": "wms",
+                      "useOwnClock": true,
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "November-March water observations",
+                  "type": "group",
+                  "items": [
+                    {
+                      "id": "4bd6f4fd",
+                      "name": "Wet Observations",
+                      "layers": "wofs_nov_mar_summary_wet",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "type": "wms",
+                      "useOwnClock": true,
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
+                    },
+                    {
+                      "id": "a9759c22",
+                      "name": "Clear Observations",
+                      "layers": "wofs_nov_mar_summary_clear",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "type": "wms",
+                      "useOwnClock": true,
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
+                    },
+                    {
+                      "id": "722dc4c3",
+                      "name": "Summary of Observations",
+                      "layers": "wofs_nov_mar_summary_statistics",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "type": "wms",
+                      "useOwnClock": true,
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "11638ff8",
+                  "name": "Daily observations",
+                  "layers": "wofs_albers",
+                  "url": "https://ows.services.dea.ga.gov.au/",
+                  "type": "wms",
+                  "useOwnClock": true,
+                  "ignoreUnknownTileErrors": true,
+                  "opacity": 1
+                }
+              ]
+            }
+          ],
+          "name": "Surface Water and Marine",
+          "type": "group"
+        },
+        {
+          "items": [
+            {
+              "name": "Fractional Cover",
+              "type": "group",
+              "preserveOrder": true,
+              "items": [
+                {
+                  "type": "group",
+                  "name": "Yearly Summaries",
+                  "preserveOrder": true,
+                  "items": [
+                    {
+                        "id": "bcfefc7b",
+                        "name": "Median",
+                        "layers": "fcp_rgb",
+                        "url": "https://ows.services.dea.ga.gov.au",
+                        "type": "wms",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1
+                    },
+                    {
+                        "id": "348f6c87",
+                        "name": "Green Vegetation",
+                        "layers": "fcp_green_veg",
+                        "url": "https://ows.services.dea.ga.gov.au",
+                        "type": "wms",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1
+                    },
+                    {
+                        "id": "e3bb2e0d",
+                        "name": "Non-Green Vegetation",
+                        "layers": "fcp_non_green_veg",
+                        "url": "https://ows.services.dea.ga.gov.au",
+                        "type": "wms",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1
+                    },
+                    {
+                        "id": "561d50b6",
+                        "name": "Bare Ground",
+                        "layers": "fcp_bare_ground",
+                        "url": "https://ows.services.dea.ga.gov.au",
+                        "type": "wms",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "Seasonal",
+                  "type": "group",
+                  "preserveOrder": true,
+                  "items": [
+                    {
+                        "id": "80df5d0b",
+                        "name": "Median",
+                        "type": "wms",
+                        "layers": "fcp_seasonal_rgb",
+                        "url": "https://ows.services.dea.ga.gov.au",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1
+                    },
+                    {
+                        "id": "c3847ddb",
+                        "name": "Green Vegetation",
+                        "type": "wms",
+                        "layers": "fcp_seasonal_green_veg",
+                        "url": "https://ows.services.dea.ga.gov.au",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1
+                    },
+                    {
+                        "id": "815134b7",
+                        "name": "Non-Green Vegetation",
+                        "type": "wms",
+                        "layers": "fcp_seasonal_non_green_veg",
+                        "url": "https://ows.services.dea.ga.gov.au",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1
+                    },
+                    {
+                        "id": "80427f06",
+                        "name": "Bare Ground",
+                        "type": "wms",
+                        "layers": "fcp_seasonal_bare_ground",
+                        "url": "https://ows.services.dea.ga.gov.au",
+                        "ignoreUnknownTileErrors": true,
+                        "opacity": 1
+                     }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Mangroves",
+              "type": "group",
+              "items": [
+                {
+                  "name": "Mangrove canopy cover",
+                  "type": "group",
+                  "items": [
+                    {
+                      "name": "Canopy cover",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "layers": "mangrove_cover",
+                      "type": "wms",
+                      "useOwnClock": true,
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "mangrove_cover"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "Vegetation",
+          "type": "group"
+        },
+        {
+          "items": [
+            {
+              "name": "Intertidal",
+              "type": "group",
+              "items": [
+                {
+                  "name": "Intertidal elevation model",
+                  "type": "wms",
+                  "url": "https://ows.services.dea.ga.gov.au",
+                  "layers": "NIDEM",
+                  "linkedWcsCoverage": "NIDEM",
+                  "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                  "useOwnClock": true,
+                  "availableDimensions": [],
+                  "opacity": 1
+                }
+              ]
+            }
+          ],
+          "name": "Elevation",
+          "type": "group"
+        }
       ]
     }
   ]
