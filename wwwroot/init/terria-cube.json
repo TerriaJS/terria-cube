@@ -785,7 +785,7 @@
       ]
     },
     {
-      "name": "Satellite Imagery - data renamed",
+      "name": "Satellite Imagery",
       "type": "group",
       "items": [
         {
@@ -881,7 +881,13 @@
                       "shareKeys": [
                         "0de1b493"
                       ]
-                    },
+                    }
+                  ]
+                },
+                {
+                  "name": "Hill shadows included",
+                  "type": "group",
+                  "items": [
                     {
                       "id": "0d7e458a",
                       "name": "Landsat 5 satellite images",
@@ -974,7 +980,13 @@
                       "ignoreUnknownTileErrors": true,
                       "useOwnClock": true,
                       "opacity": 1
-                    },
+                    }
+                  ]
+                },
+                {
+                  "name": "Hill shadows included",
+                  "type": "group",
+                  "items": [
                     {
                       "id": "2cade3f2",
                       "name": "Landsat 8 satellite images",
@@ -1071,15 +1083,21 @@
                   ]
                 },
                 {
-                  "id": "0711af5e",
                   "name": "Barest Earth",
-                  "url": "https://ows.services.dea.ga.gov.au/",
-                  "layers": "ls8_barest_earth_mosaic",
-                  "type": "wms",
-                  "ignoreUnknownTileErrors": true,
-                  "opacity": 1,
-                  "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
-                  "linkedWcsCoverage": "ls8_barest_earth_mosaic"
+                  "type": "group",
+                  "items": [
+                    {
+                      "id": "0711af5e",
+                      "name": "Imagery",
+                      "url": "https://ows.services.dea.ga.gov.au/",
+                      "layers": "ls8_barest_earth_mosaic",
+                      "type": "wms",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1,
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "linkedWcsCoverage": "ls8_barest_earth_mosaic"
+                    }
+                  ]
                 }
               ]
             }
@@ -1256,14 +1274,20 @@
                 },
                 {
                   "name": "Intertidal elevation model",
-                  "type": "wms",
-                  "url": "https://ows.services.dea.ga.gov.au",
-                  "layers": "NIDEM",
-                  "linkedWcsCoverage": "NIDEM",
-                  "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
-                  "useOwnClock": true,
-                  "availableDimensions": [],
-                  "opacity": 1
+                  "type": "group",
+                  "items": [
+                    {
+                      "name": "NIDEM - Intertidal elevation model",
+                      "type": "wms",
+                      "url": "https://ows.services.dea.ga.gov.au",
+                      "layers": "NIDEM",
+                      "linkedWcsCoverage": "NIDEM",
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "useOwnClock": true,
+                      "availableDimensions": [],
+                      "opacity": 1
+                    }
+                  ]
                 },
                 {
                   "name": "Mangrove canopy cover",
@@ -1287,178 +1311,199 @@
             {
               "name": "Water Observations from Space",
               "type": "group",
+              "preserveOrder": true,
               "items": [
                 {
-                  "name": "All water observations combined",
-                  "type": "group",
-                  "items": [
-                    {
-                      "id": "31776bb0",
-                      "name": "Summary of Observations",
-                      "layers": "wofs_filtered_summary",
-                      "url": "https://ows.services.dea.ga.gov.au/",
-                      "type": "wms",
-                      "useOwnClock": true,
-                      "ignoreUnknownTileErrors": true,
-                      "opacity": 1,
-                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
-                      "linkedWcsCoverage": "wofs_filtered_summary"
-                    },
-                    {
-                      "id": "b9c0897e",
-                      "name": "Wet Observations",
-                      "layers": "wofs_summary_wet",
-                      "url": "https://ows.services.dea.ga.gov.au/",
-                      "type": "wms",
-                      "useOwnClock": true,
-                      "ignoreUnknownTileErrors": true,
-                      "opacity": 1,
-                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
-                      "linkedWcsCoverage": "wofs_summary_wet"
-                    },
-                    {
-                      "id": "5e03b911",
-                      "name": "Clear Observations",
-                      "layers": "wofs_summary_clear",
-                      "url": "https://ows.services.dea.ga.gov.au/",
-                      "type": "wms",
-                      "useOwnClock": true,
-                      "ignoreUnknownTileErrors": true,
-                      "opacity": 1,
-                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
-                      "linkedWcsCoverage": "wofs_summary_clear"
-                    },
-                    {
-                      "id": "2546f9ab",
-                      "name": "Confidence",
-                      "layers": "wofs_filtered_summary_confidence",
-                      "url": "https://ows.services.dea.ga.gov.au/",
-                      "type": "wms",
-                      "useOwnClock": true,
-                      "ignoreUnknownTileErrors": true,
-                      "opacity": 1,
-                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
-                      "linkedWcsCoverage": "wofs_filtered_summary_confidence"
-                    }
-                  ]
-                },
-                {
-                  "name": "Yearly water observations",
-                  "type": "group",
-                  "items": [
-                    {
-                      "id": "2cafc485",
-                      "name": "Clear Observations",
-                      "layers": "wofs_annual_summary_clear",
-                      "url": "https://ows.services.dea.ga.gov.au/",
-                      "type": "wms",
-                      "useOwnClock": true,
-                      "ignoreUnknownTileErrors": true,
-                      "opacity": 1
-                    },
-                    {
-                      "id": "9b97f045",
-                      "name": "Wet Observations",
-                      "layers": "wofs_annual_summary_wet",
-                      "url": "https://ows.services.dea.ga.gov.au/",
-                      "type": "wms",
-                      "useOwnClock": true,
-                      "ignoreUnknownTileErrors": true,
-                      "opacity": 1
-                    },
-                    {
-                      "id": "c170c834",
-                      "name": "Summary of Observations",
-                      "layers": "wofs_annual_summary_statistics",
-                      "url": "https://ows.services.dea.ga.gov.au/",
-                      "type": "wms",
-                      "useOwnClock": true,
-                      "ignoreUnknownTileErrors": true,
-                      "opacity": 1
-                    }
-                  ]
-                },
-                {
-                  "name": "April-October water observations",
-                  "type": "group",
-                  "items": [
-                    {
-                      "id": "9140c499",
-                      "name": "Wet Observations",
-                      "layers": "wofs_apr_oct_summary_wet",
-                      "url": "https://ows.services.dea.ga.gov.au/",
-                      "type": "wms",
-                      "useOwnClock": true,
-                      "ignoreUnknownTileErrors": true,
-                      "opacity": 1
-                    },
-                    {
-                      "id": "6b31f15d",
-                      "name": "Clear Observations",
-                      "layers": "wofs_apr_oct_summary_clear",
-                      "url": "https://ows.services.dea.ga.gov.au/",
-                      "type": "wms",
-                      "useOwnClock": true,
-                      "ignoreUnknownTileErrors": true,
-                      "opacity": 1
-                    },
-                    {
-                      "id": "c0ee6330",
-                      "name": "Summary of Observations",
-                      "layers": "wofs_apr_oct_summary_statistics",
-                      "url": "https://ows.services.dea.ga.gov.au/",
-                      "type": "wms",
-                      "useOwnClock": true,
-                      "ignoreUnknownTileErrors": true,
-                      "opacity": 1
-                    }
-                  ]
-                },
-                {
-                  "name": "November-March water observations",
-                  "type": "group",
-                  "items": [
-                    {
-                      "id": "4bd6f4fd",
-                      "name": "Wet Observations",
-                      "layers": "wofs_nov_mar_summary_wet",
-                      "url": "https://ows.services.dea.ga.gov.au/",
-                      "type": "wms",
-                      "useOwnClock": true,
-                      "ignoreUnknownTileErrors": true,
-                      "opacity": 1
-                    },
-                    {
-                      "id": "a9759c22",
-                      "name": "Clear Observations",
-                      "layers": "wofs_nov_mar_summary_clear",
-                      "url": "https://ows.services.dea.ga.gov.au/",
-                      "type": "wms",
-                      "useOwnClock": true,
-                      "ignoreUnknownTileErrors": true,
-                      "opacity": 1
-                    },
-                    {
-                      "id": "722dc4c3",
-                      "name": "Summary of Observations",
-                      "layers": "wofs_nov_mar_summary_statistics",
-                      "url": "https://ows.services.dea.ga.gov.au/",
-                      "type": "wms",
-                      "useOwnClock": true,
-                      "ignoreUnknownTileErrors": true,
-                      "opacity": 1
-                    }
-                  ]
-                },
-                {
                   "id": "11638ff8",
-                  "name": "Daily observations",
+                  "name": "Individual water observations",
                   "layers": "wofs_albers",
                   "url": "https://ows.services.dea.ga.gov.au/",
                   "type": "wms",
                   "useOwnClock": true,
                   "ignoreUnknownTileErrors": true,
                   "opacity": 1
+                },
+                {
+                  "id": "d60a77da",
+                  "name": "All water observations combined",
+                  "layers": "wofs_filtered_summary",
+                  "url": "https://ows.services.dea.ga.gov.au/",
+                  "type": "wms",
+                  "useOwnClock": true,
+                  "ignoreUnknownTileErrors": true,
+                  "opacity": 1,
+                  "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                  "linkedWcsCoverage": "wofs_filtered_summary"
+                },
+                {
+                  "id": "c170c834",
+                  "name": "Yearly water observations",
+                  "layers": "wofs_annual_summary_statistics",
+                  "url": "https://ows.services.dea.ga.gov.au/",
+                  "type": "wms",
+                  "useOwnClock": true,
+                  "ignoreUnknownTileErrors": true,
+                  "opacity": 1
+                },
+                {
+                  "id": "722dc4c3",
+                  "name": "November-March water observations",
+                  "layers": "wofs_nov_mar_summary_statistics",
+                  "url": "https://ows.services.dea.ga.gov.au/",
+                  "type": "wms",
+                  "useOwnClock": true,
+                  "ignoreUnknownTileErrors": true,
+                  "opacity": 1
+                },
+                {
+                  "id": "c0ee6330",
+                  "name": "April-October water observations",
+                  "layers": "wofs_apr_oct_summary_statistics",
+                  "url": "https://ows.services.dea.ga.gov.au/",
+                  "type": "wms",
+                  "useOwnClock": true,
+                  "ignoreUnknownTileErrors": true,
+                  "opacity": 1
+                },
+                {
+                  "name": "WOfS underlying data",
+                  "type": "group",
+                  "preserveOrder": true,
+                  "items": [
+                    {
+                      "name": "All water observations combined",
+                      "type": "group",
+                      "preserveOrder": true,
+                      "items": [
+                        {
+                          "id": "5e03b911",
+                          "name": "Clear Observations",
+                          "layers": "wofs_summary_clear",
+                          "url": "https://ows.services.dea.ga.gov.au/",
+                          "type": "wms",
+                          "useOwnClock": true,
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1,
+                          "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_summary_clear"
+                        },
+                        {
+                          "id": "b9c0897e",
+                          "name": "Wet Observations",
+                          "layers": "wofs_summary_wet",
+                          "url": "https://ows.services.dea.ga.gov.au/",
+                          "type": "wms",
+                          "useOwnClock": true,
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1,
+                          "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_summary_wet"
+                        },
+                        {
+                          "id": "31776bb0",
+                          "name": "Summary of Observations",
+                          "layers": "Water Observations from Space Statistics",
+                          "url": "https://ows.services.dea.ga.gov.au/",
+                          "type": "wms",
+                          "useOwnClock": true,
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1,
+                          "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "Water Observations from Space Statistics"
+                        },
+                        {
+                          "id": "2546f9ab",
+                          "name": "Confidence",
+                          "layers": "wofs_filtered_summary_confidence",
+                          "url": "https://ows.services.dea.ga.gov.au/",
+                          "type": "wms",
+                          "useOwnClock": true,
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1,
+                          "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                          "linkedWcsCoverage": "wofs_filtered_summary_confidence"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Yearly water observations",
+                      "type": "group",
+                      "items": [
+                        {
+                          "id": "2cafc485",
+                          "name": "Clear Observations",
+                          "layers": "wofs_annual_summary_clear",
+                          "url": "https://ows.services.dea.ga.gov.au/",
+                          "type": "wms",
+                          "useOwnClock": true,
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        },
+                        {
+                          "id": "9b97f045",
+                          "name": "Wet Observations",
+                          "layers": "wofs_annual_summary_wet",
+                          "url": "https://ows.services.dea.ga.gov.au/",
+                          "type": "wms",
+                          "useOwnClock": true,
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "April-October water observations",
+                      "type": "group",
+                      "items": [
+                        {
+                          "id": "6b31f15d",
+                          "name": "Clear Observations",
+                          "layers": "wofs_apr_oct_summary_clear",
+                          "url": "https://ows.services.dea.ga.gov.au/",
+                          "type": "wms",
+                          "useOwnClock": true,
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        },
+                        {
+                          "id": "9140c499",
+                          "name": "Wet Observations",
+                          "layers": "wofs_apr_oct_summary_wet",
+                          "url": "https://ows.services.dea.ga.gov.au/",
+                          "type": "wms",
+                          "useOwnClock": true,
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        }
+                      ]
+                    },
+                    {
+                      "name": "November-March water observations",
+                      "type": "group",
+                      "items": [
+                        {
+                          "id": "a9759c22",
+                          "name": "Clear Observations",
+                          "layers": "wofs_nov_mar_summary_clear",
+                          "url": "https://ows.services.dea.ga.gov.au/",
+                          "type": "wms",
+                          "useOwnClock": true,
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        },
+                        {
+                          "id": "4bd6f4fd",
+                          "name": "Wet Observations",
+                          "layers": "wofs_nov_mar_summary_wet",
+                          "url": "https://ows.services.dea.ga.gov.au/",
+                          "type": "wms",
+                          "useOwnClock": true,
+                          "ignoreUnknownTileErrors": true,
+                          "opacity": 1
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -1479,40 +1524,40 @@
                   "preserveOrder": true,
                   "items": [
                     {
-                        "id": "bcfefc7b",
-                        "name": "Median",
-                        "layers": "fcp_rgb",
-                        "url": "https://ows.services.dea.ga.gov.au",
-                        "type": "wms",
-                        "ignoreUnknownTileErrors": true,
-                        "opacity": 1
+                      "id": "bcfefc7b",
+                      "name": "Median",
+                      "layers": "fcp_rgb",
+                      "url": "https://ows.services.dea.ga.gov.au",
+                      "type": "wms",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
                     },
                     {
-                        "id": "348f6c87",
-                        "name": "Green Vegetation",
-                        "layers": "fcp_green_veg",
-                        "url": "https://ows.services.dea.ga.gov.au",
-                        "type": "wms",
-                        "ignoreUnknownTileErrors": true,
-                        "opacity": 1
+                      "id": "348f6c87",
+                      "name": "Green Vegetation",
+                      "layers": "fcp_green_veg",
+                      "url": "https://ows.services.dea.ga.gov.au",
+                      "type": "wms",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
                     },
                     {
-                        "id": "e3bb2e0d",
-                        "name": "Non-Green Vegetation",
-                        "layers": "fcp_non_green_veg",
-                        "url": "https://ows.services.dea.ga.gov.au",
-                        "type": "wms",
-                        "ignoreUnknownTileErrors": true,
-                        "opacity": 1
+                      "id": "e3bb2e0d",
+                      "name": "Non-Green Vegetation",
+                      "layers": "fcp_non_green_veg",
+                      "url": "https://ows.services.dea.ga.gov.au",
+                      "type": "wms",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
                     },
                     {
-                        "id": "561d50b6",
-                        "name": "Bare Ground",
-                        "layers": "fcp_bare_ground",
-                        "url": "https://ows.services.dea.ga.gov.au",
-                        "type": "wms",
-                        "ignoreUnknownTileErrors": true,
-                        "opacity": 1
+                      "id": "561d50b6",
+                      "name": "Bare Ground",
+                      "layers": "fcp_bare_ground",
+                      "url": "https://ows.services.dea.ga.gov.au",
+                      "type": "wms",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
                     }
                   ]
                 },
@@ -1522,41 +1567,41 @@
                   "preserveOrder": true,
                   "items": [
                     {
-                        "id": "80df5d0b",
-                        "name": "Median",
-                        "type": "wms",
-                        "layers": "fcp_seasonal_rgb",
-                        "url": "https://ows.services.dea.ga.gov.au",
-                        "ignoreUnknownTileErrors": true,
-                        "opacity": 1
+                      "id": "80df5d0b",
+                      "name": "Median",
+                      "type": "wms",
+                      "layers": "fcp_seasonal_rgb",
+                      "url": "https://ows.services.dea.ga.gov.au",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
                     },
                     {
-                        "id": "c3847ddb",
-                        "name": "Green Vegetation",
-                        "type": "wms",
-                        "layers": "fcp_seasonal_green_veg",
-                        "url": "https://ows.services.dea.ga.gov.au",
-                        "ignoreUnknownTileErrors": true,
-                        "opacity": 1
+                      "id": "c3847ddb",
+                      "name": "Green Vegetation",
+                      "type": "wms",
+                      "layers": "fcp_seasonal_green_veg",
+                      "url": "https://ows.services.dea.ga.gov.au",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
                     },
                     {
-                        "id": "815134b7",
-                        "name": "Non-Green Vegetation",
-                        "type": "wms",
-                        "layers": "fcp_seasonal_non_green_veg",
-                        "url": "https://ows.services.dea.ga.gov.au",
-                        "ignoreUnknownTileErrors": true,
-                        "opacity": 1
+                      "id": "815134b7",
+                      "name": "Non-Green Vegetation",
+                      "type": "wms",
+                      "layers": "fcp_seasonal_non_green_veg",
+                      "url": "https://ows.services.dea.ga.gov.au",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
                     },
                     {
-                        "id": "80427f06",
-                        "name": "Bare Ground",
-                        "type": "wms",
-                        "layers": "fcp_seasonal_bare_ground",
-                        "url": "https://ows.services.dea.ga.gov.au",
-                        "ignoreUnknownTileErrors": true,
-                        "opacity": 1
-                     }
+                      "id": "80427f06",
+                      "name": "Bare Ground",
+                      "type": "wms",
+                      "layers": "fcp_seasonal_bare_ground",
+                      "url": "https://ows.services.dea.ga.gov.au",
+                      "ignoreUnknownTileErrors": true,
+                      "opacity": 1
+                    }
                   ]
                 }
               ]
@@ -1596,14 +1641,20 @@
               "items": [
                 {
                   "name": "Intertidal elevation model",
-                  "type": "wms",
-                  "url": "https://ows.services.dea.ga.gov.au",
-                  "layers": "NIDEM",
-                  "linkedWcsCoverage": "NIDEM",
-                  "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
-                  "useOwnClock": true,
-                  "availableDimensions": [],
-                  "opacity": 1
+                  "type": "group",
+                  "items": [
+                    {
+                      "name": "NIDEM - Intertidal elevation model",
+                      "type": "wms",
+                      "url": "https://ows.services.dea.ga.gov.au",
+                      "layers": "NIDEM",
+                      "linkedWcsCoverage": "NIDEM",
+                      "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
+                      "useOwnClock": true,
+                      "availableDimensions": [],
+                      "opacity": 1
+                    }
+                  ]
                 }
               ]
             }
