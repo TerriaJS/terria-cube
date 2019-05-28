@@ -1,6 +1,6 @@
 {
   "name": "terria-cube",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Geospatial catalog explorer based on TerriaJS.",
   "license": "Apache-2.0",
   "engines": {

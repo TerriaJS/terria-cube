@@ -1,8 +1,9 @@
 Change Log
 ==========
 
-### Next Release
+### 2019-05-28
 
+* New satellite imagery from DEA added to catalogue.
 * Fix the hot reload script.
 
 ### 2017-XX-XX
