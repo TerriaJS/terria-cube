@@ -809,7 +809,8 @@
                       "ignoreUnknownTileErrors": true,
                       "opacity": 1,
                       "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
-                      "linkedWcsCoverage": "s2a_nrt_granule_nbar_t"
+                      "linkedWcsCoverage": "s2a_nrt_granule_nbar_t",
+                      "featureTimesProperty": "data_available_for_dates"
                     },
                     {
                       "id": "afc9f4b0",
@@ -820,7 +821,8 @@
                       "ignoreUnknownTileErrors": true,
                       "opacity": 1,
                       "linkedWcsUrl": "https://ows.services.dea.ga.gov.au/",
-                      "linkedWcsCoverage": "s2b_nrt_granule_nbar_t"
+                      "linkedWcsCoverage": "s2b_nrt_granule_nbar_t",
+                      "featureTimesProperty": "data_available_for_dates"
                     }
                   ]
                 }
@@ -848,7 +850,8 @@
                       "opacity": 1,
                       "shareKeys": [
                         "eb9339e1"
-                      ]
+                      ],
+                      "featureTimesProperty": "data_available_for_dates"
                     },
                     {
                       "id": "ced51b59",
@@ -864,7 +867,8 @@
                       "opacity": 1,
                       "shareKeys": [
                         "7116f503"
-                      ]
+                      ],
+                      "featureTimesProperty": "data_available_for_dates"
                     },
                     {
                       "id": "5d75bf2a",
@@ -880,7 +884,8 @@
                       "opacity": 1,
                       "shareKeys": [
                         "0de1b493"
-                      ]
+                      ],
+                      "featureTimesProperty": "data_available_for_dates"
                     }
                   ]
                 },
@@ -902,7 +907,8 @@
                       "opacity": 1,
                       "shareKeys": [
                         "eb9339e1"
-                      ]
+                      ],
+                      "featureTimesProperty": "data_available_for_dates"
                     },
                     {
                       "id": "dc43b31b",
@@ -918,7 +924,8 @@
                       "opacity": 1,
                       "shareKeys": [
                         "7116f503"
-                      ]
+                      ],
+                      "featureTimesProperty": "data_available_for_dates"
                     },
                     {
                       "id": "848e68ca",
@@ -934,7 +941,8 @@
                       "opacity": 1,
                       "shareKeys": [
                         "0de1b493"
-                      ]
+                      ],
+                      "featureTimesProperty": "data_available_for_dates"
                     }
                   ]
                 }
