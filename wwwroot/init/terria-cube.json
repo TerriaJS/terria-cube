@@ -850,8 +850,7 @@
                       "opacity": 1,
                       "shareKeys": [
                         "eb9339e1"
-                      ],
-                      "featureTimesProperty": "data_available_for_dates"
+                      ]
                     },
                     {
                       "id": "ced51b59",
@@ -867,8 +866,7 @@
                       "opacity": 1,
                       "shareKeys": [
                         "7116f503"
-                      ],
-                      "featureTimesProperty": "data_available_for_dates"
+                      ]
                     },
                     {
                       "id": "5d75bf2a",
@@ -884,8 +882,7 @@
                       "opacity": 1,
                       "shareKeys": [
                         "0de1b493"
-                      ],
-                      "featureTimesProperty": "data_available_for_dates"
+                      ]
                     }
                   ]
                 },
@@ -907,8 +904,7 @@
                       "opacity": 1,
                       "shareKeys": [
                         "eb9339e1"
-                      ],
-                      "featureTimesProperty": "data_available_for_dates"
+                      ]
                     },
                     {
                       "id": "dc43b31b",
@@ -924,8 +920,7 @@
                       "opacity": 1,
                       "shareKeys": [
                         "7116f503"
-                      ],
-                      "featureTimesProperty": "data_available_for_dates"
+                      ]
                     },
                     {
                       "id": "848e68ca",
@@ -941,8 +936,7 @@
                       "opacity": 1,
                       "shareKeys": [
                         "0de1b493"
-                      ],
-                      "featureTimesProperty": "data_available_for_dates"
+                      ]
                     }
                   ]
                 }
@@ -1329,7 +1323,8 @@
                   "type": "wms",
                   "useOwnClock": true,
                   "ignoreUnknownTileErrors": true,
-                  "opacity": 1
+                  "opacity": 1,
+                  "featureTimesProperty": "data_available_for_dates"
                 },
                 {
                   "id": "d60a77da",
