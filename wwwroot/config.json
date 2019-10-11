@@ -70,6 +70,14 @@
 
         // To override TerriaJS's region mapping file with a local one.
         // regionMappingDefinitionsUrl: "data/regionMapping.json"
+
+        "customRequestSchedulerLimits": {
+          "ows.dea.ga.gov.au:443": 256,
+          "ows.services.dea.ga.gov.au:443": 256,
+          "ows.dev.dea.ga.gov.au:443": 256,
+          "gsky.nci.org.au:80": 256,
+          "gsky.nci.org.au:443": 256,
+        }
     }
 }
 
