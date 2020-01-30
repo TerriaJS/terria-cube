@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+
+### 2020-01-30
+
+* Update gauge data config to only load certain gauges
+* Update terriajs to latest version
+
 ### 2019-05-28
 
 * New satellite imagery from DEA added to catalogue.
