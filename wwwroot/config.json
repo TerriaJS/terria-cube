@@ -72,11 +72,11 @@
         // regionMappingDefinitionsUrl: "data/regionMapping.json"
 
         "customRequestSchedulerLimits": {
-          "ows.dea.ga.gov.au:443": 256,
-          "ows.services.dea.ga.gov.au:443": 256,
-          "ows.dev.dea.ga.gov.au:443": 256,
-          "gsky.nci.org.au:80": 256,
-          "gsky.nci.org.au:443": 256,
+          "ows.dea.ga.gov.au:443": 18,
+          "ows.services.dea.ga.gov.au:443": 18,
+          "ows.dev.dea.ga.gov.au:443": 18,
+          "gsky.nci.org.au:80": 18,
+          "gsky.nci.org.au:443": 18,
         }
 
         // True to display welcome message on startup.

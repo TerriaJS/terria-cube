@@ -17,7 +17,7 @@ module.exports = function(devMode, hot) {
             sourcePrefix: '', // to avoid breaking multi-line string literals by inserting extra tabs.
             globalObject: '(self || window)' // to avoid breaking in web worker (https://github.com/webpack/webpack/issues/6642)
         },
-        devtool: devMode ? 'cheap-inline-source-map' : 'source-map',
+        devtool: 'source-map', //devMode ? 'cheap-inline-source-map' : 'source-map',
         module: {
             rules: [
                 {
@@ -26,22 +26,43 @@ module.exports = function(devMode, hot) {
                     loader: 'raw-loader'
                 },
                 {
-                    test: /\.(js|jsx)$/,
+                    test: /\.(ts|js)x?$/,
                     include: [
                         path.resolve(__dirname, '..', 'index.js'),
                         path.resolve(__dirname, '..', 'entry.js'),
                         path.resolve(__dirname, '..', 'lib')
-                        
                     ],
-                    loader: 'babel-loader',
-                    options: {
-                        sourceMap: false, // generated sourcemaps are currently bad, see https://phabricator.babeljs.io/T7257
-                        presets: ['@babel/preset-env', '@babel/preset-react'],
-                        plugins: [
-                            'babel-plugin-jsx-control-statements',
-                            '@babel/plugin-transform-modules-commonjs'
-                        ]
-                    }
+                    use: [
+                        {
+                            // Replace Babel's super.property getter with one that is MobX aware.
+                            loader: require.resolve('string-replace-loader'),
+                            options: {
+                                search: 'function _get\\(target, property, receiver\\).*',
+                                replace: 'var _get = require(\'terriajs/lib/Core/superGet\').default;',
+                                flags: 'g'
+                            }
+                        },
+                        {
+                            loader: 'babel-loader',
+                            options: {
+                                presets: [
+                                  [
+                                    '@babel/preset-env',
+                                    {
+                                      corejs: 3,
+                                      useBuiltIns: "usage"
+                                    }
+                                  ],
+                                  '@babel/preset-react'
+                                ],
+                                plugins: [
+                                    'babel-plugin-jsx-control-statements',
+                                    '@babel/plugin-transform-modules-commonjs'
+                                ]
+                            }
+                        },
+                        require.resolve('ts-loader')
+                    ]
                 },
                 {
                     test: /\.(png|jpg|svg|gif)$/,
