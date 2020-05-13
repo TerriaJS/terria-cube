@@ -3,7 +3,8 @@
     initializationUrls: [
         // "dea",
         // "terria-cube"
-        "simple"
+        "https://tiles.terria.io/static/terria-cube-testing-2020-05-19/australia.json",
+        "https://tiles.terria.io/static/terria-cube-testing-2020-05-19/africa.json"
     ],
     parameters: {
         initFragmentPaths: [
