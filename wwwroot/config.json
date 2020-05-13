@@ -101,6 +101,13 @@
                 "icon": "video",
                 "videoUrl": "https://www.youtube.com/embed/NTtSM70rIvI",
                 "placeholderImage": "https://img.youtube.com/vi/NTtSM70rIvI/maxresdefault.jpg"
+            },
+            {
+                "itemName": "timeseries",
+                "markdownText": "# Interacting with time-series data\n\nAnother key feature of the NSW Spatial Digital Twin is the ability to explore the fourth dimension of a dataset, time. For datasets that have a 4D attribute available, you can use the Digital Twin to navigate backwards and forwards in time and see how the data and landscape changes.\n\nIn this video, we’ll show you how to use the 4D time-series controls using the Digital Twin.",
+                "icon": "datePicker",
+                "videoUrl": "https://www.youtube.com/embed/Co5Fy1uhkb8",
+                "placeholderImage": "https://img.youtube.com/vi/Co5Fy1uhkb8/maxresdefault.jpg"
             }
         ]
     }
