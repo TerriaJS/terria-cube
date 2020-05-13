@@ -2,6 +2,14 @@ Change Log
 ==========
 
 ### 2020-01-31
+### MobX Development
+
+* Fix manifest.json start_url 
+* Move About & Related Maps to left hand side
+* Default to console analytics in development
+* Allow translation overrides via gulp
+
+### Next Release
 
 * Upgrade to TerriaJS v7.11.1
 
