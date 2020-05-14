@@ -97,6 +97,8 @@
         "helpContent": [
             {
                 "itemName": "gettingstarted",
+                "title": "Getting started with the map",
+                "paneMode": "videoAndContent",
                 "markdownText": "# Getting started with the map\n\nIf you're new to the map or using spatial data, our Getting Started video quickly covers the basic functionality you'll need to use to add and interrogate data sets.\n\nIf you don't have time to watch the video, we suggest exploring the following areas:\n\n1. Search for a location to quickly find an area of interest\n2. Use 'Explore map data' to view the catalogue of available data sets and add them to the map\n3. Interact with the data layer, including opacity and toggling on and off on the left in your workbench\n4. Click on the data on the map to view more detailed data, including the raw data\n5. Change your basemap using options in 'Map Settings' to help make some data sets more visible\n6. Zoom and change your view, including tilting the view angle using the controls on the right-hand side of the screen",
                 "icon": "video",
                 "videoUrl": "https://www.youtube.com/embed/NTtSM70rIvI",
@@ -104,10 +106,17 @@
             },
             {
                 "itemName": "timeseries",
+                "title": "Interacting with time-series data",
+                "paneMode": "videoAndContent",
                 "markdownText": "# Interacting with time-series data\n\nAnother key feature of the NSW Spatial Digital Twin is the ability to explore the fourth dimension of a dataset, time. For datasets that have a 4D attribute available, you can use the Digital Twin to navigate backwards and forwards in time and see how the data and landscape changes.\n\nIn this video, we’ll show you how to use the 4D time-series controls using the Digital Twin.",
                 "icon": "datePicker",
                 "videoUrl": "https://www.youtube.com/embed/Co5Fy1uhkb8",
                 "placeholderImage": "https://img.youtube.com/vi/Co5Fy1uhkb8/maxresdefault.jpg"
+            },
+            {
+                "itemName": "satelliteimagery",
+                "title": "Satellite Imagery",
+                "paneMode": "slider"
             }
         ]
     }
