@@ -4,7 +4,8 @@
         // "dea",
         // "terria-cube"
         "https://tiles.terria.io/static/terria-cube-testing-2020-05-19/australia.json",
-        "https://tiles.terria.io/static/terria-cube-testing-2020-05-19/africa.json"
+        "https://tiles.terria.io/static/terria-cube-testing-2020-05-19/africa.json",
+        "https://tiles.terria.io/static/terria-cube-testing-2020-05-19/delta.json"
     ],
     parameters: {
         initFragmentPaths: [
