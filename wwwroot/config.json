@@ -117,6 +117,13 @@
                 "itemName": "satelliteimagery",
                 "title": "Satellite Imagery",
                 "paneMode": "slider"
+            },
+            {
+                "itemName": "compare",
+                "title": "Compare",
+                "paneMode": "videoAndContent",
+                "markdownText": "# Placeholder for compare\n\nCompare content",
+                "icon": "compare"
             }
         ]
     }
