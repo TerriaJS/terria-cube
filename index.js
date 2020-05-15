@@ -27,6 +27,7 @@ import BingMapsSearchProviderViewModel from 'terriajs/lib/Models/BingMapsSearchP
 import render from './lib/Views/render';
 import createGlobalBaseMapOptions from 'terriajs/lib/ViewModels/createGlobalBaseMapOptions';
 import registerCatalogMembers from 'terriajs/lib/Models/registerCatalogMembers';
+import defined from 'terriajs-cesium/Source/Core/defined';
 
 // Ignore Cesium's Request limiter for DEA tiles
 import RequestScheduler from 'terriajs-cesium/Source/Core/RequestScheduler';
@@ -116,30 +117,37 @@ module.exports = terria.start({
         // const allBaseMaps = undefined;
 
         // Show a modal disclaimer before user can do anything else.
-        // if (defined(terria.configParameters.globalDisclaimer)) {
-        //     var globalDisclaimer = terria.configParameters.globalDisclaimer;
-        //     var hostname = window.location.hostname;
-        //     if (globalDisclaimer.enableOnLocalhost || hostname.indexOf('localhost') === -1) {
-        //         var message = '';
-        //         // Sometimes we want to show a preamble if the user is viewing a site other than the official production instance.
-        //         // This can be expressed as a devHostRegex ("any site starting with staging.") or a negative prodHostRegex ("any site not ending in .gov.au")
-        //         if (defined(globalDisclaimer.devHostRegex) && hostname.match(globalDisclaimer.devHostRegex) ||
-        //             defined(globalDisclaimer.prodHostRegex) && !hostname.match(globalDisclaimer.prodHostRegex)) {
-        //                 message += require('./lib/Views/DevelopmentDisclaimerPreamble.html');
-        //         }
-        //         message += require('./lib/Views/GlobalDisclaimer.html');
+        if (defined(terria.configParameters.globalDisclaimer)) {
+            var globalDisclaimer = terria.configParameters.globalDisclaimer;
+            var hostname = window.location.hostname;
+            if (globalDisclaimer.enableOnLocalhost || hostname.indexOf('localhost') === -1) {
+                var message = '';
+                // Sometimes we want to show a preamble if the user is viewing a site other than the official production instance.
+                // This can be expressed as a devHostRegex ("any site starting with staging.") or a negative prodHostRegex ("any site not ending in .gov.au")
+                if (defined(globalDisclaimer.devHostRegex) && hostname.match(globalDisclaimer.devHostRegex) ||
+                    defined(globalDisclaimer.prodHostRegex) && !hostname.match(globalDisclaimer.prodHostRegex)) {
+                        message += require('./lib/Views/DevelopmentDisclaimerPreamble.html');
+                }
+                message += require('./lib/Views/GlobalDisclaimer.html');
 
-        //         var options = {
-        //             title: (globalDisclaimer.title !== undefined) ? globalDisclaimer.title : 'Warning',
-        //             confirmText: (globalDisclaimer.buttonTitle || "Ok"),
-        //             width: 600,
-        //             height: 550,
-        //             message: message,
-        //             horizontalPadding : 100
-        //         };
-        //         viewState.notifications.push(options);
-        //     }
-        // }
+                var options = {
+                    title: (globalDisclaimer.title !== undefined) ? globalDisclaimer.title : 'Warning',
+                    confirmText: (globalDisclaimer.buttonTitle || "Ok"),
+                    denyText: (globalDisclaimer.denyText || "Cancel"),
+                    denyAction: function() { 
+                        window.location = globalDisclaimer.afterDenyLocation || "https://terria.io/";
+                    },
+                    width: 600,
+                    height: 550,
+                    message: message,
+                    horizontalPadding : 100
+                };
+                runInAction(() => {
+                    viewState.disclaimerSettings = options;
+                    viewState.disclaimerVisible = true;
+                });
+            }
+        }
 
         // Ignore Cesium's Request limiter for DEA tiles
         if (terria.configParameters.customRequestSchedulerLimits !== undefined) {
