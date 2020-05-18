@@ -92,7 +92,7 @@
         // "showWelcomeMessage": false,
 
         // True to display in-app guides.
-        // "showInAppGuides": false,
+        "showInAppGuides": true,
 
         // True to display new feature popups.
         // "showFeaturePrompts": false,
